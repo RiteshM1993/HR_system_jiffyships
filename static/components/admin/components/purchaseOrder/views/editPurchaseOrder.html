@@ -1,0 +1,169 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-success">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Edit Purchase Order</h3>
+                <a ui-sref="listpurchaseorder"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Purchase Orders</span></a>
+            </div>
+              <form role="form" ng-init ="purchaseOrderScope.insertdatarow()" name="addPurchaseOrderform" ng-submit="submitForm(addPurchaseOrderform.$valid)" novalidate>
+
+                <div class="box-body">
+                 <div class="form-group col-sm-4">
+                    <label>Project Name:</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-plus"></i>
+                      </div>
+                       <select name="projectName" class="form-control" ng-model="purchaseOrderScope.data.project_id" ng-required="true">
+                          <option ng-repeat="values in purchaseOrderScope.projectname" ng-value="{{values.project_id}}">{{values.customer_id}}</option>
+                       </select>
+                    </div>
+                      <p ng-show="addPurchaseOrderform.projectName.$invalid && !addPurchaseOrderform.projectName.$pristine" class="help-block">Project Name is required.</p>
+                 </div>
+
+                 <div class="form-group col-sm-4">
+                    <label> Purchase Order Number:</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <input type="number" class="form-control" placeholder="Purchase Order Number" name="purchaseordernumber" ng-model="purchaseOrderScope.data.po_number" ng-required="true">
+                    </div>
+                      <p ng-show="addPurchaseOrderform.purchaseordernumber.$invalid && !addPurchaseOrderform.purchaseordernumber.$pristine" class="help-block">Purchase Order Number is required.</p>
+                 </div>
+
+                 <div class="form-group col-sm-4">
+                    <label>Start Date:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker1" placeholder="Start Date" ng-model="purchaseOrderScope.data.po_start_date" name="startDate" ng-required="true" ng-change='purchaseOrderScope.checkErr(purchaseOrderScope.startDate,purchaseOrderScope.endDate)' >
+                    </div>
+                    <p ng-show="addPurchaseOrderform.startDate.$invalid && !addPurchaseOrderform.startDate.$pristine" class="help-block">Start Date is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>End Date:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker2" placeholder="End Date" ng-model="purchaseOrderScope.data.po_end_date" ng-change='purchaseOrderScope.checkErr(purchaseOrderScope.startDate,purchaseOrderScope.endDate)' name="endDate" ng-required="true">
+                    </div>
+                      <p ng-show="purchaseOrderScope.error_msg" class="help-block">End Date should be greater than start date.</p>
+                      <p ng-show="addPurchaseOrderform.endDate.$invalid && !addPurchaseOrderform.endDate.$pristine" class="help-block">End Date is required.</p>
+                   </div>
+
+                  <!--<div class="form-group col-sm-4">-->
+                    <!--<label> Purchase Order Resources:</label>-->
+                    <!--<div class="input-group">-->
+                      <!--<div class="input-group-addon">-->
+                        <!--<i class="fa fa-plus"></i>-->
+                      <!--</div>-->
+                      <!--<input type="number" class="form-control" placeholder="Purchase Order Resources" name="purchaseorderresources" ng-model="purchaseOrderScope.data.po_resource_count" ng-required="true">-->
+                    <!--</div>-->
+                      <!--<p ng-show="addPurchaseOrderform.purchaseorderresources.$invalid && !addPurchaseOrderform.purchaseorderresources.$pristine" class="help-block">Purchase Order Resource Count is required.</p>-->
+                  <!--</div>-->
+
+                  <!--<div class="form-group col-sm-4">-->
+                    <!--<label> Billing Type:</label>-->
+                    <!--<div class="input-group">-->
+                      <!--<div class="input-group-addon">-->
+                        <!--<i class="fa fa-plus"></i>-->
+                      <!--</div>-->
+                      <!--<select name="billingtype" class="form-control" ng-model="purchaseOrderScope.data.po_billing_type" ng-required="true">-->
+                          <!--<option ng-repeat="values in purchaseOrderScope.billingType" ng-value="{{values.proj_id}}">{{values.proj_name}}</option>-->
+                      <!--</select>-->
+                    <!--</div>-->
+                      <!--<p ng-show="addPurchaseOrderform.billingtype.$invalid && !addPurchaseOrderform.billingtype.$pristine" class="help-block">Purchase Order Number is required.</p>-->
+                  <!--</div>-->
+
+                  <div class="form-group col-sm-4">
+                    <label> Purchase Order Amount:</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <input type="number" class="form-control" placeholder="Purchase Order Amount" name="purchaseorderamount" ng-model="purchaseOrderScope.data.po_amount" ng-required="true">
+                    </div>
+                      <p ng-show="addPurchaseOrderform.purchaseorderamount.$invalid && !addPurchaseOrderform.purchaseorderamount.$pristine" class="help-block">Purchase Order Number is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Purchase Order Currency:</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-plus"></i>
+                      </div>
+                       <select name="purchaseordercurrency" class="form-control" ng-model="purchaseOrderScope.data.po_currency_id" ng-required="true">
+                          <option ng-repeat="values in purchaseOrderScope.poCurrency" ng-value="{{values.currency_id}}">{{values.currency_logo}}</option>
+                       </select>
+                    </div>
+                      <p ng-show="addPurchaseOrderform.purchaseordercurrency.$invalid && !addPurchaseOrderform.purchaseordercurrency.$pristine" class="help-block">Purchase Order Number is required.</p>
+                  </div>
+
+                  <!--<div class="form-group col-sm-4">-->
+                    <!--<label>Billing Rate Per Hour*</label>-->
+                    <!--<div class="input-group">-->
+                      <!--<div class="input-group-addon">-->
+                        <!--<i class="fa fa-envelope"></i>-->
+                      <!--</div>-->
+                      <!--<input type="number" class="form-control" placeholder="Billing Rate" ng-model="purchaseOrderScope.data.po_billing_per_hour" name="billrate" ng-required="true">-->
+                    <!--</div>-->
+                      <!--<p ng-show="addPurchaseOrderform.billrate.$invalid && !addPurchaseOrderform.billrate.$pristine" class="help-block">Billing rate is required.</p>-->
+                  <!--</div>-->
+
+                  <!--<div class="form-group col-sm-4">-->
+                    <!--<label>Project Cost*</label>-->
+                    <!--<div class="input-group">-->
+                      <!--<div class="input-group-addon">-->
+                        <!--<i class="fa fa-envelope"></i>-->
+                      <!--</div>-->
+                      <!--<input type="number" class="form-control" placeholder="Project Cost" ng-model="purchaseOrderScope.data.po_project_cost" name="projectCost" ng-required="true">-->
+                    <!--</div>-->
+                      <!--<p ng-show="addPurchaseOrderform.projectCost.$invalid && !addPurchaseOrderform.projectCost.$pristine" class="help-block">Project Cost is required.</p>-->
+                  <!--</div>-->
+
+                  <div class="box-footer col-sm-12" style="padding-left:15px">
+                    <button type="submit" ng-disabled="addPurchaseOrderform.$invalid" class="btn btn-primary" ng-click="purchaseOrderScope.updatePo()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                  </div>
+                </div>
+              </form>
+
+            <div ng-show="purchaseOrderScope.successmsg" class="well well-sm alert alert-success text-center"> Purchase Order is saved. <a ui-sref="listpurchaseorder"> Click to go to listing Page</a> </div>
+            <div ng-show="purchaseOrderScope.errormsg" class="well well-sm alert alert-danger text-center">Purchase Order is not saved. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>

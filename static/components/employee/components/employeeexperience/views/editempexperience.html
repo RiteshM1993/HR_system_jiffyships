@@ -1,0 +1,111 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Employee Experience Details</h3>
+              <a ui-sref="listempexperience" ng-if="userRolesToggle.empRole==1"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Employee Experience</span></a>
+            </div>
+              <form role="form" ng-init="empExperienceScope.geteditvalues()" name="empExperienceform" ng-submit="submitForm(empExperienceform.$valid)" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-4">
+                    <label>Previous Company Name*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                        <input type="text" placeholder="Previous Company Name" name="prevCompanyName" ng-model="empExperienceScope.editdata.prev_company_name" class="form-control" ng-required="true">
+                    </div>
+                      <p ng-show="empExperienceform.prevCompanyName.$invalid && !empExperienceform.prevCompanyName.$pristine" class="help-block">Previous Company Name is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Job Title*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                        <input type="text" placeholder="Job Title" name="jobTitle" ng-model="empExperienceScope.editdata.job_title" class="form-control" ng-required="true">
+                    </div>
+                      <p ng-show="empExperienceform.jobTitle.$invalid && !empExperienceform.jobTitle.$pristine" class="help-block">Job Title is required.</p>
+                  </div>
+
+
+                  <div class="form-group col-sm-4">
+                    <label>From Date*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker" placeholder="From Date" ng-model="empExperienceScope.editdata.from_date" name="fromdate" ng-required="true">
+                    </div>
+                    <p ng-show="empExperienceform.fromdate.$invalid && !empExperienceform.fromdate.$pristine" class="help-block">From Date is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>To Date*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker1" placeholder="To Date" ng-model="empExperienceScope.editdata.to_date" name="todate" ng-required="true">
+                    </div>
+                      <p ng-show="empExperienceform.todate.$invalid && !empExperienceform.todate.$pristine" class="help-block">To Date is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-8">
+                    <label>Job Description*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                        <textarea name="jobDescription" class="form-control" placeholder="Job Description" ng-model="empExperienceScope.editdata.job_description" cols="30" rows="5" ng-required="true"></textarea>
+                    </div>
+                    <p ng-show="empExperienceform.jobDescription.$invalid && !empExperienceform.jobDescription.$pristine" class="help-block">Job Description is required.</p>
+                  </div>
+
+
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" id="btnenable" class="btn btn-primary" ng-disabled="empExperienceform.$invalid" ng-click="empExperienceScope.updateEmployeeExperience()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+                </div>
+              </form>
+
+            <div ng-if="userRolesToggle.empRole==1" ng-show="empExperienceScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Experience is updated. <a ui-sref="listempexperience"> Click to go to listing Page</a> </div>
+            <div ng-if="userRolesToggle.empRole==2 || userRolesToggle.empRole==3" ng-show="empExperienceScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Experience is updated.</div>
+            <div ng-show="empExperienceScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee Experience is not updated. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>

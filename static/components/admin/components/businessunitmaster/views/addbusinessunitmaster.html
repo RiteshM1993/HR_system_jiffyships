@@ -1,0 +1,93 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-success">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Add Business Unit</h3>
+              <a ui-sref="listbusinessunit"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Business Units</span></a>
+            </div>
+              <form ng-init="businessUnitMasterScope.getBusinessParent()" role="form" name="addbusinessunitform" ng-submit="submitForm(addbusinessunitform.$valid)" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-6">
+                    <label>Business Unit Name*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-bank"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Business Unit Name" name="businessunitname" ng-model="businessUnitMasterScope.businessunitname" ng-required="true">
+                    </div>
+                    <p ng-show="addbusinessunitform.businessunitname.$invalid && !addbusinessunitform.businessunitname.$pristine" class="help-block">Business Unit Name is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-6">
+                    <label>Business Parent</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-briefcase"></i>
+                      </div>
+                      <select name="businessparent" ng-model="businessUnitMasterScope.businessparent" class="form-control">
+                            <option value="">---Select---</option>
+                            <option ng-repeat="values in businessUnitMasterScope.businessUnit" value="{{values.business_id}}">{{values.business_name}}</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-sm-6">
+                    <label>Business Unit Manager</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-briefcase"></i>
+                      </div>
+                       <input name="manageName" class="form-control" type="text" ng-model="businessUnitMasterScope.managerName" placeholder="Manager Name" auto-complete="businessUnitMasterScope.autoCompleteOptions" autocomplete="off" />
+                    </div>
+                  </div>
+
+                  <div class="form-group col-sm-6">
+                    <label>Status*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-check-square-o"></i>
+                      </div>
+                        <select name="status" ng-model="businessUnitMasterScope.status"  class="form-control" ng-required="true">
+                            <option value="">---Select---</option>
+                            <option value="1">Active</option>
+                            <option value="0">Inactive</option>
+                        </select>
+                    </div>
+                    <p ng-show="addbusinessunitform.status.$invalid && !addbusinessunitform.status.$pristine" class="help-block">Status is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-6">
+                    <label>Selected Manager</label>
+                    <div class="input-group" >
+                        <ul class="list-inline">
+                            <li class="chipset" ng-repeat="emp in businessUnitMasterScope.managerNameDisplay">
+                                {{emp}} <i class="fa fa-remove" style="color:red; cursor:pointer" ng-click="businessUnitMasterScope.removeNameChip($index)" ></i>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" ng-disabled="addbusinessunitform.$invalid" class="btn btn-primary" ng-click="businessUnitMasterScope.addbusinessUnitMaster()">Submit</button>
+                    <button type="reset" ng-click="businessUnitMasterScope.clearForm()" class="btn btn-default">Clear</button>
+                </div>
+                </div>
+              </form>
+
+            <div ng-show="businessUnitMasterScope.successmsg" class="well well-sm alert alert-success text-center"> Business Unit is saved. <a ui-sref="listbusinessunit"> Click to go to listing Page</a> </div>
+            <div ng-show="businessUnitMasterScope.errormsg" class="well well-sm alert alert-danger text-center"> Business Unit is not saved. Please try again.</a> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ </div>
+<!--<script>-->
+  <!--//Date picker-->
+    <!--$('#datepicker').datepicker({-->
+      <!--autoclose: true-->
+    <!--})-->
+
+<!--</script>-->

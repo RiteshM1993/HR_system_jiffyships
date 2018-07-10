@@ -1,0 +1,36 @@
+<div class="content-wrapper">
+    <div class="col-sm-10 col-md-offset-1 p-t-b-25">
+        <a ng-if="userRolesToggle.empRole==1" ui-sref="managerprojectassign"><span class="pull-right" >Project Manager's</span></a>
+        <a ng-if="userRolesToggle.empRole==2" ui-sref="listemployeeassignedtomanager({obj:userRolesToggle.empId})"><span class="pull-right" >Project Manager's</span></a>
+    </div>
+<div class="col-sm-10 col-md-offset-1 scrollit" ng-init="projectAssignScope.getDocuments()">
+    <table st-table="displayedCollection" st-safe-src="projectAssignScope.projectDoc" class="table table-striped">
+        <thead>
+            <tr>
+                <th class="p-l-r-0" colspan="4">
+                    <input st-search="" class="form-control searchBar-w pull-right" placeholder="Search Table..." type="text"/>
+                </th>
+            </tr>
+            <tr class="table-head-color">
+                <th>S.No</th>
+                <th st-sort="project_name">Project Name</th>
+                <th st-sort="doc_name">Document Name</th>
+                <th st-sort="doc_file">Download Document</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-if="projectAssignScope.projectDoc.length" ng-repeat="row in displayedCollection">
+                <td>{{$index+1}}</td>
+                <td>{{row.project_name}}</td>
+                <td>{{row.doc_name}}</td>
+                <td><a href="/static/dist/projdocs/{{row.doc_file}}">{{row.doc_file}}</a></td>
+            </tr>
+            <tr ng-if="!projectAssignScope.projectDoc.length">
+                <td colspan="3" class="text-center">
+                    No Document Found!
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

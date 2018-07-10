@@ -1,0 +1,60 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-success">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px">Update Currency</h3>
+              <a ui-sref="listcurrencymaster"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Currencies</span></a>
+            </div>
+              <form role="form" ng-init="currencyMasterScope.populatedata()" name="addcurrencyform" ng-submit="submitForm(addcurrencyform.$valid)" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-6">
+                    <label>Currency Name*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-money"></i>
+                      </div>
+                      <!--<input type="hidden" ng-model="currencyMasterScope.data.currency_id">-->
+                      <input type="text" class="form-control" placeholder="Currency Name" name="currencyname" ng-model="currencyMasterScope.data.currency_name" ng-required="true">
+                    </div>
+                      <p ng-show="addcurrencyform.currencyname.$invalid && !addcurrencyform.currencyname.$pristine" class="help-block">Currency Name is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-6">
+                    <label>Currency Logo*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-dollar"></i>
+                      </div>
+                      <select name="currencylogo" ng-model="currencyMasterScope.data.currency_logo" class="form-control" ng-required="true">
+                            <option value="">---Select---</option>
+                            <option value="$ (USD)">$ (USD)</option>
+                            <option value="₹ (INR)">₹ (INR)</option>
+                        </select>
+                    </div>
+                      <p ng-show="addcurrencyform.currencylogo.$invalid && !addcurrencyform.currencylogo.$pristine" class="help-block">Currency Logo is required.</p>
+                  </div>
+
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" ng-disabled="addcurrencyform.$invalid" class="btn btn-primary" ng-click="currencyMasterScope.updateCurrencyMaster()">Submit</button>
+                    <button type="reset" ng-click="currencyMasterScope.clearForm()"  class="btn btn-default">Clear</button>
+                </div>
+                </div>
+              </form>
+
+            <div ng-show="currencyMasterScope.successmsg" class="well well-sm alert alert-success text-center"> Currency is updated. <a ui-sref="listcurrencymaster"> Click to go to listing Page</a> </div>
+            <div ng-show="currencyMasterScope.errormsg" class="well well-sm alert alert-danger text-center"> Currency is not updated. Please try again.</a> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ </div>
+<!--<script>-->
+  <!--//Date picker-->
+    <!--$('#datepicker').datepicker({-->
+      <!--autoclose: true-->
+    <!--})-->
+
+<!--</script>-->

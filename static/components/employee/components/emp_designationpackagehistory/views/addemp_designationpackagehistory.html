@@ -1,0 +1,146 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Employee Designation & Package Details</h3>
+              <a ui-sref="listempdesig_pack_history"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Employee Package & Designation History</span></a>
+            </div>
+              <form role="form" ng-init="empdesigpackhistoryScope.getvalues()" name="addemployeehistoryform" ng-submit="submitForm(addemployeehistoryform.$valid)" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-4">
+                    <label>Employee Name*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input class="form-control" type="text" ng-model="empdesigpackhistoryScope.employeename"  placeholder="Employee Name" auto-complete="empdesigpackhistoryScope.autoCompleteOptions" />
+                        <!--<select ng-required="true" name="employeename" ng-model="empdesigpackhistoryScope.employeename" class="form-control">-->
+                            <!--<option value="">-&#45;&#45;Select-&#45;&#45;</option>-->
+                            <!--<option ng-repeat="values in empdesigpackhistoryScope.employeeName" value="{{values.emp_id}}">{{values.emp_name}}</option>-->
+                        <!--</select>-->
+                    </div>
+                      <p ng-show="addemployeehistoryform.employeename.$invalid && !addemployeehistoryform.employeename.$pristine" class="help-block">Employee Name is required.</p>
+                  </div>
+
+
+                  <div class="form-group col-sm-4">
+                    <label>Salary*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-envelope"></i>
+                      </div>
+                      <input type="number" class="form-control" placeholder="Salary" ng-model="empdesigpackhistoryScope.salary" name="salary" ng-required="true">
+                    </div>
+                      <p ng-show="addemployeehistoryform.salary.$invalid && !addemployeehistoryform.salary.$pristine" class="help-block">Salary is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>From Date*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker" placeholder="From Date" ng-model="empdesigpackhistoryScope.fromdate" name="fromdate" ng-required="true">
+                    </div>
+                    <p ng-show="addemployeehistoryform.fromdate.$invalid && !addemployeehistoryform.fromdate.$pristine" class="help-block">From Date is required.</p>
+                  </div>
+
+                  <!--<div class="form-group col-sm-4">-->
+                    <!--<label>To Date*</label>-->
+                    <!--<div class="input-group">-->
+                      <!--<div class="input-group-addon">-->
+                        <!--<i class="fa fa-calendar"></i>-->
+                      <!--</div>-->
+                      <!--<input type="text" class="form-control" id="datepicker1" placeholder="To Date" ng-model="empdesigpackhistoryScope.todate" name="todate" ng-required="true">-->
+                    <!--</div>-->
+                      <!--<p ng-show="addemployeehistoryform.todate.$invalid && !addemployeehistoryform.todate.$pristine" class="help-block">To Date is required.</p>-->
+                  <!--</div>-->
+
+                  <div class="form-group col-sm-4">
+                    <label>Active*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                        <select name="Active" class="form-control" ng-model="empdesigpackhistoryScope.active" ng-required="true">
+                            <option value="">---Select---</option>
+                            <option value="1">Active</option>
+                            <option value="0">Inactive</option>
+                        </select>
+                    </div>
+                    <p ng-show="addemployeehistoryform.Active.$invalid && !addemployeehistoryform.Active.$pristine" class="help-block">Active is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Currency*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                        <select ng-required="true" name="currency" ng-model="empdesigpackhistoryScope.currencyid" class="form-control">
+                            <option value="">---Select---</option>
+                            <option ng-repeat="values in empdesigpackhistoryScope.currency" value="{{values.currency_id}}">{{values.currency_name}}</option>
+                        </select>
+                    </div>
+                      <p ng-show="addemployeehistoryform.currency.$invalid && !addemployeehistoryform.currency.$pristine" class="help-block">Employee Name is required.</p>
+                  </div>
+
+                   <div class="form-group col-sm-4">
+                    <label>Designation*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <select name="Designation" class="form-control" ng-model="empdesigpackhistoryScope.designationid" ng-required="true">
+                        <option value="">--Select---</option>
+                        <option ng-repeat="values in empdesigpackhistoryScope.designation" value="{{values.des_id}}">{{values.des_name}}</option>
+                      </select>
+                    </div>
+                      <p ng-show="addemployeehistoryform.Designation.$invalid && !addemployeehistoryform.Designation.$pristine" class="help-block">Designation is required.</p>
+                  </div>
+
+
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" class="btn btn-primary" ng-disabled="addemployeehistoryform.$invalid"  ng-click="empdesigpackhistoryScope.saveEmployeeHistory()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+                </div>
+              </form>
+
+            <div ng-show="empdesigpackhistoryScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Designation & Package Details are saved. <span><br><b> All Employee details Are Saved.</b></span> </div>
+            <div ng-show="empdesigpackhistoryScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee Designation & Package Details History is not saved. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>

@@ -1,0 +1,184 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Project Details:</h3>
+                <a ui-sref="listprojectmaster"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i>Projects</span></a>
+            </div>
+              <form role="form" name="addprojectmasterform" ng-init ="projectmasterScope.getvalues()"  ng-submit="submitForm(addprojectmasterform.$valid)" novalidate>
+                <div class="box-body">
+
+                   <div class="form-group col-sm-4">
+                    <label>Customer Name*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="customer name" class="form-control" ng-model="projectmasterScope.customerId" ng-required="true">
+                        <option value="">---Select---</option>
+                          <option ng-repeat="values in projectmasterScope.Customervalues" value="{{values.customer_id}}">{{values.customer_name}}</option>
+                      </select>
+                    </div>
+                   </div>
+                      <!--<p ng-show="addprojectmasterform.businessunit.$invalid && !addprojectmasterform.businessunit.$pristine" class="help-block">Business Unit is required.</p>-->
+
+
+
+                   <div class="form-group col-sm-4">
+                    <label>Project Name*</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Project Name" name="project_name" ng-model="projectmasterScope.project_name" ng-required="true">
+                    </div>
+                     <p ng-show="addprojectmasterform.project_name.$invalid && !addprojectmasterform.project_name.$pristine" class="help-block">Project Name is required.</p>
+
+                  </div>
+                 <div class="form-group col-sm-4">
+                    <label>Project Cost</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-envelope"></i>
+                      </div>
+                      <input type="number" class="form-control" placeholder="Project Cost" ng-model="projectmasterScope.projectCost" name="projectCost">
+                    </div>
+                      <!--<p ng-show="addPurchaseOrderform.projectCost.$invalid && !addPurchaseOrderform.projectCost.$pristine" class="help-block">Project Cost is required.</p>-->
+                  </div>
+
+                   <div class="form-group col-sm-4">
+                    <label>Project Type Name:</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="projtypemasterid" class="form-control" ng-model="projectmasterScope.proj_typemaster_id" ng-required="true">
+                        <option value="">--Select--</option>
+                        <option ng-repeat="values in projectmasterScope.ProjecTypeMasterValue" value="{{values.proj_id}}">{{values.proj_name}}</option>
+                      </select>
+                    </div>
+                     <!--<p ng-show="addprojectmasterform.projtypemasterid.$invalid && !addprojectmasterform.projectid.$pristine" class="help-block">Project Name is required.</p>-->
+
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <label>Start Date:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker1" placeholder="Start Date" ng-model="projectmasterScope.startDate" name="startDate" ng-required="true">
+                    </div>
+                    <p ng-show="addprojectmasterform.startDate.$invalid && !addprojectmasterform.startDate.$pristine" class="help-block">Project Start Date is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>End Date:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker2" placeholder="End Date" ng-model="projectmasterScope.endDate" ng-change='projectmasterScope.checkErr(projectmasterScope.startDate,projectmasterScope.endDate)' name="endDate" ng-required="true">
+                    </div>
+                      <p ng-show="projectmasterScope.error_msg" class="help-block">End Date should be greater than start date.</p>
+                      <p ng-show="addprojectmasterform.endDate.$invalid && !addprojectmasterform.endDate.$pristine" class="help-block">Project End Date is required.</p>
+                   </div>
+
+                   <div class="form-group col-sm-4">
+                    <label>Resource Count*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input type="number" class="form-control" placeholder="Resource Count" ng-model="projectmasterScope.resource_count" name="resource_count" ng-required="true">
+                    </div>
+                      <p ng-show="addprojectmasterform.resource_count.$invalid && !addprojectmasterform.resource_count.$pristine" class="help-block">Resource Count is required.</p>
+                  </div>
+                <div class="form-group col-sm-4">
+                    <label>Business Unit*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="businessunit_id" class="form-control" ng-model="projectmasterScope.businessunit_id" ng-required="true">
+                        <option value="">---Select---</option>
+                          <option ng-repeat="values in projectmasterScope.businessUnitValue" value="{{values.business_id}}">{{values.business_name}}</option>
+                      </select>
+                    </div>
+                      <!--<p ng-show="addprojectmasterform.businessunit.$invalid && !addprojectmasterform.businessunit.$pristine" class="help-block">Business Unit is required.</p>-->
+                  </div>
+
+
+                 <div class="form-group col-sm-4">
+                    <label>Add Manager Name:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input class="form-control" name="empName_email" type="text" ng-model="projectmasterScope.empName_email"  placeholder="Manager Name" auto-complete="projectmasterScope.autoCompleteOptions" autocomplete="off"  ng-required="true">
+                      <input class="form-control" type="hidden"  ng-model="projectmasterScope.emp_id">
+                    </div>
+                    <p ng-show="addemployeeprojectform.empName_email.$invalid && !addemployeeprojectform.empName_email.$pristine" class="help-block">Manager Name is required.</p>
+                  </div>
+
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" ng-disabled="addprojectmasterform.$invalid" class="btn btn-primary" ng-click="projectmasterScope.saveProjectmaster()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+                    </div>
+              </form>
+
+              <div ng-show="projectmasterScope.successmsg" class="well well-sm alert alert-success text-center"> Project is Saved. <a ui-sref="listprojectmaster"> Click to go to listing Page</a> </div>
+              <div ng-show="projectmasterScope.errormsg" class="well well-sm alert alert-danger text-center">Project is not Saved. Please try again.</a> </div>
+            <!--<div ng-show="employeeprojectScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Project is Saved. <a ui-sref="listemployeeeducation"> Click to go to listing Page</a> </div>-->
+            <!--<div ng-show="employeeprojectScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee Project is not Saved. Please try again.</a> </div>-->
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>
+
+<!--<script>-->
+  <!--//Date picker-->
+    <!--$('#Datepicker').Datepicker({-->
+      <!--autoclose: true-->
+    <!--})-->
+
+    <!--$('#Datepicker1').Datepicker({-->
+      <!--autoclose: true-->
+    <!--})-->
+
+    <!--$('#Datepicker2').Datepicker({-->
+      <!--autoclose: true-->
+    <!--})-->
+
+<!--</script>-->

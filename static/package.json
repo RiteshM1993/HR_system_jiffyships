@@ -1,0 +1,19 @@
+{
+  "name": "hrms",
+  "version": "1.0.0",
+  "description": "hrms portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rahul",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.15",
+    "angular": "^1.6.9",
+    "angular-auto-complete": "^1.7.3",
+    "angular-multiple-select": "^1.1.3",
+    "angular-smart-table": "^2.1.11",
+    "angular-ui-router": "^1.0.3"
+  }
+}

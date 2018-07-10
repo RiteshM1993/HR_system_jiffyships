@@ -1,0 +1,32 @@
+<div class="content-wrapper">
+    <div class="col-sm-10 col-md-offset-1 p-t-b-25">
+        <a ng-if="userRolesToggle.empRole==1" ui-sref="managerprojectassign"><span class="pull-right" ><i class="fa fa-list" aria-hidden="true"></i> Project Managers</span></a>
+        <a ng-if="userRolesToggle.empRole==2" ui-sref="listemployeeassignedtomanager({obj:userRolesToggle.empId})"><span class="pull-right" >Project Manager</span></a>
+    </div>
+     <section class="content" ng-init="projectAssignScope.getResouces()">
+      <div class="row">
+        <div class="col-md-3" ng-repeat="values in projectAssignScope.resourceData">
+          <div class="box box-primary">
+            <div class="box-body box-profile">
+              <img class="profile-user-img img-responsive img-circle" src="/static/dist/dmimages/{{values.emp_image}}" alt="User profile picture">
+
+              <h3 class="profile-username text-center">{{values.resourceName}} </h3>
+
+              <p class="text-muted text-center">{{values.resourceDesignation}}</p>
+
+              <ul class="list-group list-group-unbordered">
+                <li class="list-group-item">
+                  <b>DM ID</b> <a class="pull-right">{{values.dmId}}</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Email</b> <a class="pull-right">{{values.dmEmailId}}</a>
+                </li>
+              </ul>
+
+              <!--<a class="btn btn-primary btn-block"><b>View Profile</b></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>

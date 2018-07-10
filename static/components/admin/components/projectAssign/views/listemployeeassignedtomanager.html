@@ -1,0 +1,39 @@
+<div class="content-wrapper">
+    <!--<div class="col-sm-10 col-md-offset-1 p-t-b-25">-->
+        <!--<a ui-sref="addprojectmaster"><span class="pull-right" ><i class="fa fa-plus" aria-hidden="true"></i> Add Project</span></a>-->
+    <!--</div>-->
+
+<div class="col-sm-10 col-md-offset-1 scrollit p-t-b-25" ng-init="projectAssignScope.listProjectManagerempassigned()">
+    <table st-table="displayedCollection" style="" st-safe-src="projectAssignScope.projectdata" class="table table-striped">
+        <thead>
+
+        <tr>
+            <th class="p-l-r-0"  colspan="7">
+                <input st-search="" class="form-control searchBar-w pull-right" placeholder="Search Table..." type="text"/>
+            </th>
+            <!--<th><button class="pull-right btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-search-plus" aria-hidden="true"></i> <b>Advance Search</b></button></th>-->
+        </tr>
+        <tr class="table-head-color">
+            <th st-sort>S.No</th>
+            <th st-sort="manager_name">Manager Name</th>
+            <th st-sort="project_name">Project Name</th>
+            <th st-sort="proj_typemaster_id">Project Type Name</th>
+            <th st-sort="resource_count">Resource Count</th>
+            <th>View Resources</th>
+            <th>View Document</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in displayedCollection">
+            <td>{{$index+1}}</td>
+            <td>{{row.manager_name}}</td>
+            <td>{{row.project_name}}</td>
+            <td>{{row.proj_typemaster_id}}</td>
+            <td>{{row.resource_count}}</td>
+            <th><a href="javascript:void(0)" ng-click="projectAssignScope.showResources(row.project_id)">Click to View </a></th>
+            <th><a href="javascript:void(0)" ng-click="projectAssignScope.showDocuments(row.project_id)">Click to View </a></th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>

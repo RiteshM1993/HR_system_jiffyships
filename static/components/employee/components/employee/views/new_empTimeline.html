@@ -1,0 +1,81 @@
+<div class="content-wrapper">
+    <section class="content" style="padding-top:0px">
+         <div class="" ng-init="employeeScope.getEmp360Details()">
+            <div class="row">
+                    <h4 style="color:#183e77; padding-left:30px">Timeline <span class="small">{{employeeScope.emp360data.emp_name}}</span></h4>
+            </div>
+
+            <div class="row col-md-6 ">
+                <div class="col-md-12">
+                  <div class="box box-widget widget-user-2">
+                    <div class="widget-user-header bg-yellow">
+                      <div class="widget-user-image">
+                          <img ng-if="employeeScope.emp360data.empImg.length" class="img-circle" src="/static/dist/dmimages/{{employeeScope.emp360data.empImg}}" alt="User Avatar">
+                          <img ng-if="!employeeScope.emp360data.empImg.length" class="img-circle" src="/static/dist/img/employee.png" alt="User Avatar">
+                      </div>
+                      <h3 ng-if="employeeScope.emp360data.emp_name.length" class="widget-user-username">{{employeeScope.emp360data.emp_name}} <span class="small">{{employeeScope.emp360data.emp_dm_id}}</span></h3>
+                      <h5 ng-if="employeeScope.emp360data.emp_designation.length" class="widget-user-desc">{{employeeScope.emp360data.emp_designation}}</h5>
+                      <h3 ng-if="!employeeScope.emp360data.emp_name.length" class="widget-user-username">No Username added<span class="small">{{employeeScope.emp360data.emp_dm_id}}</span></h3>
+                      <h5 ng-if="!employeeScope.emp360data.emp_designation.length" class="widget-user-desc">No Designation Added</h5>
+                    </div>
+
+                    <div class="box-footer no-padding">
+                      <ul class="nav nav-stacked">
+                        <li ng-if="employeeScope.emp360data.emp_project_count"><a href="javascript:void(0)">Projects <span class="pull-right badge bg-blue">{{employeeScope.emp360data.emp_project_count}}</span></a></li>
+                        <li ng-if="employeeScope.emp360data.emp_increment_count"><a href="javascript:void(0)">Increments <span class="pull-right badge bg-aqua">{{employeeScope.emp360data.emp_increment_count}}</span></a></li>
+                        <li ng-if="employeeScope.emp360data.date_of_joining" title="YY-MM-DD"><a href="javascript:void(0)">Employee Since <span class="pull-right badge bg-aqua">{{employeeScope.emp360data.date_of_joining}}</span></a></li>
+                          <!--No Data -->
+                        <li ng-if="!employeeScope.emp360data.emp_project_count"><a href="javascript:void(0)">Projects <span class="pull-right badge bg-blue">0</span></a></li>
+                        <li ng-if="!employeeScope.emp360data.emp_increment_count"><a href="javascript:void(0)">Increments <span class="pull-right badge bg-aqua">0</span></a></li>
+                        <li ng-if="!employeeScope.emp360data.date_of_joining"><a href="javascript:void(0)">Employee Since <span class="pull-right badge bg-aqua">No Data</span></a></li>
+                        <!--<li><a href="javascript:void(0)">Completed Projects <span class="pull-right badge bg-green">12</span></a></li>-->
+                        <!--<li><a href="javascript:void(0)">Followers <span class="pull-right badge bg-red">842</span></a></li>-->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="page">
+                  <div class="page__demo">
+                    <div class="main-container page__container">
+                        <div class="row text-center" style="margin-top: -14px;">
+                           <h4  class="m-b-30" style="color:#183e77">Projects</h4>
+                        </div>
+                      <div class="timeline" ng-if="employeeScope.empProjects.length">
+                        <div class="timeline__group" ng-repeat="values in employeeScope.empProjects">
+                          <div class="timeline__box">
+                            <div class="timeline__date">
+                              <span class="timeline__month">{{values.project_start_date}}</span>
+                                <span class="timeline__month">-</span>
+                              <span class="timeline__month">{{values.project_end_date}}</span>
+                            </div>
+                            <div class="timeline__post">
+                              <div class="timeline__content">
+                                <p>Attends the Philadelphia Museum School of Industrial Art. Studies design with Alexey Brodovitch, art director at Harper's Bazaar, and works as his assistant.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="timeline" ng-if="!employeeScope.empProjects.length">
+                        <div class="timeline__group">
+                          <div class="timeline__box">
+                            <div class="timeline__date">
+                              <span class="timeline__day"></span>
+                            </div>
+                            <div class="timeline__post">
+                              <div class="timeline__content">
+                                <p>No Project Found!</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+         </div>
+    </section>
+</div>

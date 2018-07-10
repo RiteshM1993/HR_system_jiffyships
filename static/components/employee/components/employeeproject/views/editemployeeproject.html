@@ -1,0 +1,140 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Employee Project Details:</h3>
+                <a ui-sref="listemployeeproject"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Project Assignees</span></a>
+            </div>
+              <form role="form" name="updateemployeeprojectform" ng-init ="employeeprojectScope.insertdatarow()"ng-submit="submitForm(updateemployeeprojectform.$valid)" novalidate>
+                <div class="box-body">
+                  <div class="form-group col-sm-4">
+                    <label>Project Name:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="projectid" class="form-control" ng-model="employeeprojectScope.data.project_id" ng-required="true">
+                        <option value="">--Select--</option>
+                        <option ng-repeat="values in employeeprojectScope.projecTypeMasterValue" ng-value="values.project_id">{{values.project_name}}</option>
+                      </select>
+                    </div>
+                    <p ng-show="updateemployeeprojectform.projectid.$invalid && !updateemployeeprojectform.projectid.$pristine" class="help-block">Project Name is required.</p>
+                  </div>
+                   <div class="form-group col-sm-4">
+                    <label>Employee Name:</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input class="form-control" name="emp_name" type="text" ng-model="employeeprojectScope.data.emp_name" autocomplete="off" auto-complete="employeeprojectScope.autoCompleteOptions"  placeholder="Employee Name" ng-required="true">
+                      <input class="form-control" type="hidden"  ng-model="employeeprojectScope.emp_id">
+                    </div>
+                     <p ng-show="updateemployeeprojectform.emp_name.$invalid && !addemployeeeducationform.emp_name.$pristine" class="help-block">Employee Name is required.</p>
+                  </div>
+                   <div class="form-group col-sm-4">
+                    <label>Employee Description:</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="empdesc" class="form-control" ng-model="employeeprojectScope.data.emp_desc" ng-required="true">
+                          <option  value="">--Select--</option>
+                          <option ng-selected="employeeprojectScope.data.emp_desc == 1" value="1">Billing</option>
+                          <option ng-selected="employeeprojectScope.data.emp_desc == 2" value="2">Non-Billing</option>
+                          <option ng-selected="employeeprojectScope.data.emp_desc == 3" value="3">Shadow</option>
+                      </select>
+                    </div>
+                     <p ng-show="addemployeeprojectform.empdesc.$invalid && !addemployeeprojectform.empdesc.$pristine" class="help-block">Employee Description is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Start Date:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker1" placeholder="Start Date" ng-model="employeeprojectScope.data.start_date" name="startDate" ng-required="true">
+                    </div>
+                    <p ng-show="updateemployeeprojectform.startDate.$invalid && !addemployeeeducationform.startDate.$pristine" class="help-block">Project Start Date is required.</p>
+                  </div>
+
+
+                  <div class="form-group col-sm-4">
+                    <label>End Date:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker2" placeholder="End Date" ng-model="employeeprojectScope.data.end_date" name="endDate" ng-required="true">
+                    </div>
+                      <p ng-show="updateemployeeprojectform.endDate.$invalid && !updateemployeeprojectform.endDate.$pristine" class="help-block">Project End Date is required.</p>
+                   </div>
+
+
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" ng-disabled="updateemployeeprojectform.$invalid" class="btn btn-primary" ng-click=" employeeprojectScope.updateEmployeeproject()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+                   </div>
+              </form>
+
+              <div ng-show="employeeprojectScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Project is Saved. <a ui-sref="listemployeeproject"> Click to go to listing Page</a> </div>
+              <div ng-show="employeeprojectScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee Project is not Saved. Please try again.</a> </div>
+
+
+
+
+
+
+            <!--<div ng-show="employeeprojectScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Project is Saved. <a ui-sref="listemployeeeducation"> Click to go to listing Page</a> </div>-->
+            <!--<div ng-show="employeeprojectScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee Project is not Saved. Please try again.</a> </div>-->
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>
+
+<!--<script>-->
+  <!--//Date picker-->
+    <!--$('#Datepicker').Datepicker({-->
+      <!--autoclose: true-->
+    <!--})-->
+
+    <!--$('#Datepicker1').Datepicker({-->
+      <!--autoclose: true-->
+    <!--})-->
+
+    <!--$('#Datepicker2').Datepicker({-->
+      <!--autoclose: true-->
+    <!--})-->
+
+<!--</script>-->

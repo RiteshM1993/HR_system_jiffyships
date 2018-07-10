@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html ng-app="employeeApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DM HRMS</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/static/bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="/static/bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="/static/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/static/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="/static/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!--Angular auto complete-->
+    <link rel="stylesheet" href="/static/node_modules/angular-auto-complete/angular-auto-complete.css">
+<!--Angular Auto Select-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="/static/components/css/hrmsstyle.css">
+  <link rel="stylesheet" href="/static/components/css/empTimeline.css">
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini" ng-controller="checkSessionController">
+<div class="">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="javascript:void(0)" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">HRM</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>DM</b> HRMS</span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="javascript:void(0)" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                      page and may cause design problems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> 5 new members joined
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown user user-menu">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="/static/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="/static/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="active treeview menu-open">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a ui-sref="addemployee"><i class="fa fa-circle-o text-red"></i> ADD Employee</a></li>
+            <li ><a ui-sref="addempdesig_pack_history"><i class="fa fa-circle-o text-red"></i> ADD Employee History</a></li>
+            <li ><a ui-sref="addempexperience"><i class="fa fa-circle-o text-red"></i> ADD Employee Experience</a></li>
+            <li ><a ui-sref="addemptype"><i class="fa fa-circle-o text-red"></i> ADD Employee Type</a></li>
+            <li ><a ui-sref="addemployeedependents"><i class="fa fa-circle-o text-red"></i>Add Employee Dependents</a></li>
+            <li ><a ui-sref="addemployeeeducation"><i class="fa fa-circle-o text-red"></i>Add Employee Education</a></li>
+
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>List</span>
+            <span class="pull-right-container">
+              <!--<span class="label label-primary pull-right">4</span>-->
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a ui-sref="listemployee"><i class="fa fa-circle-o"></i> Employee List</a></li>
+            <li><a ui-sref="listempdesig_pack_history"><i class="fa fa-circle-o"></i> Employee History List</a></li>
+            <li><a ui-sref="listempexperience"><i class="fa fa-circle-o"></i> Employee Experience List</a></li>
+            <li><a ui-sref="listemptype"><i class="fa fa-circle-o"></i> Employee Type List</a></li>
+            <li><a ui-sref="listemployeedependents"><i class="fa fa-circle-o"></i>Employee Dependents List</a></li>
+            <li><a ui-sref="listemployeeeducation"><i class="fa fa-circle-o"></i>Employee Education List</a></li>
+
+          </ul>
+        </li>
+        <!--<li>-->
+          <!--<a href="pages/widgets.html">-->
+            <!--<i class="fa fa-th"></i> <span>Widgets</span>-->
+            <!--<span class="pull-right-container">-->
+              <!--<small class="label pull-right bg-green">new</small>-->
+            <!--</span>-->
+          <!--</a>-->
+        <!--</li>-->
+        <!--<li class="treeview">-->
+          <!--<a href="#">-->
+            <!--<i class="fa fa-pie-chart"></i>-->
+            <!--<span>Charts</span>-->
+            <!--<span class="pull-right-container">-->
+              <!--<i class="fa fa-angle-left pull-right"></i>-->
+            <!--</span>-->
+          <!--</a>-->
+          <!--<ul class="treeview-menu">-->
+            <!--<li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>-->
+            <!--<li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>-->
+            <!--<li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>-->
+            <!--<li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="treeview">-->
+          <!--<a href="#">-->
+            <!--<i class="fa fa-laptop"></i>-->
+            <!--<span>UI Elements</span>-->
+            <!--<span class="pull-right-container">-->
+              <!--<i class="fa fa-angle-left pull-right"></i>-->
+            <!--</span>-->
+          <!--</a>-->
+          <!--<ul class="treeview-menu">-->
+            <!--<li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>-->
+            <!--<li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>-->
+            <!--<li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>-->
+            <!--<li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>-->
+            <!--<li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>-->
+            <!--<li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="treeview">-->
+          <!--<a href="#">-->
+            <!--<i class="fa fa-edit"></i> <span>Forms</span>-->
+            <!--<span class="pull-right-container">-->
+              <!--<i class="fa fa-angle-left pull-right"></i>-->
+            <!--</span>-->
+          <!--</a>-->
+          <!--<ul class="treeview-menu">-->
+            <!--<li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>-->
+            <!--<li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>-->
+            <!--<li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="treeview">-->
+          <!--<a href="#">-->
+            <!--<i class="fa fa-table"></i> <span>Tables</span>-->
+            <!--<span class="pull-right-container">-->
+              <!--<i class="fa fa-angle-left pull-right"></i>-->
+            <!--</span>-->
+          <!--</a>-->
+          <!--<ul class="treeview-menu">-->
+            <!--<li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>-->
+            <!--<li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<a href="pages/calendar.html">-->
+            <!--<i class="fa fa-calendar"></i> <span>Calendar</span>-->
+            <!--<span class="pull-right-container">-->
+              <!--<small class="label pull-right bg-red">3</small>-->
+              <!--<small class="label pull-right bg-blue">17</small>-->
+            <!--</span>-->
+          <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<a href="pages/mailbox/mailbox.html">-->
+            <!--<i class="fa fa-envelope"></i> <span>Mailbox</span>-->
+            <!--<span class="pull-right-container">-->
+              <!--<small class="label pull-right bg-yellow">12</small>-->
+              <!--<small class="label pull-right bg-green">16</small>-->
+              <!--<small class="label pull-right bg-red">5</small>-->
+            <!--</span>-->
+          <!--</a>-->
+        <!--</li>-->
+        <!--<li class="treeview">-->
+          <!--<a href="#">-->
+            <!--<i class="fa fa-folder"></i> <span>Examples</span>-->
+            <!--<span class="pull-right-container">-->
+              <!--<i class="fa fa-angle-left pull-right"></i>-->
+            <!--</span>-->
+          <!--</a>-->
+          <!--<ul class="treeview-menu">-->
+            <!--<li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>-->
+            <!--<li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>-->
+            <!--<li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>-->
+            <!--<li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>-->
+            <!--<li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>-->
+            <!--<li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>-->
+            <!--<li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>-->
+            <!--<li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>-->
+            <!--<li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="treeview">-->
+          <!--<a href="#">-->
+            <!--<i class="fa fa-share"></i> <span>Multilevel</span>-->
+            <!--<span class="pull-right-container">-->
+              <!--<i class="fa fa-angle-left pull-right"></i>-->
+            <!--</span>-->
+          <!--</a>-->
+          <!--<ul class="treeview-menu">-->
+            <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>-->
+            <!--<li class="treeview">-->
+              <!--<a href="#"><i class="fa fa-circle-o"></i> Level One-->
+                <!--<span class="pull-right-container">-->
+                  <!--<i class="fa fa-angle-left pull-right"></i>-->
+                <!--</span>-->
+              <!--</a>-->
+              <!--<ul class="treeview-menu">-->
+                <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>-->
+                <!--<li class="treeview">-->
+                  <!--<a href="#"><i class="fa fa-circle-o"></i> Level Two-->
+                    <!--<span class="pull-right-container">-->
+                      <!--<i class="fa fa-angle-left pull-right"></i>-->
+                    <!--</span>-->
+                  <!--</a>-->
+                  <!--<ul class="treeview-menu">-->
+                    <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>-->
+                    <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>-->
+                  <!--</ul>-->
+                <!--</li>-->
+              <!--</ul>-->
+            <!--</li>-->
+            <!--<li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>-->
+          <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>-->
+        <!--<li class="header">LABELS</li>-->
+        <!--<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>-->
+        <!--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>-->
+        <!--<li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>-->
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <ui-view></ui-view>
+
+
+
+  <!-- Control Sidebar -->
+
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/static/dist/js/adminlte.min.js"></script>
+
+<script src="/static/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="/static/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!--Angular scripts starts-->
+
+
+<!--dependencies starts-->
+<!--angular lodash before angular-->
+<script src="/static/components/js/lodash.js"></script>
+<script src="/static/node_modules/angular/angular.min.js"></script>
+<script src="/static/node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+<script src="/static/node_modules/angular-smart-table/dist/smart-table.min.js"></script>
+<!--Angular Auto complete-->
+<script src="/static/node_modules/angular-auto-complete/angular-auto-complete.js"></script>
+<!--ng-sanitize-->
+<script src="/static/node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+<!--dependencies ends-->
+<!--Angular multiselect-->
+
+
+
+<!--main employee app starts-->
+<script src="/static/components/employee/employeeApp.js"></script>
+<!--main employee app ends-->
+
+<!--Employee Dashboard starts-->
+<script src="/static/components/employee/components/dashboard/employeeApp.dashboard.js"></script>
+<script src="/static/components/employee/components/dashboard/dashboardController/dashboardController.js"></script>
+<script src="/static/components/employee/components/dashboard/dashboardService/dashboardService.js"></script>
+<!--Employee Dashboard ends-->
+
+<!-- Employee starts-->
+<script src="/static/components/employee/components/employee/employeeApp.employee.js"></script>
+<script src="/static/components/employee/components/employee/employeeController/employeeController.js"></script>
+<script src="/static/components/employee/components/employee/employeeService/employeeService.js"></script>
+<!-- Employee ends-->
+
+<!-- Employee designation package history starts-->
+<script src="/static/components/employee/components/emp_designationpackagehistory/employeeApp.emp_designationpackagehistory.js"></script>
+<script src="/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryController/emp_designationpackagehistoryController.js"></script>
+<script src="/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryService/emp_designationpackagehistoryService.js"></script>
+<!-- Employee designation package history ends-->
+
+<!-- Employee experience starts-->
+<script src="/static/components/employee/components/employeeexperience/employeeApp.empExperience.js"></script>
+<script src="/static/components/employee/components/employeeexperience/empExperienceController/empExperienceController.js"></script>
+<script src="/static/components/employee/components/employeeexperience/empExperienceService/empExperienceService.js"></script>
+<!-- Employee experience ends-->
+
+<!--Emp Type Starts-->
+<script src="/static/components/employee/components/employeetype/empType.js"></script>
+<script src="/static/components/employee/components/employeetype/empTypeController/empTypeController.js"></script>
+<script src="/static/components/employee/components/employeetype/empTypeService/empTypeService.js"></script>
+<!--Emp Type Ends-->
+
+
+<!--Employee dependents starts-->
+<script src="/static/components/employee/components/employeedependents/employeeApp.employeedependents.js"></script>
+<script src="/static/components/employee/components/employeedependents/employeedependentsController/employeedependentsController.js"></script>
+<script src="/static/components/employee/components/employeedependents/employeedependentsService/employeedependentsService.js"></script>
+
+<!--Employee dependents ends-->
+
+<!--Employee education starts-->
+
+<script src="/static/components/employee/components/employeeeducation/employeeApp.employeeEducation.js"></script>
+<script src="/static/components/employee/components/employeeeducation/employeeeducationController/employeeeducationController.js"></script>
+<script src="/static/components/employee/components/employeeeducation/employeeeducationService/employeeeducationService.js"></script>
+
+<!--Employee education ends-->
+<!--EMp Project starts-->
+<script src="/static/components/employee/components/employeeproject/employeeApp.employeeProject.js"></script>
+<script src="/static/components/employee/components/employeeproject/employeeprojectController/employeeprojectController.js"></script>
+<script src="/static/components/employee/components/employeeproject/employeeprojectService/employeeprojectService.js"></script>
+<!--emp project ends-->
+
+<!--Emp_doc starts-->
+<script src="/static/components/employee/components/emp_doc/employeeApp.emp_doc.js"></script>
+<script src="/static/components/employee/components/emp_doc/emp_docController/emp_docController.js"></script>
+<script src="/static/components/employee/components/emp_doc/emp_docService/emp_docService.js"></script>
+<!--Emp_doc ends-->
+
+<!--emp resigantion starts-->
+<script src="/static/components/employee/components/employeeresignation/employeeApp.employeeResignation.js"></script>
+<script src="/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js"></script>
+<script src="/static/components/employee/components/employeeresignation/employeeresignationservice/employeeresignationService.js"></script>
+<!--emp resigantion ends-->
+
+
+<!--Angular scripts ends-->
+
+</body>
+</html>
+

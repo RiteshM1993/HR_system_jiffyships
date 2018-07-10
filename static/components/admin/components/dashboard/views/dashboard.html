@@ -1,0 +1,224 @@
+  <!--&lt;!&ndash; Content Wrapper. Contains page content &ndash;&gt;-->
+  <!--<div class="content-wrapper" ng-init="adminDashboardScope.fetchDashboardVals()">-->
+
+    <!--&lt;!&ndash; Content Header (Page header) &ndash;&gt;-->
+    <!--<section class="content-header">-->
+      <!--<h1>-->
+        <!--Dashboard-->
+        <!--<small>HRMS</small>-->
+      <!--</h1>-->
+
+
+    <!--</section>-->
+
+    <!--&lt;!&ndash; Main content &ndash;&gt;-->
+    <!--<section class="content">-->
+      <!--&lt;!&ndash; Info boxes &ndash;&gt;-->
+      <!--<div class="row">-->
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listemployee">-->
+          <!--<div class="info-box">-->
+            <!--<span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>-->
+
+            <!--<div class="info-box-content">-->
+              <!--<span class="info-box-text">Total Employee</span>-->
+              <!--<span class="info-box-number">{{adminDashboardScope.data.empCount}}</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.info-box-content &ndash;&gt;-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.info-box &ndash;&gt;-->
+        <!--</div>-->
+
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listprojectmaster">-->
+          <!--<div class="info-box">-->
+            <!--<span class="info-box-icon bg-aqua"><i class="fa fa-gear"></i></span>-->
+
+            <!--<div class="info-box-content">-->
+              <!--<span class="info-box-text">Total Project</span>-->
+              <!--<span class="info-box-number">{{adminDashboardScope.data.projectCount}}</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.info-box-content &ndash;&gt;-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.info-box &ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.col &ndash;&gt;-->
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listofficelocation">-->
+          <!--<div class="info-box">-->
+            <!--<span class="info-box-icon bg-maroon"><i class="fa fa-bank"></i></span>-->
+
+            <!--<div class="info-box-content">-->
+              <!--<span class="info-box-text">Total Offices</span>-->
+              <!--<span class="info-box-number">{{adminDashboardScope.data.ofclocationCount}}</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.info-box-content &ndash;&gt;-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.info-box &ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.col &ndash;&gt;-->
+
+        <!--&lt;!&ndash; fix for small devices only &ndash;&gt;-->
+        <!--<div class="clearfix visible-sm-block"></div>-->
+
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listdesignation">-->
+          <!--<div class="info-box">-->
+            <!--<span class="info-box-icon bg-green"><i class="icon ion-ios-briefcase"></i></span>-->
+
+            <!--<div class="info-box-content">-->
+              <!--<span class="info-box-text">Total Designation</span>-->
+              <!--<span class="info-box-number">{{adminDashboardScope.data.designationCount}}</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.info-box-content &ndash;&gt;-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.info-box &ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.col &ndash;&gt;-->
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="managerprojectassign">-->
+          <!--<div class="info-box">-->
+            <!--<span class="info-box-icon bg-blue"><i class="ion ion-android-contacts"></i></span>-->
+
+            <!--<div class="info-box-content">-->
+              <!--<span class="info-box-text">Project Manager</span>-->
+              <!--<span class="info-box-number">{{adminDashboardScope.data.projMangercount}}</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.info-box-content &ndash;&gt;-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.info-box &ndash;&gt;-->
+        <!--</div>-->
+        <!--&lt;!&ndash; /.col &ndash;&gt;-->
+         <!--<div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="expiringpo">-->
+          <!--<div class="info-box">-->
+            <!--<span class="info-box-icon bg-blue"><i class="fa fa-shopping-cart "></i></span>-->
+
+            <!--<div class="info-box-content">-->
+              <!--<span class="info-box-text">PO Expiring in 30 Days</span>-->
+              <!--<span class="info-box-number">{{adminDashboardScope.data.experingpo}}</span>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; /.info-box-content &ndash;&gt;-->
+          <!--</div>-->
+          <!--&lt;!&ndash; /.info-box &ndash;&gt;-->
+        <!--</div>-->
+      <!--</div>-->
+
+    <!--</section>-->
+    <!--&lt;!&ndash; /.content &ndash;&gt;-->
+  <!--</div>-->
+  <!--&lt;!&ndash; /.content-wrapper &ndash;&gt;-->
+
+
+
+    <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" ng-init="adminDashboardScope.fetchDashboardVals()">
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small>HRMS</small>
+      </h1>
+
+
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Info boxes -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listemployee">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Total Employee</span>
+              <span class="info-box-number">{{adminDashboardScope.data.empCount}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listprojectmaster">
+          <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="fa fa-gear"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Total Project</span>
+              <span class="info-box-number">{{adminDashboardScope.data.projectCount}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listofficelocation">
+          <div class="info-box">
+            <span class="info-box-icon bg-maroon"><i class="fa fa-bank"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Total Offices</span>
+              <span class="info-box-number">{{adminDashboardScope.data.ofclocationCount}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        <!-- fix for small devices only -->
+        <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listdesignation">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="icon ion-ios-briefcase"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Total Designation</span>
+              <span class="info-box-number">{{adminDashboardScope.data.designationCount}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="managerprojectassign">
+          <div class="info-box">
+            <span class="info-box-icon bg-blue"><i class="ion ion-android-contacts"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Project Manager</span>
+              <span class="info-box-number">{{adminDashboardScope.data.projMangercount}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+         <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="expiringpo">
+          <div class="info-box">
+            <span class="info-box-icon bg-blue"><i class="fa fa-shopping-cart "></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">PO Expiring in 30 Days</span>
+              <span class="info-box-number">{{adminDashboardScope.data.experingpo}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listemployeeresignation">
+          <div class="info-box">
+            <span class="info-box-icon bg-blue"><i class="fa fa-shopping-cart "></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Employee Resigned</span>
+              <span class="info-box-number">{{adminDashboardScope.data.empresign}}</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+      </div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->

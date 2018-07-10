@@ -1,0 +1,58 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px">Update Project Type</h3>
+              <a ui-sref="listprojecttypemaster"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Project Types</span></a>
+            </div>
+              <form role="form" ng-init="projecttypeScope.insertdatarow()" name="addprojecttypemasterform" ng-submit="submitForm(addprojecttypemasterform.$valid)" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-6">
+                    <label>Edit Projecttype Name:</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-plus"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Edit project type Name" name="projecttypename" ng-model="projecttypeScope.data[0].proj_name" ng-required="true">
+                    </div>
+                    <p ng-show="addprojecttypemasterform.projecttypename.$invalid && !addprojecttypemasterform.projecttypename.$pristine" class="help-block">Project  Name is required.</p>
+                  </div>
+                  <input type="hidden" ng-model="projecttypeScope.data[0].proj_id">
+
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" ng-disabled="addprojecttypemasterform.$invalid" class="btn btn-primary" ng-click=" projecttypeScope.updateProjecttype()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+                </div>
+              </form>
+
+            <div ng-show="projecttypeScope.successmsg" class="well well-sm alert alert-success text-center"> Project type Name is updated. <a ui-sref="listprojecttypemaster"> Click to go to listing Page</a> </div>
+            <div ng-show="projecttypeScope.errormsg" class="well well-sm alert alert-danger text-center">Project type  Name is not updated. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+</script>

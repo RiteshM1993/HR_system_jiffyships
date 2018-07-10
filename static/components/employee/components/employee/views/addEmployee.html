@@ -1,0 +1,301 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Employee Details</h3>
+                  {{request.session.name}}
+              <a ui-sref="listemployee"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Employees</span></a>
+            </div>
+              <form role="form" ng-init="employeeScope.getvalues()" name="addemployeeform" ng-submit="submitForm(addemployeeform.$valid)" enctype="multipart/form-data" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-4">
+                    <label>First Name*</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="First Name" name="employeefirstname" ng-model="employeeScope.employeefirstname" ng-required="true">
+                    </div>
+                      <p ng-show="addemployeeform.employeefirstname.$invalid && !addemployeeform.employeefirstname.$pristine" class="help-block">First Name is required.</p>
+                  </div>
+                   <div class="form-group col-sm-4">
+                    <label>Middle Name</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Middle Name" name="employeemiddlename" ng-model="employeeScope.employeemiddlename">
+                    </div>
+
+                  </div>
+                   <div class="form-group col-sm-4">
+                    <label>Last Name*</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Last Name" name="employeelastname" ng-model="employeeScope.employeelastname" ng-required="true">
+                    </div>
+                    <p ng-show="addemployeeform.employeelastname.$invalid && !addemployeeform.employeelastname.$pristine" class="help-block">Last Name is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>DM Employee ID*</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="DM Employee ID" name="dmEmployeeId" ng-model="employeeScope.dmEmployeeId" ng-required="true">
+                    </div>
+                    <p ng-show="addemployeeform.dmEmployeeId.$invalid && !addemployeeform.dmEmployeeId.$pristine" class="help-block">DM Employee ID is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Email*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-envelope"></i>
+                      </div>
+                      <input type="email" class="form-control" placeholder="Email" ng-model="employeeScope.email" name="email" ng-required="true">
+                    </div>
+                      <p ng-show="addemployeeform.email.$invalid && !addemployeeform.email.$pristine" class="help-block">Email is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Personal Email*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                         <i class="fa fa-envelope"></i>
+                      </div>
+                      <input type="email"  class="form-control" placeholder="Personal Email" ng-model="employeeScope.personalemail" name="personalemail" ng-required="true">
+                    </div>
+                    <p ng-show="addemployeeform.personalemail.$invalid && !addemployeeform.personalemail.$pristine" class="help-block">Personal Email is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Mobile Number*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-phone"></i>
+                      </div>
+                      <input type="number" ng-minlength="10" ng-maxlength="10" class="form-control" placeholder="Mobile Number" ng-model="employeeScope.mobilenum" name="mobilenum" ng-required="true">
+                    </div>
+                    <p ng-show="addemployeeform.mobilenum.$invalid && !addemployeeform.mobilenum.$pristine" class="help-block">Ten Digit Mobile Number is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Office Number</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input type="number" class="form-control" placeholder="Office Number" ng-model="employeeScope.officenumber" name="officenumber">
+                    </div>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>DOB*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker" placeholder="Date of Birth" ng-model="employeeScope.dob" name="dob" ng-required="true">
+                    </div>
+                    <p ng-show="addemployeeform.dob.$invalid && !addemployeeform.dob.$pristine" class="help-block">DOB is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Status*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                        <select name="status" class="form-control" ng-model="employeeScope.emptype" ng-required="true">
+                          <option value="">---Select---</option>
+                          <option ng-repeat="values in employeeScope.emptypeid" value="{{values.emp_type_id}}">{{values.type_name}}</option>
+                        </select>
+                    </div>
+                    <p ng-show="addemployeeform.status.$invalid && !addemployeeform.status.$pristine" class="help-block">Status is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Designation*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <select name="jobtitle" class="form-control" ng-model="employeeScope.jobtitle" ng-required="true">
+                        <option value="">--Select---</option>
+                        <option ng-repeat="values in employeeScope.designationValue" value="{{values.des_id}}">{{values.des_name}}</option>
+                      </select>
+                    </div>
+                      <p ng-show="addemployeeform.jobtitle.$invalid && !addemployeeform.jobtitle.$pristine" class="help-block">Job Title is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Date of Joining*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker1" placeholder="Date of Joining" ng-model="employeeScope.doj" name="doj" ng-required="true">
+                    </div>
+                      <p ng-show="addemployeeform.doj.$invalid && !addemployeeform.doj.$pristine" class="help-block">Date of joining is required.</p>
+                  </div>
+
+
+
+                  <div class="form-group col-sm-4">
+                    <label>Total Experience*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input class="form-control" placeholder="Experience" ng-model="employeeScope.experience" name="experience" ng-required="true">
+                    </div>
+                      <p ng-show="addemployeeform.experience.$invalid && !addemployeeform.experience.$pristine" class="help-block">Experience is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Business Unit*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="businessunit" class="form-control" ng-model="employeeScope.businessunit" ng-required="true">
+                        <option value="">---Select---</option>
+                          <option ng-repeat="values in employeeScope.businessUnitValue" value="{{values.business_id}}">{{values.business_name}}</option>
+                      </select>
+                    </div>
+                      <p ng-show="addemployeeform.businessunit.$invalid && !addemployeeform.businessunit.$pristine" class="help-block">Business Unit is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Manager</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input class="form-control" type="text" ng-model="employeeScope.data"  placeholder="Manager Name" auto-complete="employeeScope.autoCompleteOptions" />
+
+                    </div>
+                      <!--<p ng-show="addemployeeform.manager.$invalid && !addemployeeform.manager.$pristine" class="help-block">Manager is required.</p>-->
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Office Location*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="officelocation" class="form-control" ng-model="employeeScope.officelocation" ng-required="true">
+                        <option value="">---Select---</option>
+                        <option ng-repeat="values in employeeScope.officeLocationValue" value="{{values.locationId}}">{{values.officeLocation}}</option>
+                      </select>
+                    </div>
+                      <p ng-show="addemployeeform.officelocation.$invalid && !addemployeeform.officelocation.$pristine" class="help-block">Office Location is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Current Address*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <textarea class="form-control" placeholder="Current Address" ng-model="employeeScope.curraddr" name="curraddr" ng-required="true"></textarea>
+                    </div>
+                      <p ng-show="addemployeeform.curraddr.$invalid && !addemployeeform.curraddr.$pristine" class="help-block">Current address is required.</p>
+                  </div>
+
+                   <div class="form-group col-sm-4">
+                    <label>Permanent Address*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <textarea class="form-control" placeholder="Permanent Address" ng-model="employeeScope.permaaddr" name="permaaddr" ng-required="true"></textarea>
+                    </div>
+                       <p ng-show="addemployeeform.permaaddr.$invalid && !addemployeeform.permaaddr.$pristine" class="help-block">Permanent address is required.</p>
+                  </div>
+                  <!--Image Upload-->
+                  
+                  <div class="form-group col-sm-4">
+                    <label>Employee Image*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input class="form-control" accept="image/*" id="fileUpload" type="file" name="empImage" file-model="employeeScope.empImage">
+                    </div>
+                       <p ng-show="addemployeeform.empImage.$invalid && !addemployeeform.empImage.$pristine" class="help-block">Employee Image is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Employee Role*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="empRole" class="form-control" ng-model="employeeScope.empRole" ng-required="true">
+                        <option value="">---Select---</option>
+                        <option value="1">Admin</option>
+                        <option value="2">Manager</option>
+                        <option value="3">Employee</option>
+
+                      </select>
+                    </div>
+                      <p ng-show="addemployeeform.empRole.$invalid && !addemployeeform.empRole.$pristine" class="help-block">Employee Role is required.</p>
+                  </div>
+                  
+                </div>
+
+                <div class="box-footer" style="padding-left:25px;">
+                    <button type="submit" class="btn btn-primary" ng-disabled="addemployeeform.$invalid"  ng-click="employeeScope.saveEmployee()">Submit</button>
+                    <!--<button type="submit" class="btn btn-primary"  ng-click="employeeScope.saveEmployee()">Submit</button>-->
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+              </form>
+
+            <div ng-show="employeeScope.successmsg" class="well well-sm alert alert-success text-center"> Employee details are saved. <a ui-sref="addempexperience"> Click to go to Add Employee Experience</a> </div>
+            <div ng-show="employeeScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee is not saved. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+
+
+
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>

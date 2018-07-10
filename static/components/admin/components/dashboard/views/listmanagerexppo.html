@@ -1,0 +1,46 @@
+<div class="content-wrapper">
+    <div class="col-sm-10 col-md-offset-1 p-t-b-25">
+        <!--<a ui-sref="addpurchaseorder"><span class="pull-right" ><i class="fa fa-plus" aria-hidden="true"></i> Add Purchase Order</span></a>-->
+    </div>
+    <div class="col-sm-10 col-md-offset-1 scrollit" ng-init="adminDashboardScope.getManagerExpPoData()">
+        <table st-table="displayedCollection" style="" st-safe-src="adminDashboardScope.listdata" class="table table-striped">
+            <thead>
+            <tr>
+                <th class="p-l-r-0"  colspan="6">
+                    <input st-search="" class="form-control searchBar-w pull-right" placeholder="Search Table..." type="text"/>
+                </th>
+            </tr>
+            <tr class="table-head-color">
+                <th st-sort>S.No</th>
+                <th st-sort="project_name">Project Name</th>
+                <th st-sort="proj_typemaster_id">PO Number</th>
+                <th st-sort="start_date">Start Date</th>
+                <th st-sort="end_date">End Date</th>
+                <!--<th st-sort="resource_count">Resource Count</th>-->
+                <!--<th st-sort="businessunit_id">Billing Type</th>-->
+                <!--<th st-sort="manager_name">Currency</th>-->
+                <th st-sort="manager_name">PO Amount</th>
+                <!--<th st-sort="manager_name">Project Cost</th>-->
+                <!--<th st-sort="manager_name">Billing/Hour</th>-->
+                <!--<th st-sort="">Action</th>-->
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="row in displayedCollection">
+                <td>{{$index+1}}</td>
+                <td>{{row.project_name}}</td>
+                <td>{{row.po_number}}</td>
+                <td>{{row.po_start_date}}</td>
+                <td>{{row.po_end_date}}</td>
+                <!--<td>{{row.po_resource_count}}</td>-->
+                <!--<td>{{row.project_type_name}}</td>-->
+                <!--<td>{{row.currency_name}}</td>-->
+                <td>{{row.po_amount}}</td>
+                <!--<td>{{row.po_project_cost}}</td>-->
+                <!--<td>{{row.po_billing_per_hour}}</td>-->
+                <!--<td><i class="fa fa-edit" style="cursor:pointer" ng-click="purchaseOrderScope.changeState(row.po_id)"></i> <i class="fa fa-trash" style="color:orangered; cursor:pointer" ng-click="purchaseOrderScope.deletePo(row.po_id, $index)"></i></td>-->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

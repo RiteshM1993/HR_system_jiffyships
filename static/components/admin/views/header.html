@@ -1,0 +1,73 @@
+<header  ng-init="checkSession()" class="main-header">
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" style="height:60px">
+
+      <div class="navbar-custom-menu" style="margin-top:5px;">
+        <ul class="nav navbar-nav">
+
+          <!--<li class="dropdown notifications-menu">-->
+            <!--<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">-->
+              <!--<i class="fa fa-bell-o"></i>-->
+              <!--<span class="label label-warning">10</span>-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu">-->
+              <!--<li class="header">You have 10 notifications</li>-->
+              <!--<li>-->
+                <!--&lt;!&ndash; inner menu: contains the actual data &ndash;&gt;-->
+                <!--<ul class="menu">-->
+                  <!--<li>-->
+                    <!--<a href="#">-->
+                      <!--<i class="fa fa-users text-aqua"></i> 5 new members joined today-->
+                    <!--</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="#">-->
+                      <!--<i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the-->
+                      <!--page and may cause design problems-->
+                    <!--</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="#">-->
+                      <!--<i class="fa fa-users text-red"></i> 5 new members joined-->
+                    <!--</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="#">-->
+                      <!--<i class="fa fa-shopping-cart text-green"></i> 25 sales made-->
+                    <!--</a>-->
+                  <!--</li>-->
+                  <!--<li>-->
+                    <!--<a href="#">-->
+                      <!--<i class="fa fa-user text-red"></i> You changed your username-->
+                    <!--</a>-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</li>-->
+              <!--<li class="footer"><a href="#">View all</a></li>-->
+            <!--</ul>-->
+          <!--</li>-->
+
+          <li class="dropdown user user-menu m-r-5">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+              <img ng-if="!userRolesToggle.empImg" src="/static/dist/img/employee.png" class="user-image" alt="User Image">
+              <img ng-if="userRolesToggle.empImg" ng-src="/static/dist/dmimages/{{userRolesToggle.empImg}}" class="user-image" alt="User Image">
+              <span class="hidden-xs" ng-bind="userRolesToggle.empName"></span>
+                <span> <i class="fa fa-caret-down"></i></span>
+            </a>
+            <ul class="dropdown-menu" style="min-width:140px!important">
+                <!--<div class="arrow"></div>-->
+              <li class="p-all-5" style="min-width:140px!important">
+                <a ui-sref="empAllDetailsState({obj:userRolesToggle.empId})"  ><i class="fa fa-address-book"></i><b>Profile</b></a>
+              </li>
+              <li class="p-all-5">
+                <a ng-click="signOut()" ><i class="fa fa-fw fa-power-off"></i><b>Sign out</b></a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+    </nav>
+  </header>

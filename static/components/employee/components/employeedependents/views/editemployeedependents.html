@@ -1,0 +1,98 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Edit Employee Dependents Details</h3>
+              <a ui-sref="listemployeedependents" ng-if="userRolesToggle.empRole==1"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Employee Dependents</span></a>
+            </div>
+              <form role="form" ng-init="employeedependentsScope.insertdatarow()" name="addemployeedependentsform" ng-submit="submitForm(addemployeedependentsform.$valid)" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-4">
+                    <label>Edit Dependent Name:*</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Dependent Name" name="dependentname" ng-model="employeedependentsScope.data[0].dep_name" ng-required="true">
+                    </div>
+                    <p ng-show="addemployeedependentsform.dependentname.$invalid && !addemployeedependentsform.dependentname.$pristine" class="help-block">Employee Dependent Name is required.</p>
+
+                  </div>
+
+
+                  <div class="form-group col-sm-4">
+                    <label>Relation:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-briefcase"></i>
+                      </div>
+                      <select name="relation" ng-model="employeedependentsScope.data[0].dep_Relation" class="form-control" ng-required="true">
+                            <option value="">---Select---</option>
+                            <option value="Father">Father</option>
+                            <option value="Mother">Mother</option>
+                            <option value="Brother">Brother</option>
+                            <option value="Son">Son</option>
+                            <option value="Daughter">Daughter</option>
+
+                        </select>
+                    </div>
+                    <p ng-show="addemployeedependentsform.relation.$invalid && !addemployeedependentsform.relation.$pristine" class="help-block">Dependent Relation is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>DOB:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker" placeholder="Date of Birth" ng-model="employeedependentsScope.data[0].dep_dob" name="dob" ng-required="true">
+                    </div>
+                    <p ng-show="addemployeedependentsform.dob.$invalid && !addemployeedependentsform.dob.$pristine" class="help-block">Date Of Birth is required.</p>
+
+                  </div>
+                <div class="box-footer" style="padding-left:15px;">
+                    <button type="submit" ng-disabled="addemployeedependentsform.$invalid" class="btn btn-primary" ng-click="employeedependentsScope.updateemployeedependents()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+                </div>
+              </form>
+
+            <div ng-if="userRolesToggle.empRole==1" ng-show="employeedependentsScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Dependents is Updated. <a ui-sref="listemployeedependents"> Click to go to listing Page</a> </div>
+            <div ng-if="userRolesToggle.empRole==2 || userRolesToggle.empRole==3" ng-show="employeedependentsScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Dependents is Updated. </div>
+            <div ng-show="employeedependentsScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee Dependents is not Updated. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>

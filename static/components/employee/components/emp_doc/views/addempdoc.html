@@ -1,0 +1,63 @@
+<div class="content-wrapper" ng-init="checkSession()">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Employee Documents</h3>
+              <a ui-sref="listdoc"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Documents</span></a>
+            </div>
+              <form role="form" name="addempdocform" ng-submit="submitForm(addempdocform.$valid)" enctype="multipart/form-data" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-6">
+                    <label>Document Name*</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Document Name" name="docname" ng-model="empDocScope.docname" ng-required="true">
+                    </div>
+                      <p ng-show="addempdocform.docname.$invalid && !addempdocform.docname.$pristine" class="help-block">Document Name is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-6">
+                    <label>Upload Document*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input class="form-control" accept="image/*" id="fileUpload" type="file" name="empdoc" file-model="empDocScope.empdoc">
+                    </div>
+                       <p ng-show="addempdocform.empdoc.$invalid && !addempdocform.empdoc.$pristine" class="help-block">Employee Document is required.</p>
+                  </div>
+
+                </div>
+
+                <div class="box-footer" style="padding-left:25px;">
+                    <button type="submit" class="btn btn-primary" ng-disabled="addempdocform.$invalid"  ng-click="empDocScope.saveDoc()">Submit</button>
+                    <!--<button type="submit" class="btn btn-primary"  ng-click="empDocScope.saveEmployee()">Submit</button>-->
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+              </form>
+
+            <div ng-show="empDocScope.successmsg" class="well well-sm alert alert-success text-center"> Employee document is saved. <a ui-sref="listdoc"> Click to go view document.</a> </div>
+            <div ng-show="empDocScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee document is not saved. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>

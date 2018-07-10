@@ -1,0 +1,103 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Edit Employee Educations Details:</h3>
+              <a ui-sref="listemployeeeducation" ng-if="userRolesToggle.empRole==1"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Employee Education</span></a>
+            </div>
+              <form role="form" ng-init ="employeeeducationScope.insertdatarow()" name="addemployeeeducationform" ng-submit="submitForm(addemployeeeducationform.$valid)" novalidate>
+                <div class="box-body">
+                  <div class="form-group col-sm-4">
+                    <label>Edit School University Name:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="School University Name" name="employeeschooluniversityname" ng-model="employeeeducationScope.data.empSchoolUniv_Name" ng-required="true">
+                      <!--<textarea class="form-control" placeholder="School University Name" ng-model="employeeeducationScope.data.empSchoolUniv_Name" name="employeeschooluniversityname" ng-required="true"></textarea>-->
+                    </div>
+                    <p ng-show="addemployeeeducationform.employeeschooluniversityname.$invalid && !addemployeeeducationform.employeeschooluniversityname.$pristine" class="help-block">School University Name is required.</p>
+                  </div>
+                   <div class="form-group col-sm-4">
+                    <label>Edit Qualification Degree Name:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa fa-university"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Qualification Degree Name" name="qualificationdegreename" ng-model="employeeeducationScope.data.empQuali_Degr_Name" ng-required="true">
+
+                      <!--<textarea class="form-control" placeholder="Qualification Degree Name" ng-model="employeeeducationScope.data.empQuali_Degr_Name" name="qualificationdegreename" ng-required="true"></textarea>-->
+                    </div>
+                     <p ng-show="addemployeeeducationform.qualificationdegreename.$invalid && !addemployeeeducationform.qualificationdegreename.$pristine" class="help-block">Qualification Degree Name is required.</p>
+
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Edit Date of completion:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker" placeholder="Date of completion" ng-model="employeeeducationScope.data.empDoc" name="doc" ng-required="true">
+                    </div>
+                    <p ng-show="addemployeeeducationform.doc.$invalid && !addemployeeeducationform.doc.$pristine" class="help-block">Date of completion is required.</p>
+
+                  </div>
+
+
+                  <div class="form-group col-sm-4">
+                    <label>Edit Notes:</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <textarea class="form-control" placeholder="Add Notes Here" ng-model="employeeeducationScope.data.empNotes" name="notes" ng-required="true"></textarea>
+                    </div>
+                    <p ng-show="addemployeeeducationform.notes.$invalid && !addemployeeeducationform.notes.$pristine" class="help-block"> Notes is required.</p>
+                  </div>
+
+
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" ng-disabled="addemployeeeducationform.$invalid" class="btn btn-primary" ng-click="employeeeducationScope.updateemployeeeducation()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+                    </div>
+              </form>
+
+            <div ng-if="userRolesToggle.empRole==1" ng-show="employeeeducationScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Education is Updated. <a ui-sref="listemployeeeducation"> Click to go to listing Page</a> </div>
+            <div ng-if="userRolesToggle.empRole==2 || userRolesToggle.empRole==3" ng-show="employeeeducationScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Education is Updated.</div>
+            <div ng-show="employeeeducationScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee Education is not Updated. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>

@@ -1,0 +1,50 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Employee Type Details</h3>
+              <a ui-sref="listemptype"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Employee Types</span></a>
+            </div>
+              <form role="form" ng-init="empTypeScope.getvalues()" name="empTypeform" ng-submit="submitForm(empTypeform.$valid)" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-4">
+                    <label>Employee Type Name*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                        <input type="text" placeholder="Employee Type Name" name="empTypeName" ng-model="empTypeScope.empTypeName" class="form-control" ng-required="true">
+                    </div>
+                      <p ng-show="empTypeform.empTypeName.$invalid && !empTypeform.empTypeName.$pristine" class="help-block">Employee Type Name is required.</p>
+                  </div>
+
+
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" id="btnenable" class="btn btn-primary" ng-disabled="empTypeform.$invalid" ng-click="empTypeScope.saveEmployeeType()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
+                </div>
+              </form>
+
+            <div ng-show="empTypeScope.successmsg" class="well well-sm alert alert-success text-center"> Employee Type is saved. <a ui-sref="listemptype"> Click to go to listing Page</a> </div>
+            <div ng-show="empTypeScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee Type is not saved. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>

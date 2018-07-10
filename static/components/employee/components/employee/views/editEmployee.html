@@ -1,0 +1,336 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Employee Details</h3>
+              <a ui-sref="listemployee" ng-if="userRolesToggle.empRole==1"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Employees</span></a>
+            </div>
+              <form ng-init="employeeScope.insertdatarow()" role="form" name="updateemployeeform" ng-submit="submitForm(updateemployeeform.$valid)" novalidate>
+                <div class="box-body">
+
+                  <div class="form-group col-sm-4">
+                    <label>First Name*</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="hidden" ng-model="employeeScope.data.emp_id">
+                      <input type="text" class="form-control" placeholder="First Name" name="employeefirstname" ng-model="employeeScope.data.first_name" ng-required="true">
+                    </div>
+                      <p ng-show="updateemployeeform.employeefirstname.$invalid && !updateemployeeform.employeefirstname.$pristine" class="help-block">First Name is required.</p>
+                  </div>
+                   <div class="form-group col-sm-4">
+                    <label>Middle Name</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Middle Name" name="employeemiddlename" ng-model="employeeScope.data.middle_name">
+                    </div>
+
+                  </div>
+                   <div class="form-group col-sm-4">
+                    <label>Last Name*</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Last Name" name="employeelastname" ng-model="employeeScope.data.last_name" ng-required="true">
+                    </div>
+                    <p ng-show="updateemployeeform.employeelastname.$invalid && !updateemployeeform.employeelastname.$pristine" class="help-block">Last Name is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>DM Employee ID*</label>
+
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                        <input ng-if="userRolesToggle.empRole==3" readonly type="text" class="form-control" placeholder="DM Employee ID" name="dmEmployeeId" ng-model="employeeScope.data.dmEmpId" ng-required="true">
+                        <input ng-if="userRolesToggle.empRole==2" readonly type="text" class="form-control" placeholder="DM Employee ID" name="dmEmployeeId" ng-model="employeeScope.data.dmEmpId" ng-required="true">
+                        <input ng-if="userRolesToggle.empRole==1" type="text" class="form-control" placeholder="DM Employee ID" name="dmEmployeeId" ng-model="employeeScope.data.dmEmpId" ng-required="true">
+                    </div>
+                    <p ng-show="updateemployeeform.dmEmployeeId.$invalid && !updateemployeeform.dmEmployeeId.$pristine" class="help-block">DM Employee ID is required.</p>
+                  </div>
+
+
+                  <div class="form-group col-sm-4">
+                    <label>Email*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-envelope"></i>
+                      </div>
+                        <input  ng-if="userRolesToggle.empRole==3" readonly type="email" class="form-control" placeholder="Email" ng-model="employeeScope.data.emp_email" name="email" ng-required="true">
+                        <input  ng-if="userRolesToggle.empRole==2" readonly type="email" class="form-control" placeholder="Email" ng-model="employeeScope.data.emp_email" name="email" ng-required="true">
+                        <input  ng-if="userRolesToggle.empRole==1" type="email" class="form-control" placeholder="Email" ng-model="employeeScope.data.emp_email" name="email" ng-required="true">
+                    </div>
+                      <p ng-show="updateemployeeform.email.$invalid && !updateemployeeform.email.$pristine" class="help-block">Email is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Personal Email*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                         <i class="fa fa-envelope"></i>
+                      </div>
+                      <input class="form-control" placeholder="Personal Email" ng-model="employeeScope.data.personal_email" name="personalemail" ng-required="true">
+                    </div>
+                    <p ng-show="updateemployeeform.personalemail.$invalid && !updateemployeeform.personalemail.$pristine" class="help-block">Personal Email is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Mobile Number*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-phone"></i>
+                      </div>
+                      <input type="number" class="form-control" placeholder="Mobile Number" ng-model="employeeScope.data.mobile_number" name="mobilenum" ng-required="true">
+                    </div>
+                    <p ng-show="updateemployeeform.mobilenum.$invalid && !updateemployeeform.mobilenum.$pristine" class="help-block">Mobile Number is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>DOB*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker" placeholder="Date of Birth" ng-model="employeeScope.data.emp_dob" name="dob" ng-required="true">
+                    </div>
+                    <p ng-show="updateemployeeform.dob.$invalid && !updateemployeeform.dob.$pristine" class="help-block">DOB is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4" ng-if="userRolesToggle.empRole==1">
+                    <label>Status*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                        <select name="status" class="form-control" ng-model="employeeScope.data.status_id" ng-required="true">
+                          <option value="">---Select---</option>
+                          <option ng-repeat="values in employeeScope.emptypeid" ng-value="{{values.emp_type_id}}">{{values.type_name}}</option>
+                        </select>
+                    </div>
+                    <p ng-show="updateemployeeform.status.$invalid && !updateemployeeform.status.$pristine" class="help-block">Status is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4" ng-if="userRolesToggle.empRole==1">
+                    <label>Designation*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <select name="jobtitle" class="form-control" ng-model="employeeScope.data.jobtitle_id" ng-required="true">
+                        <option value="">--Select---</option>
+                        <option ng-repeat="values in employeeScope.designationValue" ng-value="{{values.des_id}}">{{values.des_name}}</option>
+                      </select>
+                    </div>
+                      <p ng-show="updateemployeeform.jobtitle.$invalid && !updateemployeeform.jobtitle.$pristine" class="help-block">Job Title is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Date of Joining*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                        <input ng-if="userRolesToggle.empRole==3" readonly  type="text" class="form-control" id="datepicker1" placeholder="Date of Joining" ng-model="employeeScope.data.date_of_joining" name="doj" ng-required="true">
+                        <input ng-if="userRolesToggle.empRole==2" readonly  type="text" class="form-control" id="datepicker1" placeholder="Date of Joining" ng-model="employeeScope.data.date_of_joining" name="doj" ng-required="true">
+                        <input ng-if="userRolesToggle.empRole==1" type="text" class="form-control" id="datepicker1" placeholder="Date of Joining" ng-model="employeeScope.data.date_of_joining" name="doj" ng-required="true">
+                    </div>
+                      <p ng-show="updateemployeeform.doj.$invalid && !updateemployeeform.doj.$pristine" class="help-block">Date of joining is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4" ng-if="userRolesToggle.empRole==1">
+                    <label>Date of Leaving</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker2" placeholder="Date of Leaving" ng-model="employeeScope.data.date_of_leaving" name="dol">
+                    </div>
+                   <!--<p ng-show="updateemployeeform.dol.$invalid && !updateemployeeform.dol.$pristine" class="help-block">Date of Leaving is required.</p>-->
+                  </div>
+
+                   <div class="form-group col-sm-4" ng-if="userRolesToggle.empRole==1 || userRolesToggle.empRole==2">
+                    <label>Office Number</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input type="number" class="form-control" placeholder="Office Number" ng-model="employeeScope.data.office_number" name="officenumber">
+                    </div>
+                    <!--<p ng-show="updateemployeeform.officenumber.$invalid && !updateemployeeform.officenumber.$pristine" class="help-block">Office Number is required.</p>-->
+                  </div>
+
+                  <div class="form-group col-sm-4" ng-if="userRolesToggle.empRole==1">
+                    <label>Is Active*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="isactive" class="form-control" ng-model="employeeScope.data.isactive" ng-required="true">
+                        <option value="">---Select---</option>
+                        <option ng-value="1">Active</option>
+                        <option ng-value="0">Inactive</option>
+                      </select>
+                    </div>
+                      <p ng-show="updateemployeeform.isactive.$invalid && !updateemployeeform.isactive.$pristine" class="help-block">Is active is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Total Experience*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input type="number" class="form-control" placeholder="Experience" ng-model="employeeScope.data.year_exp" name="experience" ng-required="true">
+                    </div>
+                      <p ng-show="updateemployeeform.experience.$invalid && !updateemployeeform.experience.$pristine" class="help-block">Experience is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4" ng-if="userRolesToggle.empRole==1">
+                    <label>Business Unit*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="businessunit" class="form-control" ng-model="employeeScope.data.businessunit_id" ng-required="true">
+                        <option value="">---Select---</option>
+                          <option ng-repeat="values in employeeScope.businessUnitValue" ng-value="{{values.business_id}}">{{values.business_name}}</option>
+                      </select>
+                    </div>
+                      <p ng-show="updateemployeeform.businessunit.$invalid && !updateemployeeform.businessunit.$pristine" class="help-block">Business Unit is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Manager Name</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                        <input class="form-control" ng-if="userRolesToggle.empRole==3" readonly   type="text" ng-model="employeeScope.data.manager_name"  placeholder="Manager Name" auto-complete="employeeScope.autoCompleteOptions" />
+                        <input class="form-control" ng-if="userRolesToggle.empRole==2" readonly   type="text" ng-model="employeeScope.data.manager_name"  placeholder="Manager Name" auto-complete="employeeScope.autoCompleteOptions" />
+                        <input class="form-control" ng-if="userRolesToggle.empRole==1" type="text" ng-model="employeeScope.data.manager_name"  placeholder="Manager Name" auto-complete="employeeScope.autoCompleteOptions" />
+                    </div>
+                  </div>
+
+                  <div class="form-group col-sm-4">
+                    <label>Office Location*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <select name="officelocation" class="form-control" ng-model="employeeScope.data.office_location_id" ng-required="true">
+                        <option value="">---Select---</option>
+                        <option ng-repeat="values in employeeScope.officeLocationValue" ng-value="{{values.locationId}}">{{values.officeLocation}}</option>
+                      </select>
+                    </div>
+                      <p ng-show="updateemployeeform.officelocation.$invalid && !updateemployeeform.officelocation.$pristine" class="help-block">Office Location is required.</p>
+                  </div>
+
+                <div class="form-group col-sm-4" ng-if="userRolesToggle.empRole==1">
+                    <label>Employee Role*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+
+                      <select name="empRole" class="form-control" ng-model="employeeScope.data.emp_role" ng-required="true">
+                        <option value="">---Select---</option>
+                        <option value="1">Admin</option>
+                        <option value="2">Manager</option>
+                        <option value="3">Employee</option>
+                      </select>
+                    </div>
+                      <p ng-show="addemployeeform.empRole.$invalid && !addemployeeform.empRole.$pristine" class="help-block">Employee Role is required.</p>
+                </div>
+
+                 <div class="form-group col-sm-4">
+                    <label>Employee Image</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <input class="form-control" accept="image/*" id="fileUpload" type="file" name="empImage" file-model="employeeScope.data.emp_Image">
+
+                    </div>
+                      <span><a href="/static/dist/dmimages/{{employeeScope.data.emp_image}}">{{employeeScope.data.emp_image}}</a></span>
+
+                  </div>
+
+
+                  <div class="form-group col-sm-4">
+                    <label>Current Address*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <textarea class="form-control" placeholder="Current Address" ng-model="employeeScope.data.emp_curr_addr" name="curraddr"></textarea>
+                    </div>
+                      <p ng-show="updateemployeeform.curraddr.$invalid && !updateemployeeform.curraddr.$pristine" class="help-block">Current address is required.</p>
+                  </div>
+
+                   <div class="form-group col-sm-4">
+                    <label>Permanent Address*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-address-card-o"></i>
+                      </div>
+                      <textarea class="form-control" placeholder="Permanent Address" ng-model="employeeScope.data.emp_per_addr" name="permaaddr"></textarea>
+                    </div>
+                       <p ng-show="updateemployeeform.permaaddr.$invalid && !updateemployeeform.permaaddr.$pristine" class="help-block">Permanent address is required.</p>
+                  </div>
+
+
+
+
+                </div>
+
+                <div class="box-footer" style="padding-left:25px;">
+                    <button type="submit" class="btn btn-primary" ng-disabled="updateemployeeform.$invalid"  ng-click="employeeScope.updateEmployee()">Submit</button>
+                    <button type="reset" ng-click="employeeScope.clearform ()" class="btn btn-default">Clear</button>
+                </div>
+              </form>
+
+            <div ng-if="userRolesToggle.empRole==1" ng-show="employeeScope.successmsg" class="well well-sm alert alert-success text-center"> Employee is updated. <a ui-sref="listemployee"> Click to go to listing Page</a> </div>
+            <div ng-if="userRolesToggle.empRole==2 || userRolesToggle.empRole==3" ng-show="employeeScope.successmsg" class="well well-sm alert alert-success text-center"> Employee is updated.</div>
+            <div ng-show="employeeScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee is not updated. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>

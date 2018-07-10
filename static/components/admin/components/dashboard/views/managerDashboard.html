@@ -1,0 +1,109 @@
+  <!--<div class="content-wrapper" ng-init="adminDashboardScope.managerProjectCount()">-->
+    <!--<section class="content-header">-->
+      <!--<h1>-->
+        <!--Manager Dashboard-->
+        <!--<small>HRMS</small>-->
+      <!--</h1>-->
+    <!--</section>-->
+    <!--<section class="content">-->
+      <!--<div class="row">-->
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listemployeeassignedtomanager({obj:userRolesToggle.empId})">-->
+          <!--<div class="info-box">-->
+            <!--<span class="info-box-icon bg-yellow">-->
+                <!--<i class="ion ion-ios-people-outline"></i>-->
+            <!--</span>-->
+            <!--<div class="info-box-content">-->
+              <!--<span class="info-box-text">Projects Assigned</span>-->
+              <!--<span class="info-box-number">{{adminDashboardScope.data.project_count}}</span>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listmanagerpo({obj:userRolesToggle.empId})">-->
+          <!--<div class="info-box">-->
+            <!--<span class="info-box-icon bg-yellow">-->
+                <!--<i class="ion ion-ios-people-outline"></i>-->
+            <!--</span>-->
+            <!--<div class="info-box-content">-->
+              <!--<span class="info-box-text">Total Purchase order</span>-->
+              <!--<span class="info-box-number">{{adminDashboardScope.data.po_count}}</span>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listmanagerexppo({obj:userRolesToggle.empId})">-->
+          <!--<div class="info-box">-->
+            <!--<span class="info-box-icon bg-yellow">-->
+                <!--<i class="ion ion-ios-people-outline"></i>-->
+            <!--</span>-->
+            <!--<div class="info-box-content">-->
+              <!--<span class="info-box-text">PO Expiring in 30 Days</span>-->
+              <!--<span class="info-box-number">{{adminDashboardScope.data.managerexppo_count}}</span>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</section>-->
+  <!--</div>-->
+
+
+    <div class="content-wrapper" ng-init="adminDashboardScope.managerProjectCount()">
+    <section class="content-header">
+      <h1>
+        Manager Dashboard
+        <small>HRMS</small>
+      </h1>
+    </section>
+    <section class="content">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listemployeeassignedtomanager({obj:userRolesToggle.empId})">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow">
+                <i class="ion ion-ios-people-outline"></i>
+            </span>
+            <div class="info-box-content">
+              <span class="info-box-text">Projects Assigned</span>
+              <span class="info-box-number">{{adminDashboardScope.data.project_count}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listmanagerpo({obj:userRolesToggle.empId})">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow">
+                <i class="ion ion-ios-people-outline"></i>
+            </span>
+            <div class="info-box-content">
+              <span class="info-box-text">Total Purchase order</span>
+              <span class="info-box-number">{{adminDashboardScope.data.po_count}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listmanagerexppo({obj:userRolesToggle.empId})">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow">
+                <i class="ion ion-ios-people-outline"></i>
+            </span>
+            <div class="info-box-content">
+              <span class="info-box-text">PO Expiring in 30 Days</span>
+              <span class="info-box-number">{{adminDashboardScope.data.managerexppo_count}}</span>
+            </div>
+          </div>
+        </div>
+
+
+         <div class="col-md-3 col-sm-6 col-xs-12 pointer-links" ui-sref="listmanagerresignations({obj:userRolesToggle.empId})">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow">
+                <i class="ion ion-ios-people-outline"></i>
+            </span>
+            <div class="info-box-content">
+              <span class="info-box-text">Resignations</span>
+              <span class="info-box-number">{{adminDashboardScope.data.empresigncount}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>

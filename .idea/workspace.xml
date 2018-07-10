@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bac66a64-725f-4b91-969e-da7bbe13fadb" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="211" column="59" selection-start-line="211" selection-start-column="59" selection-end-line="211" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>purchaseOrderScope</find>
+      <find>reso</find>
+      <find>scrollMenu</find>
+      <find>scrollit</find>
+      <find>logo</find>
+      <find>po_resource_count</find>
+      <find>getprojectpo</find>
+      <find>getexpiringpolist</find>
+      <find>exp</find>
+      <find>start</find>
+      <find>employeeres</find>
+      <find>billing</find>
+      <find>projectcos</find>
+      <find>projectcost</find>
+      <find>body</find>
+      <find>e5e9ed</find>
+      <find>.main-timeline .timeline:hover:after</find>
+      <find>timeline__year</find>
+      <find>.timeline__date</find>
+      <find>.page__container</find>
+      <find>yell</find>
+      <find>#0073b7 !important</find>
+      <find>.main-timeline</find>
+      <find>.main-timeline .timeline-content:hover</find>
+      <find>.main-timeline .post</find>
+      <find>created_by</find>
+      <find>listmanagerpo</find>
+      <find>listemployeeassignedtomanager</find>
+      <find>empdesig_pack_history</find>
+      <find>res</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>empData</replace>
+      <replace>addemployeehistoryform</replace>
+      <replace>empdesigpackhistoryScope</replace>
+      <replace>editemployeehistoryform</replace>
+      <replace>empExperienceform</replace>
+      <replace>empExperienceScope</replace>
+      <replace>empTypeform</replace>
+      <replace>empTypeScope</replace>
+      <replace>updatedesignationmasterform</replace>
+      <replace>/employee/</replace>
+      <replace>employee</replace>
+      <replace>red</replace>
+      <replace>$rootscope</replace>
+      <replace>$rootScope</replace>
+      <replace>$scope</replace>
+      <replace>projectAssignScope</replace>
+      <replace>updateemployeeform</replace>
+      <replace>addempdocform</replace>
+      <replace>emp_doc = empDoc()</replace>
+      <replace>emp_doc</replace>
+      <replace>empDoc()</replace>
+      <replace>employee_doc</replace>
+      <replace>empDocScope</replace>
+      <replace>employeeResign</replace>
+      <replace>employee_resign</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/static</dir>
+      <dir>$PROJECT_DIR$/hrms_employee</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/static/components/admin/components</dir>
+      <dir>$PROJECT_DIR$/hrms_admin</dir>
+      <dir>$PROJECT_DIR$/static/components/admin</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hrms_admin/projectdocu/projectDocuController/projectDocuController.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/projectdocu/projectDocuService/projectDocuService.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/projectmaster/projectmastercontroller/projectmastercontroller.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/projectmaster/projectmasterservice/projectmasterservice.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/projecttypemaster/projecttypemastercontroller/projecttypemastercontroller.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/projecttypemaster/projecttypemasterservice/projecttypemasterservice.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderController/purchaseOrderController.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderService/purchaseOrderService.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/employee/employeecontroller/employeecontroller.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/employeeproject/employeeprojectcontroller/employeeprojectcontroller.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/employeeproject/employeeprojectservice/employeeprojectservice.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/emptype/empTypeController/empTypeController.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/emptype/empTypeService/empTypeService.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdoccontroller/uploadempdoccontroller.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdocservice/uploadempdocservice.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/officelocation/officeLocationService/officeLocationService.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/designationmaster/designationmasterservice/designationmasterservice.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/customermaster/views/listcustomermaster.html" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/projectmaster/views/listprojectmaster.html" />
+        <option value="$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryController/empdesigpackhistoryController.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryService/empdesigpackhistoryService.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentscontroller/employeedependentscontroller.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentsservice/employeedependentsservice.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationcontroller/employeeeducationcontroller.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationservice/employeeeducationservice.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/urls.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/urls.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceController/empExperienceController.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceService/empExperienceService.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/adminApp.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/employeeApp.js" />
+        <option value="$PROJECT_DIR$/static/components/admin/views/sidebar.html" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/managerDashboard.html" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryController/emp_designationpackagehistoryController.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryService/emp_designationpackagehistoryService.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeedependents/employeedependentsController/employeedependentsController.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeedependents/employeedependentsService/employeedependentsService.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationController/employeeeducationController.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationService/employeeeducationService.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceController/empExperienceController.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceService/empExperienceService.js" />
+        <option value="$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/login/loginservice/loginservice.py" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/listemployeeresignation.html" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" />
+        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="75" />
+    <option name="y" value="24" />
+    <option name="width" value="1281" />
+    <option name="height" value="704" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/local/myworkspace/hrms/hrms/static/components/admin/components/dashboard/dashboardController/dashboardController.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views" />
+      <recent name="$PROJECT_DIR$/static/components/admin/components/dashboard/views" />
+      <recent name="$PROJECT_DIR$/static/components/admin/components/customermaster" />
+      <recent name="$PROJECT_DIR$/static/components/admin/components/designationmaster" />
+      <recent name="$PROJECT_DIR$/static/components/admin/components/customer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/components/employee/components" />
+      <recent name="$PROJECT_DIR$/hrms_admin" />
+      <recent name="$PROJECT_DIR$/static/components/admin/components" />
+      <recent name="$PROJECT_DIR$/static/components/css" />
+      <recent name="$PROJECT_DIR$/static/components/employee/components/employee/views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.hrms">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <module name="hrms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="hrms" type="PythonConfigurationType" factoryName="Python">
+      <module name="hrms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.hrms" />
+      <item itemvalue="Python.Unnamed" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bac66a64-725f-4b91-969e-da7bbe13fadb" name="Default" comment="" />
+      <created>1520352537413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520352537413</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26447573" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32868218" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32868218" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32093024" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.27286822" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.35458788" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hrms_admin/projectmaster_old/projectmasterservice/projectmasterservice.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="440" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="514" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>employee.objects.filter()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>saveqry</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>projectEndMonthYear</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>projectStartMonthYear</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>filterStartDate.year</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>filterStartDate.month</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>'' if data.project_cost is None or 'Null' else int(data.project_cost)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>project_cost</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.data['status']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>status</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>listqry</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hrms_employee/emptype/empTypeController/empTypeController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdocservice/uploadempdocservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdoccontroller/uploadempdoccontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/officelocation/officeLocationService/officeLocationService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/officelocation/officeLocationController/officeLocationController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="64" column="101" selection-start-line="64" selection-start-column="78" selection-end-line="64" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/designationmaster/designationmasterservice/designationmasterservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/designationmaster/designationmastercontroller/designationmastercontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/customermaster/views/listcustomermaster.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="36" column="69" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/customermaster/views/listcustomerprojectpo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/css/empTimeline.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/css/hrmsstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="176" column="1" lean-forward="true" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/projectmaster/views/listprojectmaster.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/projectmaster/views/listprojectPurchaseOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryController/empdesigpackhistoryController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryService/empdesigpackhistoryService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentscontroller/employeedependentscontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentsservice/employeedependentsservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationcontroller/employeeeducationcontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationservice/employeeeducationservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="138" column="46" selection-start-line="138" selection-start-column="46" selection-end-line="138" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empexperience/empExperienceController/empExperienceController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empexperience/empExperienceService/empExperienceService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/adminApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="256" column="42" selection-start-line="256" selection-start-column="13" selection-end-line="256" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/views/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="829">
+          <caret line="215" column="9" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
+          <folding>
+            <element signature="e#7582#7615#0" expanded="true" />
+            <element signature="e#7650#7676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/managerDashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryController/emp_designationpackagehistoryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryService/emp_designationpackagehistoryService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeedependents/employeedependentsController/employeedependentsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeedependents/employeedependentsService/employeedependentsService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationController/employeeeducationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationService/employeeeducationService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceController/empExperienceController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceService/empExperienceService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/employee/employeecontroller/employeecontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="34" column="48" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="34" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/login/loginservice/loginservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/login/logincontroller/logincontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-503" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/employeeApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="292" column="98" selection-start-line="292" selection-start-column="85" selection-end-line="292" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/listemployeeresignation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="117" column="9" lean-forward="true" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="211" column="59" selection-start-line="211" selection-start-column="59" selection-end-line="211" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
