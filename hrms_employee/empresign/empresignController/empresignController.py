@@ -18,9 +18,10 @@ def saveEmpResign(request):
     emp_id = request.session['empId']
     updated_by = request.session['empId']
     updated_date = datetime.now(tz=timezone.utc)
+    resign_status = 1;
 
     employee_resign = employeeResign()
-    result = employee_resign.saveEmpResignation(resignReason,resignDate,emp_id,date_of_leaving,updated_by,updated_date )
+    result = employee_resign.saveEmpResignation(resignReason,resignDate,emp_id,date_of_leaving,updated_by,updated_date,resign_status)
     dataobj = {'data':result}
     return HttpResponse(json.dumps(dataobj, cls=DjangoJSONEncoder), content_type='Application/json', status=200)
 

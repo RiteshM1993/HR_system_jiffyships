@@ -50,10 +50,14 @@ class getcount:
                 'select 1 po_id,count(*) as count from project_master pm inner join purchase_order po on pm.project_id=po.project_id where pm.manager_id=' + id)
             managerexpiringpocount = purchase_order.objects.raw(
                 "select 1 po_id,count(*) as count from project_master pm inner join purchase_order po on pm.project_id=po.project_id where po.po_end_date BETWEEN now() and  now() + '1 months' and pm.manager_id=" + id)
+            empresigncount = employee.objects.raw('select 1 emp_id, count(resignation_date)from employee where manager_id = '+id)
+
             data = {
                 'project_count': projMangercountqry[0].count,
                 'po_count': pocountqry[0].count,
                 'managerexppo_count': managerexpiringpocount[0].count,
+                'empresigncount': empresigncount[0].count,
+
             }
 
             return data

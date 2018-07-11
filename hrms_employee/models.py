@@ -35,6 +35,7 @@ class employee(models.Model):
     updated_by = models.IntegerField(null=True)
     created_date = models.DateField(null=True)
     updated_date = models.DateField(null=True)
+    resign_status = models.IntegerField(null=True)
 
     class Meta:
         db_table = "employee"

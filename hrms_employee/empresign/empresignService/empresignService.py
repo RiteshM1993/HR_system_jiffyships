@@ -5,7 +5,7 @@ from django.core.files.storage import FileSystemStorage
 
 class employeeResign:
     @classmethod
-    def saveEmpResignation(cls,resignReason,resignDate,emp_id,dateofleaving,updated_by,updated_date ):
+    def saveEmpResignation(cls,resignReason,resignDate,emp_id,dateofleaving,updated_by,updated_date,resign_status):
         try:
 
             getqry = employee.object.get(emp_id=emp_id)
@@ -15,6 +15,7 @@ class employeeResign:
             getqry.updated_date = updated_date
             getqry.updated_by = updated_by
             getqry.date_of_leaving = dateofleaving
+            getqry.resign_status = resign_status
             getqry.save()
 
             successobj = {'data':'success'}
@@ -29,14 +30,14 @@ class employeeResign:
     @classmethod
     def listingEmpresign(cls):
         try:
-            listqry = employee_doc.objects.raw('Select emp_id,date_of_leaving,resignation_date,reason_of_leaving,first_name, middle_name, last_name from employee')
+            listqry = employee.objects.raw('Select emp_id,date_of_leaving,resignation_date,reason_of_leaving,first_name, middle_name, last_name from employee where resign_status=1 order by resignation_date')
             datalist = []
             for values in listqry:
                 datalist.append({
                     'dol' : values.date_of_leaving,
                     'resignReason' : values.reason_of_leaving,
                     'resignDate': values.resignation_date,
-                    'emp_id': values.upload_doc_name,
+                    'emp_id': values.emp_id,
                     'emp_name' : ' '.join(filter(None, (values.first_name, values.middle_name, values.last_name))),
                 })
             return datalist
@@ -47,16 +48,15 @@ class employeeResign:
             }
             return failureobj
 
-
     @classmethod
-    def getEmpeditDocdata(cls, id):
+    def getEmpeResigndata(cls, id):
         try:
-            getdataqry = employee_doc.objects.get(docId=id)
+            getdataqry = employee.objects.get(emp_id=id)
 
             dataobj = {
-                'docId' : getdataqry.docId,
-                'doc_name': getdataqry.doc_name,
-                'upload_doc_name': getdataqry.upload_doc_name,
+                # 'emp_name' : getdataqry.emp_name,
+                'resignation_date': getdataqry.resignation_date,
+                'reason_of_leaving': getdataqry.reason_of_leaving,
             }
 
             return dataobj

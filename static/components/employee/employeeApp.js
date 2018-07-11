@@ -277,8 +277,8 @@ angular.module('employeeApp',[
   .state('listemployeeresignation',{
       url: '/listemployeeresignation',
       templateUrl: '/static/components/employee/components/employeeresignation/views/listemployeeresignation.html',
-      controller: 'employeeprojectController',
-      controllerAs: 'employeeprojectScope',
+      controller: 'employeeresignationController',
+      controllerAs: 'employeeresignationScope',
   })
 
 //  .state('editemployeeresignation',{

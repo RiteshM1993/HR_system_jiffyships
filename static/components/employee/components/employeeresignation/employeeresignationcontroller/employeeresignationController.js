@@ -13,7 +13,6 @@ angular.module('employeeApp.employeeresignationController',[])
 
         empResignData={
             'reasonOfResign' : employeeresignationScope.reasonOfResign,
-
             'resignDate' : resignDate,
         }
 
@@ -45,6 +44,8 @@ angular.module('employeeApp.employeeresignationController',[])
 
     employeeresignationScope.getEmployeeResignationlist = function(){
 
+        console.log('hello ')
+
         $rootScope.checkSession()
 
         var success = function(response){
@@ -65,7 +66,7 @@ angular.module('employeeApp.employeeresignationController',[])
     //    change state with id
 
     employeeresignationScope.changeState = function(id){
-        $state.go('editemployeeresignation',{obj: id})
+        $state.go('myresignation',{obj: id})
     }
 
 
@@ -80,7 +81,7 @@ angular.module('employeeApp.employeeresignationController',[])
 
         var success = function(response){
             console.log('success')
-            employeeresignationScope.getvalues()
+            //employeeresignationScope.getvalues()
             listdata.push(response.data.data)
 
             employeeresignationScope.data = listdata

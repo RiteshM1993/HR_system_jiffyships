@@ -22,7 +22,7 @@ angular.module('employeeApp.employeeresignationService',[])
     }
 
     employeeresign.geteditdata = function(id, success, failure){
-        $http.get('/employee/api/geteditemployeeresignation/?id='+id).then(success, failure)
+        $http.get('/employee/api/myresignation/?id='+id).then(success, failure)
     }
 
 
