@@ -71,7 +71,7 @@ def updateEmpeResignData(request):
     updatedDate = datetime.now(tz=timezone.utc)
     employee_resign = employeeResign()
     result = employee_resign.updateEmpeResignData(id,resignReason,resignDate,managerComment,updatedDate)
-        dataobj = {'data': result}
+    dataobj = {'data': result}
     return HttpResponse(json.dumps(dataobj, cls=DjangoJSONEncoder), content_type='Application/json', status=200)
 
 

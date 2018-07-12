@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bac66a64-725f-4b91-969e-da7bbe13fadb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/editemployeeresignation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" afterPath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" afterPath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/urls.py" afterPath="$PROJECT_DIR$/hrms_admin/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py" afterPath="$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py" afterPath="$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_employee/models.py" afterPath="$PROJECT_DIR$/hrms_employee/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_employee/urls.py" afterPath="$PROJECT_DIR$/hrms_employee/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/adminApp.js" afterPath="$PROJECT_DIR$/static/components/admin/adminApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/designationmaster/designationmasterController/designationmasterController.js" afterPath="$PROJECT_DIR$/static/components/admin/components/designationmaster/designationmasterController/designationmasterController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/addemployeeresignation.html" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/addemployeeresignation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" />
-    </list>
+    <list default="true" id="bac66a64-725f-4b91-969e-da7bbe13fadb" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +24,8 @@
       <file leaf-file-name="empresignController.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+            <state relative-caret-position="270">
+              <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -1038,8 +1019,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+        <state relative-caret-position="270">
+          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding />
         </state>
       </provider>
