@@ -66,6 +66,13 @@ angular.module('adminApp',[
         controllerAs: 'adminDashboardScope',
     })
 
+    .state('editemployeeresignation',{
+        url: '/editemployeeresignation/:obj',
+        templateUrl: '/static/components/admin/components/dashboard/views/editemployeeresignation.html',
+        controller: 'dashboardController',
+        controllerAs: 'adminDashboardScope',
+    })
+
 // show manager resignation ends
 
 

@@ -67,20 +67,17 @@ class employeeResign:
             }
             return failureobj
 
+
+
     @classmethod
-    def updateEmpdoc(cls,id,docName,doc_file,modifiedDate):
+    def updateEmpeResignData(cls,id,resignReason,resignDate,managerComment,updatedDate):
         try:
-            updateqry = employee_doc.objects.get(docId=id)
-
-            updateqry.doc_name = docName
-            updateqry.upload_doc_name = doc_file.name
-            updateqry.modified_date = modifiedDate
-
+            updateqry = employee.objects.get(emp_id=id)
+            updateqry.reason_of_leaving = resignReason
+            updateqry.resignation_date = resignDate
+            updateqry.manager_resignation_comment = managerComment
+            updateqry.updated_date = updatedDate
             updateqry.save()
-
-            fs = FileSystemStorage("static/dist/empdocs/")
-
-            fs.save(doc_file.name, doc_file)
 
             dataobj = {'data':'success'}
 
@@ -91,6 +88,25 @@ class employeeResign:
                 'response': "Failure"
             }
             return failureobj
+
+    @classmethod
+    def geteditdata(cls, id):
+        try:
+            getqry = employee.objects.get(emp_id=id)
+            dataobj = {
+                'managerComment':getqry.manager_resignation_comment,
+                'emp_id': getqry.emp_id,
+                'dol': getqry.date_of_leaving,
+                'resignDate': getqry.resignation_date,
+                'reasonResign': getqry.reason_of_leaving,
+                # 'emp_name': ' '.join(filter(None, (getqry.first_name, getqry.middle_name, getqry.last_name))),
+            }
+            return dataobj
+        except Exception, err:
+            saveqryfailureobj = {
+                'response': "Failure"
+            }
+            return saveqryfailureobj
 
 
 

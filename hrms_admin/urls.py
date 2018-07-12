@@ -15,6 +15,8 @@ from hrms_admin.customermaster.customermastercontroller import customermastercon
 
 from hrms_admin.purchaseOrder.purchaseOrderController import purchaseOrderController
 
+from hrms_employee.empresign.empresignController import empresignController
+
 urlpatterns =[
 
     # business unit master
@@ -65,6 +67,10 @@ urlpatterns =[
     url('^dashboard/api/getmanagerpodata/$', dashboardController.getmanagerpodata),
     url('^dashboard/api/getmanagerexpoodata/$', dashboardController.getmanagerexpoodata),
     url('^dashboard/api/ListEmployeeResignations/$', dashboardController.ListEmployeeResignations),
+
+
+    url(r'^dashboard/api/editemployeeresignations/$', empresignController.geteditdata),
+    url(r'^dashboard/api/updateemployeeresignation/$', empresignController.updateEmpeResignData),
 
     # project Master
 

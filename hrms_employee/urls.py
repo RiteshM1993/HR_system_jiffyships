@@ -11,6 +11,8 @@ from hrms_employee.employeeproject.employeeprojectcontroller import employeeproj
 from hrms_employee.uploadempdoc.uploadempdoccontroller import uploadempdoccontroller
 from hrms_employee.empresign.empresignController import empresignController
 
+
+
 urlpatterns =[
 
     # view
@@ -105,9 +107,10 @@ urlpatterns =[
     url(r'^employee/api/saveemployeeresign/$', empresignController.saveEmpResign),
     url(r'^employee/api/listEmployeeresignation/$', empresignController.listEmpResign),
     url(r'^employee/api/myresignation/$', empresignController.getEmpeResignData),
+    url(r'^employee/api/editemployeeresignations/$', empresignController.geteditdata),
+    # url(r'^employee/api/updateemployeeresignation/$', empresignController.updateEmpeResignData),
 
-
-#   employee timeline
+    #   employee timeline
     url(r'^employee/api/getEmp360Details/$', employeecontroller.getEmp360Details),
     url(r'^employee/api/getEmp360IncrementDetails/$', employeecontroller.getEmp360IncrementDetails),
     url(r'^employee/api/getEmp360EducationDetails/$', employeecontroller.getEmp360EducationDetails),

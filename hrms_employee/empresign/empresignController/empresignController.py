@@ -51,15 +51,27 @@ def getEmpeResignData(request):
     return HttpResponse(json.dumps(dataobj, cls=DjangoJSONEncoder), content_type='Application/json', status=200)
 
 
-@api_view(['POST'])
-def updateEmpdoc(request):
-    id = request.data['id']
-    docName = request.data['docName']
-    doc_file = request.data['file']
-    modifiedDate = datetime.now(tz=timezone.utc)
+
+@api_view(['GET'])
+def geteditdata(request):
+    id = request.GET['id']
     employee_resign = employeeResign()
-    result = employee_resign.updateEmpdoc(id,docName,doc_file,modifiedDate)
+    result = employee_resign.geteditdata(id)
     dataobj = {'data': result}
+    return HttpResponse(json.dumps(dataobj, cls=DjangoJSONEncoder), content_type='application/json', status=200)
+
+
+@api_view(['POST'])
+def updateEmpeResignData(request):
+    id = request.data['id']
+    resignReason = request.data['resignReason']
+    resignDate = request.data['resignDate']
+    resignDate = str(resignDate)
+    managerComment = request.data['managerComment']
+    updatedDate = datetime.now(tz=timezone.utc)
+    employee_resign = employeeResign()
+    result = employee_resign.updateEmpeResignData(id,resignReason,resignDate,managerComment,updatedDate)
+        dataobj = {'data': result}
     return HttpResponse(json.dumps(dataobj, cls=DjangoJSONEncoder), content_type='Application/json', status=200)
 
 

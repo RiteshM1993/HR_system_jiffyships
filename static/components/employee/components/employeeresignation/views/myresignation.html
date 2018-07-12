@@ -16,7 +16,7 @@
                       <div class="input-group-addon">
                         <i class="fa fa-address-card-o"></i>
                       </div>
-                      <textarea class="form-control" placeholder="Reason Of Resignation" ng-model="employeeresignationScope.data[0].reason_of_leaving" name="reasonOfResign" ng-required="true"></textarea>
+                      <textarea class="form-control"  placeholder="Reason Of Resignation" ng-model="employeeresignationScope.data[0].reason_of_leaving" name="reasonOfResign" ng-required="true"></textarea>
                     </div>
                       <!--<p ng-show="addresignationform.reasonOfResign.$invalid && !addresignationform.reasonOfResign.$pristine" class="help-block">Resignation Reason is required.</p>-->
                   </div>
@@ -32,10 +32,10 @@
                       <!--<p ng-show="addemployeeform.doj.$invalid && !addemployeeform.doj.$pristine" class="help-block">Date of joining is required.</p>-->
                   </div>
 
-                <!--<div class="box-footer col-sm-12" style="padding-left:15px;">-->
-                    <!--<button type="submit" ng-disabled="addresignationform.$invalid" class="btn btn-primary" ng-click="employeeresignationScope.saveEmployeeresign()">Submit</button>-->
-                    <!--<button type="reset" class="btn btn-default">Clear</button>-->
-                <!--</div>-->
+                <div class="box-footer col-sm-12" style="padding-left:15px;">
+                    <button type="submit" ng-disabled="addresignationform.$invalid" class="btn btn-primary" ng-click="employeeresignationScope.saveEmployeeresign()">Submit</button>
+                    <button type="reset" class="btn btn-default">Clear</button>
+                </div>
                 </div>
               </form>
 

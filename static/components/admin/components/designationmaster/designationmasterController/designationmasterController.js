@@ -82,7 +82,7 @@ angular.module('adminApp.designationController',[])
     //    change state with id
 
     designationScope.changeState = function(id){
-        $state.go('editdesignation',{obj: JSON.stringify(id)})
+        $state.go('editemployeeresignation',{obj: JSON.stringify(id)})
     }
 // insert data into fields function
 

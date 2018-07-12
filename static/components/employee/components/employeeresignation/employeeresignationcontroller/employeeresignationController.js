@@ -5,15 +5,25 @@ angular.module('employeeApp.employeeresignationController',[])
 
      var employeeresignationScope = this;
 
+
+    var currentTime = new Date()
+    var month = currentTime.getMonth() + 1
+    var day = currentTime.getDate()
+    var year = currentTime.getFullYear()
+    var todayDate=year + "/" + month + "/" + day
+
+    employeeresignationScope.resignDate = todayDate
+
+
      // Save Function
 
     employeeresignationScope.saveEmployeeresign = function(){
 
-      var resignDate = employeeresignationScope.resignDate.replace(/(\d\d)\/(\d\d)\/(\d{4})/, "$3/$1/$2");
+//      var resignDate = employeeresignationScope.resignDate.replace(/(\d\d)\/(\d\d)\/(\d{4})/, "$3/$1/$2");
 
         empResignData={
             'reasonOfResign' : employeeresignationScope.reasonOfResign,
-            'resignDate' : resignDate,
+            'resignDate' : employeeresignationScope.resignDate,
         }
 
         console.log(empResignData)
@@ -44,7 +54,7 @@ angular.module('employeeApp.employeeresignationController',[])
 
     employeeresignationScope.getEmployeeResignationlist = function(){
 
-        console.log('hello ')
+//        console.log('hello ')
 
         $rootScope.checkSession()
 
@@ -85,7 +95,7 @@ angular.module('employeeApp.employeeresignationController',[])
             listdata.push(response.data.data)
 
             employeeresignationScope.data = listdata
-            console.log(employeeprojectScope.data)
+            console.log(employeeresignationScope.data)
         }
 
         var failure = function(response){
@@ -105,7 +115,7 @@ angular.module('employeeApp.employeeresignationController',[])
 
         empResignData={
 //            'id' : employeeprojectScope.data[0].emp_proj_id,
-            'reasonOfResign' : employeeprojectScope.data[0].emp_id,
+            'reasonOfResign' : employeeresignationScope.data[0].emp_id,
             'resignDate': resignDate,
         }
 

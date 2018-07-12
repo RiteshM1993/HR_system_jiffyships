@@ -120,8 +120,61 @@ angular.module('adminApp.admindashboardController',[])
         adminDashboardService.getemployeeresignations(id, success, failure)
     }
 
+   adminDashboardScope.changeState = function(id){
+        $state.go('editemployeeresignation',{obj: JSON.stringify(id)})
+    }
+
+    adminDashboardScope.getFieldsValue = function(){
+
+        $rootScope.checkSession()
+
+        var id = $stateParams.obj
+         var success = function(response){
+                console.log('success')
+                console.log(response)
+                adminDashboardScope.populatedata = response.data.data
+            }
+
+            var failure = function(response){
+                console.log('failure')
+                console.log(response)
+            }
+
+            adminDashboardService.editemployeeresignations(id,success, failure)
+    }
 
 
+    adminDashboardScope.updateEmployeeResignation = function(){
+
+       var resignDate = adminDashboardScope.populatedata.resignDate.replace(/(\d\d)\/(\d\d)\/(\d{4})/, "$3-$1-$2");
+
+        empResignData={
+            'id' : adminDashboardScope.populatedata.emp_id,
+            'reasonOfResign' : adminDashboardScope.populatedata.reasonResign,
+            'resignDate': resignDate,
+            'managerComment':adminDashboardScope.populatedata.managerComment,
+        }
+
+        console.log(empResignData)
+
+        var success = function(response){
+            adminDashboardScope.successmsg = true
+            adminDashboardScope.errormsg = false
+            console.log(response)
+            console.log('success')
+
+        }
+
+        var failure = function(response){
+            adminDashboardScope.successmsg = false
+            adminDashboardScope.errormsg = true
+            console.log(response)
+            console.log('failure')
+
+        }
+
+        adminDashboardService.updateEmployeeResignations(empResignData, success, failure)
+    }
 
 
     return adminDashboardScope;

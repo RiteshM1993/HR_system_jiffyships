@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bac66a64-725f-4b91-969e-da7bbe13fadb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/hrms.iml" afterPath="$PROJECT_DIR$/.idea/hrms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/editemployeeresignation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" afterPath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" afterPath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/urls.py" afterPath="$PROJECT_DIR$/hrms_admin/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py" afterPath="$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py" afterPath="$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_employee/models.py" afterPath="$PROJECT_DIR$/hrms_employee/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_employee/urls.py" afterPath="$PROJECT_DIR$/hrms_employee/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/adminApp.js" afterPath="$PROJECT_DIR$/static/components/admin/adminApp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/designationmaster/designationmasterController/designationmasterController.js" afterPath="$PROJECT_DIR$/static/components/admin/components/designationmaster/designationmasterController/designationmasterController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationservice/employeeresignationService.js" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationservice/employeeresignationService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/listemployeeresignation.html" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/listemployeeresignation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/addemployeeresignation.html" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/addemployeeresignation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/employeeApp.js" afterPath="$PROJECT_DIR$/static/components/employee/employeeApp.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,43 +31,105 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrms_employee/urls.py">
+        <entry file="file://$PROJECT_DIR$/hrms_admin/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="105" column="76" lean-forward="false" selection-start-line="105" selection-start-column="76" selection-end-line="105" selection-end-column="76" />
+            <state relative-caret-position="146">
+              <caret line="71" column="78" lean-forward="false" selection-start-line="71" selection-start-column="78" selection-end-line="71" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="empresignController.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="empresignService.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="employeeresignationController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dashboardService.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="221" column="44" lean-forward="true" selection-start-line="221" selection-start-column="44" selection-end-line="221" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hrms_employee/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="109" column="84" lean-forward="false" selection-start-line="109" selection-start-column="73" selection-end-line="109" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listmanagerresignations.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboardController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="employeeresignationController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="83" column="14" lean-forward="false" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+            <state relative-caret-position="-946">
+              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="employeeresignationService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationservice/employeeresignationService.js">
+      <file leaf-file-name="editemployeeresignation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+            <state relative-caret-position="414">
+              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myresignation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html">
+      <file leaf-file-name="editemployeeresignation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/editemployeeresignation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="153" lean-forward="false" selection-start-line="31" selection-start-column="153" selection-end-line="32" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="288">
+              <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+              <folding>
+                <marker date="1531374636627" expanded="false" signature="363:382" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,10 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logo</find>
-      <find>po_resource_count</find>
-      <find>getprojectpo</find>
-      <find>getexpiringpolist</find>
       <find>exp</find>
       <find>start</find>
       <find>employeeres</find>
@@ -108,6 +172,10 @@
       <find>getEmployeeResignationlist</find>
       <find>employeeresignationScope</find>
       <find>employeeresignationScope.getEmployeeResignationlist</find>
+      <find>listma</find>
+      <find>ListEmployeeResignations</find>
+      <find>updateemployeeresignation</find>
+      <find>editemployeeresignations</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -152,11 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hrms_admin/projecttypemaster/projecttypemastercontroller/projecttypemastercontroller.py" />
-        <option value="$PROJECT_DIR$/hrms_admin/projecttypemaster/projecttypemasterservice/projecttypemasterservice.py" />
-        <option value="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderController/purchaseOrderController.py" />
-        <option value="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderService/purchaseOrderService.py" />
-        <option value="$PROJECT_DIR$/hrms_employee/employee/employeecontroller/employeecontroller.py" />
         <option value="$PROJECT_DIR$/hrms_employee/employeeproject/employeeprojectcontroller/employeeprojectcontroller.py" />
         <option value="$PROJECT_DIR$/hrms_employee/employeeproject/employeeprojectservice/employeeprojectservice.py" />
         <option value="$PROJECT_DIR$/hrms_employee/emptype/empTypeController/empTypeController.py" />
@@ -168,20 +231,15 @@
         <option value="$PROJECT_DIR$/static/components/admin/components/customermaster/views/listcustomermaster.html" />
         <option value="$PROJECT_DIR$/static/components/admin/components/projectmaster/views/listprojectmaster.html" />
         <option value="$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py" />
-        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" />
         <option value="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryController/empdesigpackhistoryController.py" />
         <option value="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryService/empdesigpackhistoryService.py" />
         <option value="$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentscontroller/employeedependentscontroller.py" />
         <option value="$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentsservice/employeedependentsservice.py" />
         <option value="$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationcontroller/employeeeducationcontroller.py" />
         <option value="$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationservice/employeeeducationservice.py" />
-        <option value="$PROJECT_DIR$/hrms_employee/urls.py" />
-        <option value="$PROJECT_DIR$/hrms_admin/urls.py" />
         <option value="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceController/empExperienceController.py" />
         <option value="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceService/empExperienceService.py" />
-        <option value="$PROJECT_DIR$/static/components/admin/adminApp.js" />
         <option value="$PROJECT_DIR$/static/components/admin/views/sidebar.html" />
-        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" />
         <option value="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryController/emp_designationpackagehistoryController.js" />
         <option value="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryService/emp_designationpackagehistoryService.js" />
         <option value="$PROJECT_DIR$/static/components/employee/components/employeedependents/employeedependentsController/employeedependentsController.js" />
@@ -191,18 +249,28 @@
         <option value="$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceController/empExperienceController.js" />
         <option value="$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceService/empExperienceService.js" />
         <option value="$PROJECT_DIR$/hrms_admin/login/loginservice/loginservice.py" />
-        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" />
         <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html" />
-        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" />
         <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/managerDashboard.html" />
         <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/listemployeeresignation.html" />
-        <option value="$PROJECT_DIR$/static/components/employee/employeeApp.js" />
-        <option value="$PROJECT_DIR$/hrms_employee/models.py" />
         <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationservice/employeeresignationService.js" />
-        <option value="$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py" />
-        <option value="$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" />
+        <option value="$PROJECT_DIR$/hrms_employee/models.py" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html" />
+        <option value="$PROJECT_DIR$/static/components/employee/employeeApp.js" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/designationmaster/designationmasterController/designationmasterController.js" />
+        <option value="$PROJECT_DIR$/static/components/admin/adminApp.js" />
+        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/urls.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/urls.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" />
         <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/addemployeeresignation.html" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" />
+        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html" />
+        <option value="$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/editemployeeresignation.html" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" />
+        <option value="$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py" />
       </list>
     </option>
   </component>
@@ -248,22 +316,7 @@
             <path>
               <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
               <item name="hrms" type="462c0819:PsiDirectoryNode" />
-              <item name="hrms_employee" type="462c0819:PsiDirectoryNode" />
-              <item name="empresign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrms" type="462c0819:PsiDirectoryNode" />
-              <item name="hrms_employee" type="462c0819:PsiDirectoryNode" />
-              <item name="empresign" type="462c0819:PsiDirectoryNode" />
-              <item name="empresignController" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrms" type="462c0819:PsiDirectoryNode" />
-              <item name="hrms_employee" type="462c0819:PsiDirectoryNode" />
-              <item name="empresign" type="462c0819:PsiDirectoryNode" />
-              <item name="empresignService" type="462c0819:PsiDirectoryNode" />
+              <item name="hrms_main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
@@ -275,6 +328,60 @@
               <item name="hrms" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboardController" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboardService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
@@ -345,19 +452,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/components/admin/components/dashboard/views" />
+      <recent name="$PROJECT_DIR$/static/components/employee/components" />
+      <recent name="$PROJECT_DIR$/hrms_admin" />
+      <recent name="$PROJECT_DIR$/static/components/admin/components" />
+      <recent name="$PROJECT_DIR$/static/components/css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views" />
       <recent name="$PROJECT_DIR$/static/components/admin/components/dashboard/views" />
       <recent name="$PROJECT_DIR$/static/components/admin/components/customermaster" />
       <recent name="$PROJECT_DIR$/static/components/admin/components/designationmaster" />
       <recent name="$PROJECT_DIR$/static/components/admin/components/customer" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/components/employee/components" />
-      <recent name="$PROJECT_DIR$/hrms_admin" />
-      <recent name="$PROJECT_DIR$/static/components/admin/components" />
-      <recent name="$PROJECT_DIR$/static/components/css" />
-      <recent name="$PROJECT_DIR$/static/components/employee/components/employee/views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -432,24 +539,24 @@
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21772939" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26693228" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21772939" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22395024" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -467,6 +574,11 @@
           <line>64</line>
           <option name="timeStamp" value="440" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="519" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -475,7 +587,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="516" />
+      <option name="time" value="520" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -541,97 +653,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hrms_admin/officelocation/officeLocationService/officeLocationService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/officelocation/officeLocationController/officeLocationController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="64" column="101" lean-forward="false" selection-start-line="64" selection-start-column="78" selection-end-line="64" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/designationmaster/designationmasterservice/designationmasterservice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="77" column="40" lean-forward="false" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/designationmaster/designationmastercontroller/designationmastercontroller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/customermaster/views/listcustomermaster.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="36" column="69" lean-forward="false" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/customermaster/views/listcustomerprojectpo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/css/empTimeline.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="104" column="16" lean-forward="false" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/css/hrmsstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="176" column="1" lean-forward="true" selection-start-line="176" selection-start-column="1" selection-end-line="176" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/projectmaster/views/listprojectmaster.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/projectmaster/views/listprojectPurchaseOrder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryController/empdesigpackhistoryController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryService/empdesigpackhistoryService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentscontroller/employeedependentscontroller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -660,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hrms_employee/empexperience/empExperienceController/empExperienceController.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -681,24 +695,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/adminApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="256" column="42" lean-forward="false" selection-start-line="256" selection-start-column="13" selection-end-line="256" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/components/admin/views/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="829">
           <caret line="215" column="9" lean-forward="false" selection-start-line="215" selection-start-column="9" selection-end-line="215" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -772,27 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-503">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2106">
-          <caret line="117" column="9" lean-forward="true" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="888">
@@ -819,75 +798,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1894">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/employee/employeeApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="280" column="45" lean-forward="false" selection-start-line="280" selection-start-column="45" selection-end-line="280" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/managerDashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="104" column="16" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="78" column="42" lean-forward="false" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="153" lean-forward="false" selection-start-line="31" selection-start-column="153" selection-end-line="32" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,29 +814,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/urls.py">
+    <entry file="file://$PROJECT_DIR$/static/components/employee/employeeApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="105" column="76" lean-forward="false" selection-start-line="105" selection-start-column="76" selection-end-line="105" selection-end-column="76" />
+        <state relative-caret-position="332">
+          <caret line="283" column="35" lean-forward="false" selection-start-line="283" selection-start-column="12" selection-end-line="283" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/officelocation/officeLocationController/officeLocationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/designationmaster/views/editdesignation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/adminApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/designationmaster/designationmasterController/designationmasterController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="84" column="42" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/designationmaster/views/listdesignation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="99" lean-forward="false" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/customermaster/customermasterservice/customermasterservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="62" column="36" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="62" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/customermaster/customermastercontroller/customermastercontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="136" column="48" lean-forward="false" selection-start-line="136" selection-start-column="42" selection-end-line="136" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/projectmaster/projectmasterservice/projectmasterservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="81" column="36" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="118" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/currencymaster/currencyMasterController/currencyMasterController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1296">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/officelocation/views/editofficelocation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationservice/employeeresignationService.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="41" column="57" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/projectdocuments/views/addprojectdocument.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/addemployeeresignation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="35" column="161" lean-forward="false" selection-start-line="35" selection-start-column="118" selection-end-line="35" selection-end-column="161" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="104" column="33" lean-forward="true" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="221" column="44" lean-forward="true" selection-start-line="221" selection-start-column="44" selection-end-line="221" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="109" column="84" lean-forward="false" selection-start-line="109" selection-start-column="73" selection-end-line="109" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="71" column="78" lean-forward="false" selection-start-line="71" selection-start-column="78" selection-end-line="71" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="83" column="14" lean-forward="false" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+        <state relative-caret-position="-946">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/editemployeeresignation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <folding>
+            <marker date="1531374636627" expanded="false" signature="363:382" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="73" column="4" lean-forward="false" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

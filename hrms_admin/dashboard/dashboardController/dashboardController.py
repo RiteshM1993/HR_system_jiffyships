@@ -107,3 +107,13 @@ def ListEmployeeResignations(request):
     dataobj = {'data': result}
 
     return HttpResponse(json.dumps(dataobj, cls=DjangoJSONEncoder), content_type='application/json', status=200)
+
+
+
+@api_view(['GET'])
+def geteditdata(request):
+    id = request.GET['id']
+    get_count = getcount()
+    result = get_count.geteditdata(id)
+    dataobj = {'data': result}
+    return HttpResponse(json.dumps(dataobj, cls=DjangoJSONEncoder), content_type='application/json', status=200)

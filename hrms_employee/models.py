@@ -36,6 +36,7 @@ class employee(models.Model):
     created_date = models.DateField(null=True)
     updated_date = models.DateField(null=True)
     resign_status = models.IntegerField(null=True)
+    manager_resignation_comment = models.CharField(max_length=8000, null=True)
 
     class Meta:
         db_table = "employee"

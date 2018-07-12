@@ -29,6 +29,20 @@ angular.module('adminApp.admindashboardService',[])
         $http.get('api/ListEmployeeResignations/?id='+id).then(success,failure)
     }
 
+    adminDashboard.editemployeeresignations = function(id, success, failure){
+        $http.get('api/editemployeeresignations/?id='+id).then(success,failure)
+    }
+
+    adminDashboard.updateEmployeeResignations = function(empResignData, success, failure){
+
+        $http.post('api/updateemployeeresignation/',{
+            'id': empResignData.id,
+            'resignReason' : empResignData.reasonOfResign,
+            'resignDate' : empResignData.resignDate,
+            'managerComment':empResignData.managerComment,
+        }).then(success, failure)
+    }
+
 
     return adminDashboard;
 

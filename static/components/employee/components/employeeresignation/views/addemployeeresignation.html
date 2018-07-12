@@ -27,7 +27,7 @@
                       <div class="input-group-addon">
                         <i class="fa fa-calendar"></i>
                       </div>
-                      <input type="text" class="form-control" id="datepicker" placeholder="Resignation Date" ng-model="employeeresignationScope.resignDate" name="resignDate" ng-required="true">
+                      <input type="text" read only class="form-control"  placeholder="Resignation Date" ng-model="employeeresignationScope.resignDate" name="resignDate" ng-required="true">
                     </div>
                       <!--<p ng-show="addemployeeform.doj.$invalid && !addemployeeform.doj.$pristine" class="help-block">Date of joining is required.</p>-->
                   </div>
@@ -39,8 +39,8 @@
                 </div>
               </form>
 
-            <div ng-show="addresignationform.successmsg" class="well well-sm alert alert-success text-center"> Resignation is saved. <a ui-sref="listcurrencymaster"> Click to go to listing Page</a> </div>
-            <div ng-show="addresignationform.errormsg" class="well well-sm alert alert-danger text-center"> Resignation is not saved. Please try again.</a> </div>
+            <div ng-show="employeeresignationScope.successmsg" class="well well-sm alert alert-success text-center"> Resignation is saved. <a ui-sref="listcurrencymaster"> Click to go to listing Page</a> </div>
+            <div ng-show="employeeresignationScope.errormsg" class="well well-sm alert alert-danger text-center"> Resignation is not saved. Please try again.</a> </div>
           </div>
         </div>
       </div>

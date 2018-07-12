@@ -6,7 +6,7 @@
     <table st-table="displayedCollection" style="" st-safe-src="adminDashboardScope.listdata" class="table table-striped">
         <thead>
         <tr>
-            <th class="p-l-r-0" colspan="5">
+            <th class="p-l-r-0" colspan="6">
                 <input st-search="" class="form-control searchBar-w pull-right" placeholder="Search Table..." type="text"/>
             </th>
         </tr>
@@ -15,6 +15,7 @@
             <th st-sort="resignReason" >Reason of Resignation</th>
             <th st-sort="resignDate" >Resign Date</th>
             <th st-sort="dol" >Date of Leaving</th>
+            <th st-sort="managerComment">Manager Comment</th>
             <th>Action</th>
         </tr>
 
@@ -25,7 +26,8 @@
             <td>{{row.resignReason}}</td>
             <td>{{row.resignDate}}</td>
             <td>{{row.dol}}</td>
-            <td><i class="fa fa-edit" style="cursor:pointer" ng-click="employeeresignationScope.changeState(row.emp_id)"></i></td>
+            <td>{{row.managerComment}}</td>
+            <td><i class="fa fa-edit" style="cursor:pointer" ng-click="adminDashboardScope.changeState(row.emp_id)"></i></td>
         </tr>
         </tbody>
     </table>

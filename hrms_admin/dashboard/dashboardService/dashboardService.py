@@ -193,6 +193,7 @@ class getcount:
             datalist = []
             for values in listqry:
                 datalist.append({
+                    'emp_id':values.emp_id,
                     'dol': values.date_of_leaving,
                     'resignReason': values.reason_of_leaving,
                     'resignDate': values.resignation_date,
@@ -217,6 +218,8 @@ class getcount:
             datalist = []
             for values in listqry:
                 datalist.append({
+                    'managerComment':values.manager_resignation_comment,
+                    'emp_id': values.emp_id,
                     'dol': values.date_of_leaving,
                     'resignReason': values.reason_of_leaving,
                     'resignDate': values.resignation_date,
@@ -231,3 +234,21 @@ class getcount:
                 'response': "Failure"
             }
             return failureobj
+    #
+    # @classmethod
+    # def geteditdata(cls, id):
+    #     try:
+    #         getqry = employee.objects.get(emp_id=id)
+    #         dataobj = {
+    #             'emp_id': getqry.emp_id,
+    #             'dol': getqry.date_of_leaving,
+    #             'resignReason': getqry.resignReason,
+    #             'resignDate': getqry.resignDate,
+    #             # 'emp_name': ' '.join(filter(None, (getqry.first_name, getqry.middle_name, getqry.last_name))),
+    #         }
+    #         return dataobj
+    #     except Exception, err:
+    #         saveqryfailureobj = {
+    #             'response': "Failure"
+    #         }
+    #         return saveqryfailureobj
