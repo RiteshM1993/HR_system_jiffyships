@@ -1,4 +1,5 @@
 from hrms_admin.models import customer_table
+from bigchaindb_shared import api
 
 class dmcustomermaster:
     @classmethod

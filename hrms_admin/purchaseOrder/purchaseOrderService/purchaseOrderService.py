@@ -1,4 +1,6 @@
 from hrms_admin.models import purchase_order
+
+from hrms_admin.models import po_payment
 from decimal import Decimal
 
 
@@ -125,4 +127,60 @@ class purchaseOrder:
                 'response': "Failure"
             }
             return failureobj
+
+    @classmethod
+    def savepopayment(cls,id,CheckTransactionDetails,receiveddate,Description,createdby,createdDate):
+        try:
+            saveqry = po_payment(po_id=id, cheque_tnx_no=CheckTransactionDetails, description=Description,received_date=receiveddate, created_date=createdDate, created_by=createdby)
+
+            saveqry.save()
+
+            po_status_change = purchase_order.objects.get(po_id=id)
+            po_status_change.payment_received_flag=1
+            po_status_change.save()
+
+            saveqrysuccessobj = {
+                'response': "success"
+            }
+            return saveqrysuccessobj
+
+        except Exception, err:
+            saveqryfailureobj = {
+                'response': "Failure"
+            }
+            return {'failureobj': saveqryfailureobj}
+
+    @classmethod
+    def getpopayment(cls):
+        try:
+            listqry=po_payment.objects.all()
+            ListpoPayment=[]
+
+            for values in listqry:
+                ListpoPayment.append({
+
+                    'paymentId':values.payment_id,
+                    'poId':values.po_id,
+                    'receivedDate':values.received_date,
+                    'chequetransno':values.cheque_tnx_no,
+                    'description':values.description,
+                })
+
+            return ListpoPayment
+
+        except Exception, err:
+            saveqryfailureobj = {
+
+                'response':'Failure'
+
+            }
+            return {'failureobj':saveqryfailureobj}
+
+
+
+
+
+
+
+
 

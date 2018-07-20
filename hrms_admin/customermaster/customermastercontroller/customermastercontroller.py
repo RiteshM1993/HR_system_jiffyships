@@ -9,6 +9,7 @@ from hrms_admin.customermaster.customermasterservice.customermasterservice impor
 from datetime import datetime
 from django.utils import timezone
 
+
 @api_view(['POST'])
 def saveCustomerMaster(request):
     CustomerName = request.data['CustomerName']

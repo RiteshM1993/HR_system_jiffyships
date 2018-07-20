@@ -128,6 +128,7 @@ urlpatterns =[
     url('^dashboard/api/delpodata/$', purchaseOrderController.delPoData),
     url('^dashboard/api/poeditdata/$', purchaseOrderController.getpoEditData),
     url('^dashboard/api/updatepo/$', purchaseOrderController.updatepo),
-
+    url('^dashboard/api/savepopayment/$', purchaseOrderController.SavePoPayment),
+    url('^dashboard/api/getpoPayment/$', purchaseOrderController.getpaymentdetails),
 
 ]

@@ -28,7 +28,7 @@ class employee(models.Model):
     office_location_id = models.IntegerField(null=True)
     emp_dm_id = models.CharField(max_length=4000, null=True)
     emp_image = models.CharField(max_length=4000, null=True)
-    resignation_date = models.DateTimeField(null=True)
+    resignation_date = models.DateField(null=True)
     reason_of_leaving = models.CharField(max_length=8000, null=True)
     emp_role = models.CharField(max_length=4000, null=True)
     created_by = models.IntegerField(null=True)

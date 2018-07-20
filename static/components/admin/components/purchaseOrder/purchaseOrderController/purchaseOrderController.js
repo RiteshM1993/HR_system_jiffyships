@@ -1,8 +1,21 @@
 angular.module('adminApp.purchaseOrderController',[])
 
-.controller('purchaseOrderController',['purchaseOrderService','$state','$stateParams','$rootScope', function(purchaseOrderService,$state,$stateParams,$rootScope){
+.controller('purchaseOrderController',['purchaseOrderService','$state','$stateParams','$rootScope','$scope', function(purchaseOrderService,$state,$stateParams,$rootScope,$scope){
 
     var purchaseOrderScope = this;
+
+    $scope.filterPopover = {
+
+     payment:{
+       templateUrl:'payment.html',
+       title: 'Payment Status',
+       value:'',
+       reset: function(){
+           this.value = '';
+       }
+     }
+
+   }
 
     purchaseOrderScope.getValues = function(){
 
@@ -70,12 +83,8 @@ angular.module('adminApp.purchaseOrderController',[])
             'purchaseOrderNumber': purchaseOrderScope.purchaseordernumber,
             'startDate' : startDate,
             'endDate' : endDate,
-//            'purchaseOrderResources' : purchaseOrderScope.purchaseorderresources,
-//            'billingType' : purchaseOrderScope.billingtype,
             'purchaseOrderAmount' : purchaseOrderScope.purchaseorderamount,
             'purchaseordercurrency' : purchaseOrderScope.purchaseordercurrency,
-//            'projBillRate' : purchaseOrderScope.projBillRate,
-//            'projectCost' : purchaseOrderScope.projectCost,
         }
 
         var success = function(response){
@@ -131,7 +140,7 @@ angular.module('adminApp.purchaseOrderController',[])
 
     }
 
-    purchaseOrderScope.changeState = function(id){
+    purchaseOrderScope.changeEditState = function(id){
 
         $state.go('editpurchaseorder',{obj: id})
 
@@ -142,7 +151,7 @@ angular.module('adminApp.purchaseOrderController',[])
 
         $rootScope.checkSession()
 
-        id = $stateParams.obj
+        var id = $stateParams.obj
 
         var success = function(response){
             console.log('success')
@@ -175,13 +184,8 @@ angular.module('adminApp.purchaseOrderController',[])
             'poNumber': purchaseOrderScope.data.po_number,
             'startDate': start_date,
             'endDate': end_date,
-//            'resourceCount': purchaseOrderScope.data.po_resource_count,
-//            'billingType': purchaseOrderScope.data.po_billing_type,
             'poAmount': purchaseOrderScope.data.po_amount,
             'currencyId': purchaseOrderScope.data.po_currency_id,
-//            'billperhour': purchaseOrderScope.data.po_billing_per_hour,
-//            'projectCost': purchaseOrderScope.data.po_project_cost,
-
         }
 
 
@@ -204,6 +208,64 @@ angular.module('adminApp.purchaseOrderController',[])
     }
 
 
+     purchaseOrderScope.changeState = function(id){
+
+        $state.go('paymentdetails', {obj: id})
+
+    }
+
+    purchaseOrderScope.SavePaymentDetails = function(){
+
+       var receiveddate = purchaseOrderScope.receiveddate.replace(/(\d\d)\/(\d\d)\/(\d{4})/, "$3-$1-$2");
+
+       var id = $stateParams.obj
+
+
+
+       PayDetails= {
+
+              'po_id':id,
+              'CheckTransactionDetails': purchaseOrderScope.CheckTransactionDetails,
+              'receiveddate': receiveddate,
+              'Description':purchaseOrderScope.Description,
+       }
+
+       var success = function(response){
+            console.log(response.data.data)
+            purchaseOrderScope.successmsg = true
+            purchaseOrderScope.errormsg = false
+        }
+
+       var failure = function(response){
+            console.log(response)
+            console.log('failure')
+            purchaseOrderScope.successmsg = false
+            purchaseOrderScope.errormsg = true
+        }
+
+        purchaseOrderService.SavepaymentDetails(PayDetails,success,failure)
+
+
+    }
+
+
+    purchaseOrderScope.getPoPaymentData = function(){
+
+        $rootScope.checkSession()
+
+        var success = function(response){
+            console.log(response.data.data)
+            purchaseOrderScope.listdata = response.data.data
+        }
+
+        var failure = function(response){
+            console.log(response)
+            console.log('failure')
+        }
+
+        purchaseOrderService.paymentdetails(success, failure)
+    }
+
 
 
 
@@ -223,12 +285,8 @@ angular.module('adminApp.purchaseOrderController',[])
                   purchaseOrderScope.errMessage = false
                   purchaseOrderScope.error_msg = true
                return false;
-
            }
-
         };
-
-
 
     return purchaseOrderScope;
 

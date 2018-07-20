@@ -66,6 +66,22 @@ angular.module('adminApp.purchaseOrderService',[])
 
     }
 
+    purchaseOrder.SavepaymentDetails = function(PayDetails,success,failure){
+
+
+        $http.post('api/savepopayment/',{
+
+           'id':PayDetails.po_id,
+           'CheckTransactionDetails': PayDetails.CheckTransactionDetails,
+           'receiveddate': PayDetails.receiveddate,
+           'Description':PayDetails.Description,
+        }).then(success,failure)
+
+    }
+
+    purchaseOrder.paymentdetails = function(success, failure){
+        $http.get('api/getpoPayment/').then(success, failure)
+    }
 
     return purchaseOrder;
 }])

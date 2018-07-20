@@ -1,0 +1,108 @@
+<div class="content-wrapper" ng-init="purchaseOrderScope.getValues()">
+    <section class="content">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="box box-success">
+            <div class="box-header">
+              <h3 class="box-title" style="padding-left:15px;">Payment Details</h3>
+                <a ui-sref="viewpayment"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> View payment</span></a>
+            </div>
+              <form role="form" name="addPurchaseOrderform" ng-submit="submitForm(addPurchaseOrderform.$valid)" novalidate>
+                <div class="box-body">
+
+                <div class="form-group col-sm-6">
+                    <label>Cheque/Transaction Details*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-bank"></i>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Cheque/Transaction Details" name="checkdetails" ng-model="purchaseOrderScope.CheckTransactionDetails" ng-required="true">
+                    </div>
+                    <p ng-show="addofficelocationform.officelocation.$invalid && !addofficelocationform.officelocation.$pristine" class="help-block">Office Location is required.</p>
+                  </div>
+
+                 <div class="form-group col-sm-6">
+                    <label>Received  Date:*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control" id="datepicker1" placeholder="Enter Cheque Received Date" ng-model="purchaseOrderScope.receiveddate" name="recieveddate" ng-required="true"  autocomplete="off" >
+                    </div>
+                    <p ng-show="addPurchaseOrderform.startDate.$invalid && !addPurchaseOrderform.startDate.$pristine" class="help-block">Cheque Received Date is required.</p>
+                  </div>
+
+                  <div class="form-group col-sm-6">
+                    <label>Description*</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-briefcase"></i>
+                      </div>
+                        <textarea class="form-control" placeholder="Address" name="address" cols="60" rows="4" ng-model="purchaseOrderScope.Description" ng-required="true"></textarea>
+                    </div>
+                    <p ng-show="addofficelocationform.address.$invalid && !addofficelocationform.address.$pristine" class="help-block">Office address is required.</p>
+                  </div>
+
+                  <!--<div class="form-group col-sm-4">-->
+                    <!--<label>Billing Rate Per Hour*</label>-->
+                    <!--<div class="input-group">-->
+                      <!--<div class="input-group-addon">-->
+                        <!--<i class="fa fa-envelope"></i>-->
+                      <!--</div>-->
+                      <!--<input type="number" class="form-control" placeholder="Billing Rate" ng-model="purchaseOrderScope.projBillRate" name="billrate" ng-required="true">-->
+                    <!--</div>-->
+                      <!--<p ng-show="addPurchaseOrderform.billrate.$invalid && !addPurchaseOrderform.billrate.$pristine" class="help-block">Billing rate is required.</p>-->
+                  <!--</div>-->
+
+                  <!--<div class="form-group col-sm-4">-->
+                    <!--<label>Project Cost*</label>-->
+                    <!--<div class="input-group">-->
+                      <!--<div class="input-group-addon">-->
+                        <!--<i class="fa fa-envelope"></i>-->
+                      <!--</div>-->
+                      <!--<input type="number" class="form-control" placeholder="Project Cost" ng-model="purchaseOrderScope.projectCost" name="projectCost" ng-required="true">-->
+                    <!--</div>-->
+                      <!--<p ng-show="addPurchaseOrderform.projectCost.$invalid && !addPurchaseOrderform.projectCost.$pristine" class="help-block">Project Cost is required.</p>-->
+                  <!--</div>-->
+
+                  <div class="box-footer col-sm-12" style="padding-left:15px">
+                        <button type="submit" ng-disabled="addPurchaseOrderform.$invalid" class="btn btn-primary" ng-click="purchaseOrderScope.SavePaymentDetails()">Submit</button>
+                        <button type="reset" class="btn btn-default">Clear</button>
+                  </div>
+                </div>
+              </form>
+
+            <div ng-show="purchaseOrderScope.successmsg" class="well well-sm alert alert-success text-center"> Payment Details is saved.</div>
+            <div ng-show="purchaseOrderScope.errormsg" class="well well-sm alert alert-danger text-center">Payment Details is not saved. Please try again.</a> </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+
+          <!-- /.box -->
+
+        </div>
+        <!-- /.col (left) -->
+
+        <!-- /.col (right) -->
+      </div>
+      <!-- /.row -->
+
+    </section>
+ </div>
+<script>
+  //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker1').datepicker({
+      autoclose: true
+    })
+
+    $('#datepicker2').datepicker({
+      autoclose: true
+    })
+
+</script>

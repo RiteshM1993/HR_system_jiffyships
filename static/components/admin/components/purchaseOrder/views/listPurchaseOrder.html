@@ -6,7 +6,7 @@
     <table st-table="displayedCollection" style="" st-safe-src="purchaseOrderScope.listdata" class="table table-striped">
         <thead>
         <tr>
-            <th class="p-l-r-0"  colspan="8">
+            <th class="p-l-r-0"  colspan="9">
                 <input st-search="" class="form-control searchBar-w pull-right" placeholder="Search Table..." type="text"/>
             </th>
         </tr>
@@ -20,10 +20,15 @@
             <!--<th st-sort="businessunit_id">Billing Type</th>-->
             <!--<th st-sort="manager_name">Currency</th>-->
             <th st-sort="manager_name">PO Amount</th>
+            <!--<th st-sort>Payment Status</th>-->
             <!--<th st-sort="manager_name">Project Cost</th>-->
             <!--<th st-sort="manager_name">Billing/Hour</th>-->
-            <th st-sort="">Action</th>
+            <!--<th st-sort="">Action</th>-->
             <th>Trigger</th>
+            <th st-sort>Payment Status</th>
+            <th st-sort="">Action</th>
+
+
         </tr>
         </thead>
         <tbody>
@@ -39,8 +44,13 @@
             <td>{{row.po_amount}}</td>
             <!--<td>{{row.po_project_cost}}</td>-->
             <!--<td>{{row.po_billing_per_hour}}</td>-->
-            <td><i class="fa fa-edit" style="cursor:pointer" ng-click="purchaseOrderScope.changeState(row.po_id)"></i> <i class="fa fa-trash" style="color:orangered; cursor:pointer" ng-click="purchaseOrderScope.deletePo(row.po_id, $index)"></i></td>
+            <!--<td><i class="fa fa-edit" style="cursor:pointer" ng-click="purchaseOrderScope.changeState(row.po_id)"></i> <i class="fa fa-trash" style="color:orangered; cursor:pointer" ng-click="purchaseOrderScope.deletePo(row.po_id, $index)"></i></td>-->
             <td><button class="btn btn-danger hrms-button">Email</button></td>
+            <td><button class="btn btn-primary hrms-button" ng-click="purchaseOrderScope.changeState(row.po_id)">Accept Payment</button></td>
+            <td><i class="fa fa-edit" style="cursor:pointer" ng-click="purchaseOrderScope.changeState(row.po_id)"></i> <i class="fa fa-trash" style="color:orangered; cursor:pointer" ng-click="purchaseOrderScope.deletePo(row.po_id, $index)"></i></td>
+
+
+
         </tr>
         </tbody>
     </table>

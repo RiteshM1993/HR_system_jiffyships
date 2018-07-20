@@ -12,8 +12,9 @@ angular.module('employeeApp.employeeresignationController',[])
     var year = currentTime.getFullYear()
     var todayDate=year + "/" + month + "/" + day
 
-    employeeresignationScope.resignDate = todayDate
-
+    employeeresignationScope.resignDate = todayDate;
+    employeeresignationScope.reason_of_leaving = null;
+    employeeresignationScope.resignation_date = todayDate;
 
      // Save Function
 
@@ -90,12 +91,11 @@ angular.module('employeeApp.employeeresignationController',[])
         listdata = []
 
         var success = function(response){
-            console.log('success')
-            //employeeresignationScope.getvalues()
-            listdata.push(response.data.data)
 
-            employeeresignationScope.data = listdata
-            console.log(employeeresignationScope.data)
+            var responseData = response.data.data;
+
+            employeeresignationScope.reason_of_leaving = responseData.reason_of_leaving;
+            employeeresignationScope.resignation_date = responseData.resignation_date;
         }
 
         var failure = function(response){

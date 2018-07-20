@@ -140,7 +140,8 @@ class customer_table(models.Model):
     updated_by = models.IntegerField(null=True)
     created_date = models.DateField(null=True)
     updated_date = models.DateField(null=True)
-
+    public_key = models.CharField(max_length=4000,null=True)
+    private_key = models.CharField(max_length=4000,null=True)
 
     class Meta:
         db_table = "customer_table"
@@ -152,20 +153,39 @@ class purchase_order(models.Model):
     po_number = models.BigIntegerField()
     po_start_date = models.DateField(null=True)
     po_end_date = models.DateField(null=True)
-    # po_resource_count = models.BigIntegerField()
-    # po_billing_type = models.BigIntegerField()
     po_amount = models.CharField(max_length=2000)
-    # po_billing_per_hour = models.BigIntegerField(null=True)
-    # po_project_cost = models.DecimalField(max_digits=10, decimal_places=2, null=True)
     po_currency_id = models.BigIntegerField()
     created_by = models.IntegerField(null=True)
     updated_by = models.IntegerField(null=True)
     created_date = models.DateField(null=True)
     updated_date = models.DateField(null=True)
+    payment_received_flag= models.IntegerField(default=0,null=True)
+
 
 
     class Meta:
         db_table = "purchase_order"
+
+class po_payment(models.Model):
+    payment_id=models.AutoField(primary_key=True)
+    po_id=models.BigIntegerField()
+    cheque_tnx_no=models.CharField(max_length=2000,null=True)
+    description=models.CharField(max_length=2000,null=True)
+    received_date=models.DateField(null=True)
+    created_date = models.DateField(null=True)
+    created_by = models.IntegerField(null=True)
+    updated_by = models.IntegerField(null=True)
+    updated_date = models.DateField(null=True)
+
+    class Meta:
+        db_table ="po_payment"
+
+
+
+
+
+
+
 
 
 

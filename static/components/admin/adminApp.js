@@ -16,7 +16,8 @@ angular.module('adminApp',[
     'adminApp.projectdocuments',
     'adminApp.billing',
     'adminApp.customermaster',
-     'adminApp.purchaseOrder',
+    'adminApp.purchaseOrder',
+    'ui.bootstrap',
 ])
 
 .config(['$stateProvider','$urlRouterProvider', function($stateProvider, $urlRouterProvider){
@@ -388,6 +389,25 @@ angular.module('adminApp',[
         controller: 'purchaseOrderController',
         controllerAs: 'purchaseOrderScope',
     })
+
+    .state('paymentdetails',{
+        url:'/paymentdetails/:obj',
+        templateUrl: '/static/components/admin/components/purchaseOrder/views/popayment.html',
+        controller: 'purchaseOrderController',
+        controllerAs: 'purchaseOrderScope',
+    })
+
+
+    .state('viewpayment',{
+        url: '/viewpayment',
+        templateUrl: '/static/components/admin/components/purchaseOrder/views/viewpayment.html',
+        controller: 'purchaseOrderController',
+        controllerAs: 'purchaseOrderScope',
+    })
+
+
+
+
 
 
 
