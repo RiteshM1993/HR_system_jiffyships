@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'hrms_main.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'hrms_new',
-        'USER': 'admin',
-        'PASSWORD': 'admin',
+        'NAME': 'hrms',
+        'USER': 'ebu',
+        'PASSWORD': 'ebu',
         'HOST': 'localhost',
         'PORT': '5432',
     }

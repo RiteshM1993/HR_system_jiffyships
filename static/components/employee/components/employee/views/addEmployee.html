@@ -8,7 +8,7 @@
                   {{request.session.name}}
               <a ui-sref="listemployee"><span style="padding-right:15px;" class="pull-right"><i class="fa fa-list"></i> Employees</span></a>
             </div>
-              <form role="form" ng-init="employeeScope.getvalues()" name="addemployeeform" ng-submit="submitForm(addemployeeform.$valid)" enctype="multipart/form-data" novalidate>
+              <form role="form" name="addemployeeform" ng-submit="submitForm(addemployeeform.$valid)" enctype="multipart/form-data" novalidate>
                 <div class="box-body">
 
                   <div class="form-group col-sm-4">
@@ -46,15 +46,15 @@
                   </div>
 
                   <div class="form-group col-sm-4">
-                    <label>DM Employee ID*</label>
+                    <label> Employee ID*</label>
 
                     <div class="input-group">
                       <div class="input-group-addon">
                         <i class="fa fa-user"></i>
                       </div>
-                      <input type="text" class="form-control" placeholder="DM Employee ID" name="dmEmployeeId" ng-model="employeeScope.dmEmployeeId" ng-required="true">
+                      <input type="text" class="form-control" placeholder="Employee ID" name="dmEmployeeId" ng-model="employeeScope.dmEmployeeId" ng-required="true">
                     </div>
-                    <p ng-show="addemployeeform.dmEmployeeId.$invalid && !addemployeeform.dmEmployeeId.$pristine" class="help-block">DM Employee ID is required.</p>
+                    <p ng-show="addemployeeform.dmEmployeeId.$invalid && !addemployeeform.dmEmployeeId.$pristine" class="help-block">Employee ID is required.</p>
                   </div>
 
                   <div class="form-group col-sm-4">
@@ -67,18 +67,6 @@
                     </div>
                       <p ng-show="addemployeeform.email.$invalid && !addemployeeform.email.$pristine" class="help-block">Email is required.</p>
                   </div>
-
-                  <div class="form-group col-sm-4">
-                    <label>Personal Email*</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                         <i class="fa fa-envelope"></i>
-                      </div>
-                      <input type="email"  class="form-control" placeholder="Personal Email" ng-model="employeeScope.personalemail" name="personalemail" ng-required="true">
-                    </div>
-                    <p ng-show="addemployeeform.personalemail.$invalid && !addemployeeform.personalemail.$pristine" class="help-block">Personal Email is required.</p>
-                  </div>
-
                   <div class="form-group col-sm-4">
                     <label>Mobile Number*</label>
                     <div class="input-group">
@@ -91,68 +79,6 @@
                   </div>
 
                   <div class="form-group col-sm-4">
-                    <label>Office Number</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-address-card-o"></i>
-                      </div>
-                      <input type="number" class="form-control" placeholder="Office Number" ng-model="employeeScope.officenumber" name="officenumber">
-                    </div>
-                  </div>
-
-                  <div class="form-group col-sm-4">
-                    <label>DOB*</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                      </div>
-                      <input type="text" class="form-control" id="datepicker" placeholder="Date of Birth" ng-model="employeeScope.dob" name="dob" ng-required="true">
-                    </div>
-                    <p ng-show="addemployeeform.dob.$invalid && !addemployeeform.dob.$pristine" class="help-block">DOB is required.</p>
-                  </div>
-
-                  <div class="form-group col-sm-4">
-                    <label>Status*</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                      </div>
-                        <select name="status" class="form-control" ng-model="employeeScope.emptype" ng-required="true">
-                          <option value="">---Select---</option>
-                          <option ng-repeat="values in employeeScope.emptypeid" value="{{values.emp_type_id}}">{{values.type_name}}</option>
-                        </select>
-                    </div>
-                    <p ng-show="addemployeeform.status.$invalid && !addemployeeform.status.$pristine" class="help-block">Status is required.</p>
-                  </div>
-
-                  <div class="form-group col-sm-4">
-                    <label>Designation*</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                      </div>
-                      <select name="jobtitle" class="form-control" ng-model="employeeScope.jobtitle" ng-required="true">
-                        <option value="">--Select---</option>
-                        <option ng-repeat="values in employeeScope.designationValue" value="{{values.des_id}}">{{values.des_name}}</option>
-                      </select>
-                    </div>
-                      <p ng-show="addemployeeform.jobtitle.$invalid && !addemployeeform.jobtitle.$pristine" class="help-block">Job Title is required.</p>
-                  </div>
-
-                  <div class="form-group col-sm-4">
-                    <label>Date of Joining*</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-calendar"></i>
-                      </div>
-                      <input type="text" class="form-control" id="datepicker1" placeholder="Date of Joining" ng-model="employeeScope.doj" name="doj" ng-required="true">
-                    </div>
-                      <p ng-show="addemployeeform.doj.$invalid && !addemployeeform.doj.$pristine" class="help-block">Date of joining is required.</p>
-                  </div>
-
-
-
-                  <div class="form-group col-sm-4">
                     <label>Total Experience*</label>
                     <div class="input-group">
                       <div class="input-group-addon">
@@ -163,45 +89,7 @@
                       <p ng-show="addemployeeform.experience.$invalid && !addemployeeform.experience.$pristine" class="help-block">Experience is required.</p>
                   </div>
 
-                  <div class="form-group col-sm-4">
-                    <label>Business Unit*</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-address-card-o"></i>
-                      </div>
-                      <select name="businessunit" class="form-control" ng-model="employeeScope.businessunit" ng-required="true">
-                        <option value="">---Select---</option>
-                          <option ng-repeat="values in employeeScope.businessUnitValue" value="{{values.business_id}}">{{values.business_name}}</option>
-                      </select>
-                    </div>
-                      <p ng-show="addemployeeform.businessunit.$invalid && !addemployeeform.businessunit.$pristine" class="help-block">Business Unit is required.</p>
-                  </div>
 
-                  <div class="form-group col-sm-4">
-                    <label>Manager</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-address-card-o"></i>
-                      </div>
-                      <input class="form-control" type="text" ng-model="employeeScope.data"  placeholder="Manager Name" auto-complete="employeeScope.autoCompleteOptions" />
-
-                    </div>
-                      <!--<p ng-show="addemployeeform.manager.$invalid && !addemployeeform.manager.$pristine" class="help-block">Manager is required.</p>-->
-                  </div>
-
-                  <div class="form-group col-sm-4">
-                    <label>Office Location*</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-address-card-o"></i>
-                      </div>
-                      <select name="officelocation" class="form-control" ng-model="employeeScope.officelocation" ng-required="true">
-                        <option value="">---Select---</option>
-                        <option ng-repeat="values in employeeScope.officeLocationValue" value="{{values.locationId}}">{{values.officeLocation}}</option>
-                      </select>
-                    </div>
-                      <p ng-show="addemployeeform.officelocation.$invalid && !addemployeeform.officelocation.$pristine" class="help-block">Office Location is required.</p>
-                  </div>
 
                   <div class="form-group col-sm-4">
                     <label>Current Address*</label>
@@ -263,7 +151,7 @@
                 </div>
               </form>
 
-            <div ng-show="employeeScope.successmsg" class="well well-sm alert alert-success text-center"> Employee details are saved. <a ui-sref="addempexperience"> Click to go to Add Employee Experience</a> </div>
+            <div ng-show="employeeScope.successmsg" class="well well-sm alert alert-success text-center"> Employee details are saved. </a> </div>
             <div ng-show="employeeScope.errormsg" class="well well-sm alert alert-danger text-center"> Employee is not saved. Please try again.</a> </div>
             <!-- /.box-body -->
           </div>

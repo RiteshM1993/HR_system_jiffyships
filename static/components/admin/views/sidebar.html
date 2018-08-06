@@ -128,7 +128,7 @@
       <ul class="sidebar-menu scrollMenu" data-widget="tree">
 
 
-        <li class="treeview bdr-btm-1-white" ng-if="userRolesToggle.empRole==1">
+        <li class="treeview bdr-btm-1-white" >
           <a ui-sref="dashboard">
             <i class="fa fa-desktop"></i>
               <span ><b>Dashboard</b></span>
@@ -136,28 +136,28 @@
             </span>
           </a>
 
-        </li>
-           <li class="treeview bdr-btm-1-white" ng-if="userRolesToggle.empRole==2">
-          <a ui-sref="managerdashboard({obj:userRolesToggle.empId})">
-               <i class="fa fa-desktop"></i>
-              <span ><b>Dashboard</b></span>
-            <span class="pull-right-container">
-            </span>
-          </a>
+        <!--</li>-->
+           <!--<li class="treeview bdr-btm-1-white">-->
+          <!--<a ui-sref="managerdashboard({obj:userRolesToggle.empId})">-->
+               <!--<i class="fa fa-desktop"></i>-->
+              <!--<span ><b>Dashboard</b></span>-->
+            <!--<span class="pull-right-container">-->
+            <!--</span>-->
+          <!--</a>-->
 
-        </li>
+        <!--</li>-->
 
-        <li class="treeview bdr-btm-1-white" ng-if="userRolesToggle.empRole==2">
-          <a ui-sref="listemployeeproject({obj:userRolesToggle.empId})">
-              <span class="m-r-9" ><i class="fa fa-gear icon-white-sidebar"></i></span>
-              <span ><b>Project Resources</b></span>
-            <span class="pull-right-container">
-            </span>
-          </a>
+        <!--<li class="treeview bdr-btm-1-white">-->
+          <!--<a ui-sref="listemployeeproject({obj:userRolesToggle.empId})">-->
+              <!--<span class="m-r-9" ><i class="fa fa-gear icon-white-sidebar"></i></span>-->
+              <!--<span ><b>Project Resources</b></span>-->
+            <!--<span class="pull-right-container">-->
+            <!--</span>-->
+          <!--</a>-->
 
-        </li>
+        <!--</li>-->
 
-        <li class="treeview bdr-btm-1-white" ng-if="userRolesToggle.empRole==1">
+        <li class="treeview bdr-btm-1-white">
 
             <div class="sidebar-main-li-hightlight">
                 <span><b>Admin</b></span>
@@ -165,75 +165,40 @@
 
           <ul class="ul-no-style">
 
-            <div class="sidebar-li-hightlight">Master Activity</div>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-table icon-white-sidebar"></i><a ui-sref="listbusinessunit" class="m-l-10">Business Units</a></li>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-money icon-white-sidebar"></i><a ui-sref="listcurrencymaster" class="m-l-10">Currencies</a></li>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-location-arrow icon-white-sidebar"></i><a ui-sref="listofficelocation" class="m-l-10">Office Locations</a></li>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-pencil icon-white-sidebar"></i> <a ui-sref="listdesignation" class="m-l-10">Designations</a></li>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-gear icon-white-sidebar"></i><a ui-sref="listprojecttypemaster" class="m-l-10">Project's Type</a></li>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-user icon-white-sidebar"></i><a ui-sref="listemptype" class="m-l-10">Employee's Type</a></li>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-building icon-white-sidebar"></i><a ui-sref="listcustomermaster" class="m-l-10">Customers</a></li>
 
 
           </ul>
           <ul class="ul-no-style">
             <div class="sidebar-li-hightlight">Daily Activity</div>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-gear icon-white-sidebar"></i><a ui-sref="listprojectmaster" class="m-l-10">Projects</a></li>
             <li class="p-t-b-10 p-l-20" ><i class="fa fa-user-circle-o icon-white-sidebar"></i><a ui-sref="listemployee" class="m-l-10">Employees </a></li>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-users icon-white-sidebar"></i><a ui-sref="listemployeeproject" class="m-l-10">Project Resources</a></li>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-user icon-white-sidebar"></i><a ui-sref="listemployeeresignation" class="m-l-10">Employee Resigned</a></li>
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-file icon-white-sidebar"></i><a ui-sref="listprojectdocument" class="m-l-10">Project Documents</a></li>
             <!--<li class="p-t-b-10 p-l-20" ><i class="fa fa-dollar icon-white-sidebar"></i><a ui-sref="listbilling" class="m-l-10">Billing </a></li>-->
-            <li class="p-t-b-10 p-l-20" ><i class="fa fa-shopping-cart icon-white-sidebar"></i><a ui-sref="listpurchaseorder" class="m-l-10">Purchase Orders</a></li>
 
 
           </ul>
         </li>
 
-        <li class="treeview" ng-if="userRolesToggle.empRole==1">
+        <li class="treeview">
 
            <div class="sidebar-main-li-hightlight">
               <span><b>Employee</b></span>
            </div>
+
+
+        </li>
+
+        <!--<li class="treeview">-->
+
+           <!--<div class="sidebar-main-li-hightlight">-->
+              <!--<span><b>Employee</b></span>-->
+           <!--</div>-->
 
           <!--<ul class="ul-no-style">-->
-            <!--<li class="p-t-b-10"><i class="fa fa-user icon-white-sidebar"></i> <a ui-sref="listemployee" class="m-l-10">My Information</a></li>-->
-            <!--<li class="p-t-b-10"><i class="fa fa-user icon-white-sidebar"></i>  <a ui-sref="myresignation({obj:userRolesToggle.empId})" class="m-l-10">My Resignation </a></li>-->
-            <!--<li class="p-t-b-10"><i class="fa fa-line-chart icon-white-sidebar"></i> <a ui-sref="listempdesig_pack_history" class="m-l-10">Promotion Summary</a></li>-->
-            <!--<li class="p-t-b-10"><i class="fa fa-briefcase icon-white-sidebar"></i> <a ui-sref="listempexperience" class="m-l-10">Experience Details</a></li>-->
-            <!--<li class="p-t-b-10"><i class="fa fa-vcard-o icon-white-sidebar"></i> <a ui-sref="listemployeedependents" class="m-l-10"> Dependents </a></li>-->
-            <!--<li class="p-t-b-10"><i class="glyphicon glyphicon-education icon-white-sidebar"></i><a ui-sref="listemployeeeducation" class="m-l-10">Education History</a></li>-->
-            <!--<li class="p-t-b-10"><i class="fa fa-file icon-white-sidebar"></i> <a ui-sref="listdoc" class="m-l-10">My Documents</a></li>-->
+            <!--<li class="p-t-b-10"><i class="fa fa-user icon-white-sidebar"></i>  <a ui-sref="editemployee({obj:userRolesToggle.empId})" class="m-l-10">My Information</a></li>-->
+            <!--<li class="p-t-b-10"><i class="fa fa-file icon-white-sidebar"></i>  <a ui-sref="listdoc({obj:userRolesToggle.empId})" class="m-l-10">My Documents</a></li>-->
+            <!--<li class="p-t-b-10"><i class="fa fa-line-chart icon-white-sidebar"></i>  <a ui-sref="empdesig_pack_history({obj:userRolesToggle.empId})" class="m-l-10">Promotion Summary</a></li>-->
           <!--</ul>-->
-         <ul class="ul-no-style">
-            <li class="p-t-b-10"><i class="fa fa-user icon-white-sidebar"></i>  <a ui-sref="editemployee({obj:userRolesToggle.empId})" class="m-l-10">My Information</a></li>
-            <li class="p-t-b-10"><i class="fa fa-briefcase icon-white-sidebar"></i>  <a ui-sref="empexperience({obj:userRolesToggle.empId})" class="m-l-10">Experience Details</a></li>
-            <li class="p-t-b-10"><i class="fa fa-vcard-o icon-white-sidebar"></i>  <a ui-sref="employeedependents({obj:userRolesToggle.empId})" class="m-l-10"> Dependents </a></li>
-            <li class="p-t-b-10"><i class="glyphicon glyphicon-education icon-white-sidebar"></i> <a ui-sref="employeeducation({obj:userRolesToggle.empId})" class="m-l-10">Education History</a></li>
-            <li class="p-t-b-10"><i class="fa fa-file icon-white-sidebar"></i>  <a ui-sref="listdoc({obj:userRolesToggle.empId})" class="m-l-10">My Documents</a></li>
-            <li class="p-t-b-10"><i class="fa fa-line-chart icon-white-sidebar"></i>  <a ui-sref="empdesig_pack_history({obj:userRolesToggle.empId})" class="m-l-10">Promotion Summary</a></li>
-            <li class="p-t-b-10"><i class="fa fa-user icon-white-sidebar"></i>  <a ui-sref="myresignation({obj:userRolesToggle.empId})" class="m-l-10">My Resignation </a></li>
-         </ul>
 
-        </li>
-
-        <li class="treeview" ng-if="userRolesToggle.empRole==2 || userRolesToggle.empRole==3 ">
-
-           <div class="sidebar-main-li-hightlight">
-              <span><b>Employee</b></span>
-           </div>
-
-          <ul class="ul-no-style">
-            <li class="p-t-b-10"><i class="fa fa-user icon-white-sidebar"></i>  <a ui-sref="editemployee({obj:userRolesToggle.empId})" class="m-l-10">My Information</a></li>
-            <li class="p-t-b-10"><i class="fa fa-briefcase icon-white-sidebar"></i>  <a ui-sref="empexperience({obj:userRolesToggle.empId})" class="m-l-10">Experience Details</a></li>
-            <li class="p-t-b-10"><i class="fa fa-vcard-o icon-white-sidebar"></i>  <a ui-sref="employeedependents({obj:userRolesToggle.empId})" class="m-l-10"> Dependents </a></li>
-            <li class="p-t-b-10"><i class="glyphicon glyphicon-education icon-white-sidebar"></i> <a ui-sref="employeeducation({obj:userRolesToggle.empId})" class="m-l-10">Education History</a></li>
-            <li class="p-t-b-10"><i class="fa fa-file icon-white-sidebar"></i>  <a ui-sref="listdoc({obj:userRolesToggle.empId})" class="m-l-10">My Documents</a></li>
-            <li class="p-t-b-10"><i class="fa fa-line-chart icon-white-sidebar"></i>  <a ui-sref="empdesig_pack_history({obj:userRolesToggle.empId})" class="m-l-10">Promotion Summary</a></li>
-            <li class="p-t-b-10"><i class="fa fa-user icon-white-sidebar"></i>  <a ui-sref="myresignation({obj:userRolesToggle.empId})" class="m-l-10">My Resignation </a></li>
-          </ul>
-
-        </li>
+        <!--</li>-->
 
       </ul>
     </section>

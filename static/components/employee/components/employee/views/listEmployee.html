@@ -1,6 +1,8 @@
 <div class="content-wrapper noScroll">
      <div class="col-sm-10 col-md-offset-1 p-t-b-25">
-        <a ui-sref="addemployee"><span class="pull-right" ><i class="fa fa-plus" aria-hidden="true"></i> Add Employee</span></a>
+         <!--<a ui-sref="addemployee"><span class="pull-right" ><i class="fa fa-edit" aria-hidden="true"></i> Add Employee</span></a>-->
+
+        <a ui-sref="addemployee"><span class="pull-right"><i class="fa fa-plus" aria-hidden="true"></i> Add Employee</span></a>
     </div>
 <div class="col-sm-10 col-md-offset-1 scrollit" ng-init="employeeScope.getEmployeelist()">
     <table st-table="displayedCollection" style="" st-safe-src="employeeScope.listdata" class="table table-striped">
@@ -8,60 +10,36 @@
 
         <!--<tr>-->
            <!---->
-            <th class="p-l-r-0" colspan="9">
+            <th class="p-l-r-0" colspan="10">
                 <input st-search="" class="form-control searchBar-w pull-right" placeholder="Search Table..." type="text"/>
             </th>
             <!--<th><button class="pull-right btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-search-plus" aria-hidden="true"></i> <b>Advance Search</b></button></th>-->
         <!--</tr>-->
         <tr class="table-head-color">
-            <th>S.No.</th>
+            <!--<th>S.No.</th>-->
             <th st-sort="emp_name">Employee</th>
             <th st-sort="emp_email">Email</th>
-            <!--<th st-sort="personal_email">Personal Email</th>-->
+            <th st-sort="employee_id">Employee id</th>
             <th st-sort="mobile_number">Contact No.</th>
-            <!--<th st-sort="office_number">Office Number</th>-->
-            <!--<th st-sort="emp_dob">DOB</th>-->
-            <th st-sort="date_of_joining">Joining Date </th>
-            <!--<th st-sort="date_of_leaving">Date of Leaving</th>-->
-            <!--<th st-sort="status_id">Status</th>-->
-            <!--<th st-sort="jobtitle_id">Job Title</th>-->
-            <!--<th st-sort="emp_dob">Experience</th>-->
-            <!--<th st-sort="businessunit_id">Business Unit</th>-->
-            <th st-sort="year_exp">Manager</th>
-            <th st-sort="year_exp">Image</th>
-            <!--<th st-sort="emp_dob">Office Location</th>-->
-            <!--<th st-sort="emp_dob">Is Active</th>-->
-            <!--<th st-sort="emp_dob">Created By</th>-->
-            <!--<th st-sort="emp_curr_addr">Current Address</th>-->
-            <!--<th st-sort="emp_per_addr">Permanent Address</th>-->
-            <th>Employee 360 View</th>
+            <th st-sort="year_exp">years of exp</th>
+            <th st-sort="emp_curr_addr">Current Address</th>
+            <th st-sort="emp_per_addr">Permanent Address</th>
+            <!--<th st-sort="empImg">empImg</th>-->
             <th st-sort="">Action</th>
         </tr>
 
         </thead>
         <tbody>
         <tr ng-repeat="row in displayedCollection">
-            <td>{{$index+1}}</td>
+            <!--<td>{{$index+1}}</td>-->
             <td>{{row.emp_name}}</td>
             <td>{{row.emp_email}}</td>
-            <!--<td>{{row.personal_email}}</td>-->
+            <td>{{row.employee_id}}</td>
             <td>{{row.mobile_number}}</td>
-            <!--<td>{{row.office_number}}</td>-->
-            <!--<td>{{row.emp_dob}}</td>-->
-            <td>{{row.date_of_joining}}</td>
-            <!--<td>{{row.date_of_leaving}}</td>-->
-            <!--<td>{{row.status_id}}</td>-->
-            <!--<td>{{row.jobtitle_id}}</td>-->
-            <!--<td>{{row.year_exp}}</td>-->
-            <!--<td>{{row.businessunit_id}}</td>-->
-            <td><span ng-if="row.manager_name">{{row.manager_name}}</span><span ng-if="!row.manager_name">NAN</span></td>
-            <td><span ng-if="row.empImg"><img src="/static/dist/dmimages/{{row.empImg}}" width="100" height="100"></span><span ng-if="!row.empImg">No Image</span></td>
-            <!--<td>{{row.office_locationId}}</td>-->
-            <!--<td>{{row.isactive}}</td>-->
-            <!--<td>{{row.created_by}}</td>-->
-            <!--<td>{{row.emp_curr_addr}}</td>-->
-            <!--<td>{{row.emp_per_addr}}</td>-->
-            <th><button style="font-size:11px" ng-click="employeeScope.empAllDetailsState(row.emp_id)">View 360</button></th>
+            <td>{{row.year_exp}}</td>
+            <td>{{row.emp_curr_addr}}</td>
+            <td>{{row.emp_per_addr}}</td>
+            <!--<td><span ng-if="row.empImg"><img src="/static/dist/dmimages/{{row.empImg}}" width="100" height="100"></span><span ng-if="!row.empImg">No Image</span></td>-->
             <td><i class="fa fa-edit" style="cursor:pointer" ng-click="employeeScope.changeState (row.emp_id)"></i> <i class="fa fa-trash" style="color:orangered; cursor:pointer" ng-click="employeeScope.deleteEmployee(row.emp_id, $index)"></i></td>
         </tr>
         </tbody>

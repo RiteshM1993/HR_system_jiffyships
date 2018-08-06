@@ -1,8 +1,8 @@
-from hrms_employee.models import employee
-# from pprint import pprint
-# from django.contrib import sessions
+from hrms_employee.models import hremployee
+from pprint import pprint
+from django.contrib import sessions
 
-from django.contrib.sessions.models import Session
+# from django.contrib.sessions.models import Session
 
 
 
@@ -12,7 +12,7 @@ class dmlogin:
     @classmethod
     def login(cls, email_id):
         try:
-            getqry=employee.objects.get(email_id=email_id)
+            getqry=hremployee.objects.get(email_id=email_id)
 
             if getqry.email_id:
                 succesresplist= []

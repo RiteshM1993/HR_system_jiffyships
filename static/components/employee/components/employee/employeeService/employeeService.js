@@ -4,23 +4,6 @@ angular.module('employeeApp.employeeService',[])
 
     var employee ={};
 
-    //    get add employee page data api's
-
-     employee.employeeDesignation = function(success, failure){
-            $http.get('/employee/api/employeedesignationvalues/').then(success, failure)
-     }
-
-     employee.employeeBusinessUnitValues = function(success, failure){
-        $http.get('/employee/api/employeebusinessunitvalues/').then(success, failure)
-     }
-
-     employee.employeeOfficeLocationValue = function(success, failure){
-        $http.get('/employee/api/employeeofficelocationvalue/').then(success, failure)
-     }
-
-     employee.employeeType = function(success, failure){
-        $http.get('/employee/api/listemptype/').then(success, failure)
-     }
 
     employee.saveEmployee = function(formdata, success, failure){
         $http({
@@ -71,13 +54,6 @@ angular.module('employeeApp.employeeService',[])
         $http.get('/employee/api/getEmp360EducationDetails/?id='+id).then(success, failure)
     }
 
-    employee.advanceSearch = function(columnName, searchText, dbCondition, success, failure){
-        $http.post('/employee/api/advancesearch/',{
-            'column_name': columnName,
-            'search_text': searchText,
-            'db_condition': dbCondition,
-        }).then(success, failure)
-    }
 
     return employee;
 

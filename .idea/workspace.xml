@@ -2,23 +2,308 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bac66a64-725f-4b91-969e-da7bbe13fadb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/customermaster/customermastercontroller/customermastercontroller.py" afterPath="$PROJECT_DIR$/hrms_admin/customermaster/customermastercontroller/customermastercontroller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/customermaster/customermasterservice/customermasterservice.py" afterPath="$PROJECT_DIR$/hrms_admin/customermaster/customermasterservice/customermasterservice.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/login/logincontroller/logincontroller.py" afterPath="$PROJECT_DIR$/hrms_admin/login/logincontroller/logincontroller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/models.py" afterPath="$PROJECT_DIR$/hrms_admin/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderController/purchaseOrderController.py" afterPath="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderController/purchaseOrderController.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderService/purchaseOrderService.py" afterPath="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderService/purchaseOrderService.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_admin/urls.py" afterPath="$PROJECT_DIR$/hrms_admin/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hrms_employee/models.py" afterPath="$PROJECT_DIR$/hrms_employee/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/adminApp.js" afterPath="$PROJECT_DIR$/static/components/admin/adminApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderController/purchaseOrderController.js" afterPath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderController/purchaseOrderController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderService/purchaseOrderServices.js" afterPath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderService/purchaseOrderServices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/listPurchaseOrder.html" afterPath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/listPurchaseOrder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/admin/views/index.html" afterPath="$PROJECT_DIR$/static/components/admin/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/css/hrmsstyle.css" afterPath="$PROJECT_DIR$/static/components/css/hrmsstyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" afterPath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/hrms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hrms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/billing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/billing/billingController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/billing/billingController/billingController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/billing/billingService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/billing/billingService/billingService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/businessunitmaster/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/businessunitmaster/businessUnitMasterController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/businessunitmaster/businessUnitMasterController/businessUnitMasterController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/businessunitmaster/businessUnitMasterService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/businessunitmaster/businessUnitMasterService/businessUnitMasterService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/currencymaster/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/currencymaster/currencyMasterController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/currencymaster/currencyMasterController/currencyMasterController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/currencymaster/currencyMasterService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/currencymaster/currencyMasterService/currencyMasterService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/customermaster/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/customermaster/customermastercontroller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/customermaster/customermastercontroller/customermastercontroller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/customermaster/customermasterservice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/customermaster/customermasterservice/customermasterservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/designationmaster/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/designationmaster/designationmastercontroller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/designationmaster/designationmastercontroller/designationmastercontroller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/designationmaster/designationmasterservice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/designationmaster/designationmasterservice/designationmasterservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/login/logincontroller/logincontroller.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_admin/login/logincontroller/logincontroller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/login/loginservice/loginservice.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_admin/login/loginservice/loginservice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0002_project_master_customer_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0003_auto_20180625_1102.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0004_auto_20180625_1154.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0005_remove_project_master_customer_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0006_project_master_customer_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0007_remove_customer_table_active.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0008_customer_table_active.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0009_project_master_project_cost.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0010_auto_20180709_0806.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0011_purchase_order_payment_received_flag.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0012_auto_20180713_0722.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0013_po_payment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0014_po_payment_cheque_tnx_no.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0015_po_payment_description.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0016_auto_20180713_1141.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/0017_auto_20180717_0809.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_admin/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/officelocation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/officelocation/officeLocationController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/officelocation/officeLocationController/officeLocationController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/officelocation/officeLocationService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/officelocation/officeLocationService/officeLocationService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectdocu/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectdocu/projectDocuController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectdocu/projectDocuController/projectDocuController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectdocu/projectDocuService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectdocu/projectDocuService/projectDocuService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectmaster/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectmaster/projectmastercontroller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectmaster/projectmastercontroller/projectmastercontroller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectmaster/projectmasterservice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projectmaster/projectmasterservice/projectmasterservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projecttypemaster/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projecttypemaster/projecttypemastercontroller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projecttypemaster/projecttypemastercontroller/projecttypemastercontroller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projecttypemaster/projecttypemasterservice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/projecttypemaster/projecttypemasterservice/projecttypemasterservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/purchaseOrder/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderController/purchaseOrderController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderService/purchaseOrderService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_admin/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryController/empdesigpackhistoryController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryService/empdesigpackhistoryService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empexperience/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceController/empExperienceController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceService/empExperienceService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employee/employeecontroller/employeecontroller.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_employee/employee/employeecontroller/employeecontroller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeedependents/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentscontroller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentscontroller/employeedependentscontroller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentsservice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeedependents/employeedependentsservice/employeedependentsservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeeducation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationcontroller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationcontroller/employeeeducationcontroller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationservice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationservice/employeeeducationservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeproject/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeproject/employeeprojectcontroller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeproject/employeeprojectcontroller/employeeprojectcontroller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeproject/employeeprojectservice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/employeeproject/employeeprojectservice/employeeprojectservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empresign/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empresign/empresignController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empresign/empresignService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/emptype/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/emptype/empTypeController/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/emptype/empTypeController/empTypeController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/emptype/empTypeService/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/emptype/empTypeService/empTypeService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/migrations/0002_auto_20180620_1732.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/migrations/0003_auto_20180620_1734.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/migrations/0004_remove_employee_experience_created_by.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/migrations/0005_auto_20180709_0806.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/migrations/0006_employee_resign_status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/migrations/0007_employee_manager_resignation_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/migrations/0008_auto_20180713_0542.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_employee/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/uploadempdoc/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdoccontroller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdoccontroller/uploadempdoccontroller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdocservice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdocservice/uploadempdocservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_employee/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_employee/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrms_main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrms_main/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/adminApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/admin/adminApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/billing/adminApp.billing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/billing/billingController/billingController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/billing/billingService/billingService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/billing/views/addbilling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/billing/views/listbilling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/businessunitmaster/adminApp.businessUnitMaster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/businessunitmaster/businessUnitMasterController/businessUnitMasterController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/businessunitmaster/businessUnitMasterService/businessUnitMasterService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/businessunitmaster/views/addbusinessunitmaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/businessunitmaster/views/editbusinessunit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/businessunitmaster/views/listbusinessunitmaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/currencymaster/adminApp.currencyMaster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/currencymaster/currencyMasterController/currencyMasterController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/currencymaster/currencyMasterService/currencyMasterService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/currencymaster/views/addcurrencymaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/currencymaster/views/editcurrencymaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/currencymaster/views/listcurrency.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/customermaster/adminApp.customermaster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/customermaster/customerMasterController/customerMasterController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/customermaster/customerMasterService/customerMasterService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/customermaster/views/addcustomermaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/customermaster/views/customerproject.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/customermaster/views/editcustomermaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/customermaster/views/listcustomermaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/customermaster/views/listcustomerprojectpo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/editemployeeresignation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/expiring_po_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerexppo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerpo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/dashboard/views/managerDashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/designationmaster/adminApp.designationmaster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/designationmaster/designationmasterController/designationmasterController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/designationmaster/designationmasterService/designationmasterService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/designationmaster/views/adddesignationmaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/designationmaster/views/editdesignation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/designationmaster/views/listdesignation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/officelocation/adminApp.officeLocation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/officelocation/officeLocationController/officeLocationController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/officelocation/officeLocationService/officeLocationService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/officelocation/views/addofficelocation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/officelocation/views/editofficelocation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/officelocation/views/listofficelocation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectAssign/adminApp.projectAssign.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectAssign/projectAssignController/projectAssignController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectAssign/projectAssignService/projectAssignService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectAssign/views/listemployeeassignedtomanager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectAssign/views/projManagerAssign.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectAssign/views/projectassignmanager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectAssign/views/viewDocuments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectAssign/views/viewResource.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectdocuments/adminApp.projectdocuments.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectdocuments/projectDocumentController/projectDocumentController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectdocuments/projectDocumentService/projectDocumentService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectdocuments/views/addprojectdocument.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectdocuments/views/editprojectdocument.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectdocuments/views/listprojectdocument.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectmaster/adminApp.projectMaster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectmaster/projectMasterController/projectMasterController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectmaster/projectMasterService/projectMasterService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectmaster/views/addprojectmaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectmaster/views/editprojectmaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectmaster/views/listprojectPurchaseOrder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projectmaster/views/listprojectmaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projecttypemaster/adminApp.projecttypemaster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projecttypemaster/projecttypemastercontroller/projecttypemastercontroller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projecttypemaster/projecttypemasterservice/projecttypemasterservice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projecttypemaster/views/addprojecttypemaster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projecttypemaster/views/editprojecttype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/projecttypemaster/views/listprojecttype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/adminApp.purchaseOrder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderController/purchaseOrderController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderService/purchaseOrderServices.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/addPurchaseOrder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/editPurchaseOrder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/listPurchaseOrder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/popayment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/viewpayment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/views/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/admin/views/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/admin/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/admin/views/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/admin/views/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/dashboard/dashboardController/dashboardController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/dashboard/dashboardService/dashboardService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/dashboard/employeeApp.dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/dashboard/views/employeedashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryController/emp_designationpackagehistoryController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryService/emp_designationpackagehistoryService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/employeeApp.emp_designationpackagehistory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/views/addemp_designationpackagehistory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/views/editempdesigpackhistory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/views/listempdesigpackhistory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_doc/emp_docController/emp_docController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_doc/emp_docService/emp_docService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_doc/employeeApp.emp_doc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_doc/views/addempdoc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_doc/views/editempdoc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/emp_doc/views/listdoc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employee/employeeController/employeeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/employee/components/employee/employeeController/employeeController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employee/employeeService/employeeService.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/employee/components/employee/employeeService/employeeService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employee/views/addEmployee.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/employee/components/employee/views/addEmployee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employee/views/editEmployee.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/employee/components/employee/views/editEmployee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employee/views/empTimeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employee/views/listEmployee.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/employee/components/employee/views/listEmployee.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employee/views/new_empTimeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeedependents/employeeApp.employeedependents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeedependents/employeedependentsController/employeedependentsController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeedependents/employeedependentsService/employeedependentsService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeedependents/views/addemployeedependents.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeedependents/views/editemployeedependents.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeedependents/views/listemployeedependents.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeApp.employeeEducation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationController/employeeeducationController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationService/employeeeducationService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeeducation/views/addemployeeeducation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeeducation/views/editemployeeeducation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeeducation/views/listemployeeeducation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceController/empExperienceController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceService/empExperienceService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeexperience/employeeApp.empExperience.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeexperience/views/addempexperience.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeexperience/views/editempexperience.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeexperience/views/listempexperience.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeproject/employeeApp.employeeProject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeproject/employeeprojectController/employeeprojectController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeproject/employeeprojectService/employeeprojectService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeproject/views/addemployeeproject.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeproject/views/editemployeeproject.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeproject/views/listemployeeproject.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeApp.employeeResignation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationservice/employeeresignationService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/addemployeeresignation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/listemployeeresignation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeetype/empType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeetype/empTypeController/empTypeController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeetype/empTypeService/empTypeService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeetype/views/addemptype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeetype/views/editemptype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/components/employeetype/views/listemptype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/employeeApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/employee/employeeApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/employee/views/employeeindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/employee/views/employeeindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/components/login/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/components/login/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/avatar04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/avatar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/avatar3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/avatar5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/boxed-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/boxed-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/default-50x50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/dmlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/emp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/employee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/photo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/photo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/photo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/photo4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/user1-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/user2-160x160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/user3-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/user4-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/user5-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/user6-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/user7-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/dist/img/user8-128x128.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,52 +312,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="hrms" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customermastercontroller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrms_admin/customermaster/customermastercontroller/customermastercontroller.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/components/admin/views/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1188">
+              <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="employeecontroller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrms_employee/employee/employeecontroller/employeecontroller.py">
+      <file leaf-file-name="sidebar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/components/admin/views/sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="4026">
+              <caret line="183" column="17" selection-start-line="183" selection-start-column="17" selection-end-line="183" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="employeeservice.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py">
+      <file leaf-file-name="employeeindex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/components/employee/views/employeeindex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="253" column="28" lean-forward="false" selection-start-line="253" selection-start-column="28" selection-end-line="253" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="8184">
+              <caret line="372" selection-start-line="372" selection-end-line="372" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="purchaseOrderService.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderService/purchaseOrderService.py">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/components/admin/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2682">
-              <caret line="152" column="16" lean-forward="false" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -89,15 +365,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>listmanagerpo</find>
-      <find>listemployeeassignedtomanager</find>
-      <find>empdesig_pack_history</find>
-      <find>res</find>
-      <find>listEmployeeresignation</find>
-      <find>getEmployeeResignationlist</find>
-      <find>employeeresignationScope</find>
-      <find>employeeresignationScope.getEmployeeResignationlist</find>
-      <find>listma</find>
       <find>ListEmployeeResignations</find>
       <find>updateemployeeresignation</find>
       <find>editemployeeresignations</find>
@@ -119,6 +386,15 @@
       <find>.popover-title</find>
       <find>pop</find>
       <find>paymentdetails</find>
+      <find>check</find>
+      <find>emp</find>
+      <find>ng-if</find>
+      <find>dm</find>
+      <find>join</find>
+      <find>office</find>
+      <find>pers</find>
+      <find>dob</find>
+      <find>year_exp</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -166,42 +442,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hrms_employee/employeeeducation/employeeeducationservice/employeeeducationservice.py" />
-        <option value="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceController/empExperienceController.py" />
-        <option value="$PROJECT_DIR$/hrms_employee/empexperience/empExperienceService/empExperienceService.py" />
-        <option value="$PROJECT_DIR$/static/components/admin/views/sidebar.html" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryController/emp_designationpackagehistoryController.js" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/emp_designationpackagehistory/emp_designationpackagehistoryService/emp_designationpackagehistoryService.js" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeedependents/employeedependentsController/employeedependentsController.js" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeedependents/employeedependentsService/employeedependentsService.js" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationController/employeeeducationController.js" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationService/employeeeducationService.js" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceController/empExperienceController.js" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeeexperience/empExperienceService/empExperienceService.js" />
-        <option value="$PROJECT_DIR$/hrms_admin/login/loginservice/loginservice.py" />
-        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html" />
-        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/managerDashboard.html" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/listemployeeresignation.html" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationservice/employeeresignationService.js" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/editemployeeresignation.html" />
-        <option value="$PROJECT_DIR$/static/components/admin/components/designationmaster/designationmasterController/designationmasterController.js" />
-        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" />
-        <option value="$PROJECT_DIR$/hrms_employee/urls.py" />
-        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" />
-        <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/addemployeeresignation.html" />
-        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" />
         <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerresignations.html" />
         <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/editemployeeresignation.html" />
-        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" />
         <option value="$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py" />
         <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js" />
-        <option value="$PROJECT_DIR$/hrms_employee/models.py" />
         <option value="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html" />
         <option value="$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py" />
         <option value="$PROJECT_DIR$/static/components/admin/views/login.html" />
         <option value="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/popayment.html" />
-        <option value="$PROJECT_DIR$/static/components/employee/employeeApp.js" />
-        <option value="$PROJECT_DIR$/static/components/admin/views/index.html" />
         <option value="$PROJECT_DIR$/static/AdminLTE-2.4.3/bower_components/bootstrap/dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/static/node_modules/angular-ui-bootstrap/template/popover/popover-template.html" />
         <option value="$PROJECT_DIR$/static/components/css/hrmsstyle.css" />
@@ -209,18 +457,46 @@
         <option value="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/listPurchaseOrder.html" />
         <option value="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderService/purchaseOrderService.py" />
         <option value="$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderController/purchaseOrderController.py" />
-        <option value="$PROJECT_DIR$/hrms_admin/urls.py" />
         <option value="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderService/purchaseOrderServices.js" />
         <option value="$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderController/purchaseOrderController.js" />
-        <option value="$PROJECT_DIR$/static/components/admin/adminApp.js" />
         <option value="$PROJECT_DIR$/hrms_admin/customermaster/customermastercontroller/customermastercontroller.py" />
-        <option value="$PROJECT_DIR$/hrms_admin/models.py" />
         <option value="$PROJECT_DIR$/hrms_admin/customermaster/customermasterservice/customermasterservice.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/currencymaster/currencyMasterService/currencyMasterService.js" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/projectmaster/projectMasterController/projectMasterController.js" />
+        <option value="$PROJECT_DIR$/hrms_admin/models.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryController/empdesigpackhistoryController.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/adminApp.js" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html" />
+        <option value="$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryService/empdesigpackhistoryService.py" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employee/employeeService/employeeService.js" />
+        <option value="$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdocservice/uploadempdocservice.py" />
+        <option value="$PROJECT_DIR$/hrms_main/settings.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/models.py" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employee/views/addEmployee.html" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employee/employeeController/employeeController.js" />
+        <option value="$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/employee/employeecontroller/employeecontroller.py" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employee/views/listEmployee.html" />
+        <option value="$PROJECT_DIR$/static/components/employee/components/employee/views/editEmployee.html" />
+        <option value="$PROJECT_DIR$/static/components/admin/views/header.html" />
         <option value="$PROJECT_DIR$/hrms_admin/login/logincontroller/logincontroller.py" />
+        <option value="$PROJECT_DIR$/static/components/login/components/login/loginController/loginController.js" />
+        <option value="$PROJECT_DIR$/hrms_admin/login/loginservice/loginservice.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py" />
+        <option value="$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py" />
+        <option value="$PROJECT_DIR$/hrms_employee/urls.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js" />
+        <option value="$PROJECT_DIR$/hrms_admin/urls.py" />
+        <option value="$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js" />
+        <option value="$PROJECT_DIR$/static/components/login/views/login.html" />
+        <option value="$PROJECT_DIR$/static/components/admin/views/sidebar.html" />
+        <option value="$PROJECT_DIR$/static/components/employee/views/employeeindex.html" />
+        <option value="$PROJECT_DIR$/static/components/employee/employeeApp.js" />
+        <option value="$PROJECT_DIR$/static/components/admin/views/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="75" />
     <option name="y" value="24" />
     <option name="width" value="1281" />
@@ -228,60 +504,48 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrms" type="462c0819:PsiDirectoryNode" />
+              <item name="hrms_jiffyship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hrms_jiffyship" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hrms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrms" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="hrms_jiffyship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/local/myworkspace/hrms/hrms/static/components/admin/components/dashboard/dashboardController/dashboardController.js" />
-    <property name="last_opened_file_path" value="$USER_HOME$/myworkspace/csapi_master" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/components/admin/components/dashboard/views" />
-      <recent name="$PROJECT_DIR$/static/components/employee/components" />
-      <recent name="$PROJECT_DIR$/hrms_admin" />
-      <recent name="$PROJECT_DIR$/static/components/admin/components" />
-      <recent name="$PROJECT_DIR$/static/components/css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/components/employee/components/employeeresignation/views" />
       <recent name="$PROJECT_DIR$/static/components/admin/components/dashboard/views" />
       <recent name="$PROJECT_DIR$/static/components/admin/components/customermaster" />
       <recent name="$PROJECT_DIR$/static/components/admin/components/designationmaster" />
       <recent name="$PROJECT_DIR$/static/components/admin/components/customer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/components/admin/components/dashboard/views" />
+      <recent name="$PROJECT_DIR$/static/components/employee/components" />
+      <recent name="$PROJECT_DIR$/hrms_admin" />
+      <recent name="$PROJECT_DIR$/static/components/admin/components" />
+      <recent name="$PROJECT_DIR$/static/components/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -296,8 +560,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hrms">
-    <configuration name="HRMS" type="PythonConfigurationType" factoryName="Python">
+  <component name="RunManager" selected="Python.hr">
+    <configuration name="hr" type="PythonConfigurationType" factoryName="Python">
+      <module name="hrms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -308,36 +573,34 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hrms" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
-      <option name="PARAMETERS" value="runserver" />
+      <option name="PARAMETERS" value="runserver 0.0.0.0:7000" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="hrms" type="PythonConfigurationType" factoryName="Python">
+      <module name="hrms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/myworkspace/HRMS/venv/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hrms" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.hrms" />
-      <item index="1" class="java.lang.String" itemvalue="Python.HRMS" />
+    <list>
+      <item itemvalue="Python.hrms" />
+      <item itemvalue="Python.hr" />
     </list>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -353,28 +616,47 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="24" width="1303" height="780" extended-state="7" />
-    <editor active="true" />
+    <frame x="98" y="-6" width="1822" height="1086" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29083666" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32348368" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42457232" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49892932" visible="true" weight="0.20581655" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32314923" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32970452" />
+      <window_info anchor="bottom" id="Python Console" order="2" weight="0.32970452" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.24940239" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32970452" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39012927" />
+      <window_info id="Favorites" order="0" sideWeight="0.5010707" side_tool="true" weight="0.16331096" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="0" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32902467" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.29421398" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32348368" />
+      <window_info anchor="right" id="Data View" order="0" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.24940239" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32970452" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.42418033" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32970452" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Python Console" order="2" weight="0.32970452" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
@@ -399,9 +681,8 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="528" />
+      <option name="time" value="555" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -418,413 +699,321 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>projectEndMonthYear</expression-string>
+        <expression-string>saveqry</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>projectStartMonthYear</expression-string>
+        <expression-string>empcurrentaddr</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>filterStartDate.year</expression-string>
+        <expression-string>empmobnum</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>filterStartDate.month</expression-string>
+        <expression-string>email</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>'' if data.project_cost is None or 'Null' else int(data.project_cost)</expression-string>
+        <expression-string>email_id</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>project_cost</expression-string>
+        <expression-string>saveqry.employee_no</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>request.data['status']</expression-string>
+        <expression-string>err[2]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>status</expression-string>
+        <expression-string>err</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>listqry</expression-string>
+        <expression-string>dmempid</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/listmanagerexppo.html">
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationService/employeeeducationService.js" />
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeeducation/employeeeducationController/employeeeducationController.js" />
+    <entry file="file://$PROJECT_DIR$/hrms_admin/businessunitmaster/businessUnitMasterService/businessUnitMasterService.py" />
+    <entry file="file://$PROJECT_DIR$/../../myworkspace/hrmsenv/local/lib/python2.7/site-packages/django/core/management/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="117">
+          <caret line="343" lean-forward="true" selection-start-line="343" selection-end-line="343" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/listemployeeresignation.html">
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/currencymaster/currencyMasterController/currencyMasterController.js">
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="2904">
+          <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/businessunitmaster/businessUnitMasterController/businessUnitMasterController.js">
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryController/empdesigpackhistoryController.py" />
+    <entry file="file://$PROJECT_DIR$/hrms_employee/empdesigpackhistory/empdesigpackhistoryService/empdesigpackhistoryService.py" />
+    <entry file="file://$PROJECT_DIR$/../../myworkspace/hrmsenv/local/lib/python2.7/site-packages/django/views/generic/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3332">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="201">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employee/employeeController/employeeController.js">
+    <entry file="file://$PROJECT_DIR$/../../myworkspace/hrmsenv/local/lib/python2.7/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3996">
-          <caret line="222" column="45" lean-forward="false" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
+        <state relative-caret-position="135">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/views/myresignation.html">
+    <entry file="file://$PROJECT_DIR$/../../myworkspace/hrmsenv/local/lib/python2.7/site-packages/django/views/decorators/csrf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        <state relative-caret-position="207">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employeeresignation/employeeresignationcontroller/employeeresignationController.js">
+    <entry file="file://$PROJECT_DIR$/hrms_employee/migrations/0002_auto_20180806_0712.py" />
+    <entry file="file://$PROJECT_DIR$/hrms_employee/uploadempdoc/uploadempdocservice/uploadempdocservice.py" />
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employee/employeeService/employeeService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="94" column="28" lean-forward="true" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/officelocation/views/addofficelocation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignService/empresignService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1511">
-          <caret line="101" column="77" lean-forward="false" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/empresign/empresignController/empresignController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="31" />
+        <state relative-caret-position="526">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/components/admin/views/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="61" column="10" lean-forward="false" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js" />
-    <entry file="file://$PROJECT_DIR$/static/components/admin/views/index.html">
+    <entry file="file://$PROJECT_DIR$/static/components/admin/adminApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="91" column="77" lean-forward="false" selection-start-line="91" selection-start-column="77" selection-end-line="91" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="5629" column="60" lean-forward="true" selection-start-line="5629" selection-start-column="60" selection-end-line="5629" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4320">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/employee/employeeApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/AdminLTE-2.4.3/bower_components/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="6152" column="18" lean-forward="true" selection-start-line="6152" selection-start-column="18" selection-end-line="6152" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/addPurchaseOrder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3024">
-          <caret line="168" column="34" lean-forward="true" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/node_modules/angular-ui-bootstrap/template/popover/popover-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/popayment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="135" lean-forward="false" selection-start-line="8" selection-start-column="135" selection-end-line="8" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/css/hrmsstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="178" column="1" lean-forward="true" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/projectmaster/views/listprojectmaster.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/businessunitmaster/views/listbusinessunitmaster.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/currencymaster/views/listcurrency.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/billing/views/listbilling.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/designationmaster/designationmasterservice/designationmasterservice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/empexperience/empExperienceService/empExperienceService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/customermaster/views/listcustomermaster.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hrms_main/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        <state relative-caret-position="154">
+          <caret line="86" column="54" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/adminApp.js">
+    <entry file="file://$PROJECT_DIR$/hrms_employee/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="385" column="36" lean-forward="false" selection-start-line="385" selection-start-column="36" selection-end-line="385" selection-end-column="36" />
+        <state relative-caret-position="138">
+          <caret line="259" column="35" selection-start-line="259" selection-start-column="35" selection-end-line="259" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderController/purchaseOrderController.js">
+    <entry file="file://$PROJECT_DIR$/hrms_employee/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="260" column="41" lean-forward="true" selection-start-line="260" selection-start-column="41" selection-end-line="260" selection-end-column="41" />
+        <state relative-caret-position="361">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/listPurchaseOrder.html">
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employee/employeeController/employeeController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state relative-caret-position="1496">
+          <caret line="152" column="57" lean-forward="true" selection-start-line="152" selection-start-column="57" selection-end-line="152" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/urls.py">
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employee/views/addEmployee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="131" column="68" lean-forward="false" selection-start-line="131" selection-start-column="68" selection-end-line="131" selection-end-column="68" />
+        <state relative-caret-position="81">
+          <caret line="127" column="18" selection-start-line="127" selection-start-column="18" selection-end-line="142" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/purchaseOrder/purchaseOrderService/purchaseOrderServices.js">
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employee/views/listEmployee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="81" column="32" lean-forward="false" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="32" />
+        <state relative-caret-position="396">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/admin/components/purchaseOrder/views/viewpayment.html">
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/employee/views/editEmployee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="44" lean-forward="false" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        <state relative-caret-position="2376">
+          <caret line="108" column="24" lean-forward="true" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hrms_admin/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="143" column="30" lean-forward="false" selection-start-line="143" selection-start-column="30" selection-end-line="143" selection-end-column="30" />
+        <state relative-caret-position="110">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderController/purchaseOrderController.py">
+    <entry file="file://$PROJECT_DIR$/static/components/login/components/login/loginController/loginController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="87" column="4" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/purchaseOrder/purchaseOrderService/purchaseOrderService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2682">
-          <caret line="152" column="16" lean-forward="false" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/login/loginservice/loginservice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/login/logincontroller/logincontroller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/billing/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/billing/billingService/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/businessunitmaster/businessUnitMasterService/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/billing/billingController/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/customermaster/customermasterservice/customermasterservice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_admin/customermaster/customermastercontroller/customermastercontroller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrms_employee/employee/employeecontroller/employeecontroller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/files/storage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1954">
-          <caret line="339" column="10" lean-forward="false" selection-start-line="339" selection-start-column="10" selection-end-line="339" selection-end-column="10" />
+        <state relative-caret-position="396">
+          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hrms_employee/employee/employeeservice/employeeservice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="253" column="28" lean-forward="false" selection-start-line="253" selection-start-column="28" selection-end-line="253" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2354">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../myworkspace/hrmsenv/local/lib/python2.7/site-packages/rest_framework/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../myworkspace/hrmsenv/local/lib/python2.7/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="473" selection-start-line="473" selection-end-line="473" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/login/loginservice/loginservice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/employee/employeecontroller/employeecontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1162">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/dashboard/dashboardService/dashboardService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_main/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/dashboard/dashboardController/dashboardController.js" />
+    <entry file="file://$PROJECT_DIR$/hrms_admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/login/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/login/logincontroller/logincontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_admin/dashboard/dashboardController/dashboardController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardService/dashboardService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/components/dashboard/dashboardController/dashboardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrms_employee/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/views/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/admin/views/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4026">
+          <caret line="183" column="17" selection-start-line="183" selection-start-column="17" selection-end-line="183" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/dashboard/views/employeedashboard.html" />
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/dashboard/dashboardService/dashboardService.js" />
+    <entry file="file://$PROJECT_DIR$/static/components/employee/components/dashboard/employeeApp.dashboard.js" />
+    <entry file="file://$PROJECT_DIR$/static/components/employee/employeeApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/components/employee/views/employeeindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8184">
+          <caret line="372" selection-start-line="372" selection-end-line="372" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/dist/img/dmlogo.png" />
+    <entry file="file://$PROJECT_DIR$/static/components/admin/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
         </state>
       </provider>
     </entry>
